@@ -1,0 +1,9 @@
+{%- case include.name -%}
+{%- when "スマートフォン" -%}smartphone
+{%- when "Apple" -%}apple
+{%- when "Android" -%}android
+{%- when "ガジェット" -%}gadget
+{%- when "テクノロジー" -%}technology
+{%- when "PC・パーツ" -%}pc-parts
+{%- else -%}{{ include.name | slugify }}
+{%- endcase -%}

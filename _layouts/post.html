@@ -18,7 +18,7 @@ layout: default
       </time>
       {% if page.categories %}
         {% for cat in page.categories %}
-          <a href="/category/{% assign _cd = site.data.categories[cat] %}{{ _cd.slug | default: cat | slugify }}/" class="post-category">{{ cat }}</a>
+          <a href="/category/{% include cat_slug.html name=cat %}/" class="post-category">{{ cat }}</a>
         {% endfor %}
       {% endif %}
       <span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -56,7 +56,7 @@ layout: default
   <!-- カテゴリ別おすすめ記事への誘導 -->
   <div class="category-cta">
     {% for cat in page.categories %}
-    <a href="/category/{% assign _cd = site.data.categories[cat] %}{{ _cd.slug | default: cat | slugify }}/">{{ cat }}の最新記事をもっと見る →</a>
+    <a href="/category/{% include cat_slug.html name=cat %}/">{{ cat }}の最新記事をもっと見る →</a>
     {% endfor %}
   </div>
 
