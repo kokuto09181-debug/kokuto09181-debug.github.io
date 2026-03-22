@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<div class="sale-page">
+  <header class="sale-hero">
+    <div class="sale-badge">SALE</div>
+    <h1 class="sale-title">{{ page.title }}</h1>
+    <p class="sale-period">{{ page.period }}</p>
+    {% if page.description %}
+    <p class="sale-desc">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <!-- ジャンル別ナビゲーション -->
+  {% if page.genres %}
+  <nav class="genre-nav">
+    <p class="genre-nav-label">ジャンルで探す</p>
+    <div class="genre-nav-list">
+      {% for genre in page.genres %}
+      <a href="#{{ genre.id }}" class="genre-nav-item">{{ genre.name }}</a>
+      {% endfor %}
+    </div>
+  </nav>
+  {% endif %}
+
+  <div class="sale-content">
+    {{ content }}
+  </div>
+
+  <!-- セール関連の記事一覧 -->
+  {% assign sale_tag = page.sale_tag %}
+  {% if sale_tag %}
+  <section class="sale-articles">
+    <h2 class="section-title">関連するセール記事</h2>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        {% if post.tags contains sale_tag or post.slug contains page.sale_slug %}
+        <li class="post-list-item">
+          {% if post.thumbnail %}
+          <div class="card-thumbnail">
+            <img src="{{ post.thumbnail }}" alt="{{ post.title }}" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          {% endif %}
+          <div class="card-body">
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <div class="post-meta">
+              <time>{{ post.date | date: "%Y年%-m月%-d日" }}</time>
+            </div>
+          </div>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</div>

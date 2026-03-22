@@ -15,6 +15,7 @@ from ..collectors.reddit_collector import RedditCollector
 from ..collectors.dedup_store import DedupStore
 from ..processors.claude_processor import ClaudeProcessor
 from ..processors.roundup_processor import RoundupProcessor
+from ..processors.sale_processor import SaleProcessor
 from ..publishers.jekyll_publisher import JekyllPublisher
 from ..publishers.git_publisher import GitPublisher
 from ..publishers.social_publisher import SocialPublisher
@@ -68,6 +69,13 @@ class Pipeline:
 
         # まとめ記事プロセッサ (Sonnetモデルで高品質生成)
         self.roundup_processor = RoundupProcessor(
+            api_key=config.api_key,
+            model=config.featured_model,
+            max_tokens=8192,
+        )
+
+        # セール記事プロセッサ
+        self.sale_processor = SaleProcessor(
             api_key=config.api_key,
             model=config.featured_model,
             max_tokens=8192,
@@ -138,9 +146,22 @@ class Pipeline:
                     # 通常記事がなくてもまとめ記事があればデプロイ
                     self.git_pub.deploy(1)
 
+        # ステップ6.5: セール記事を生成 (イベントカレンダーに基づく)
+        sale_articles = self._generate_sale_articles()
+        for sale_article in sale_articles:
+            if self.jekyll_pub.publish(sale_article):
+                articles.append(sale_article)
+                result.published += 1
+        if sale_articles and published_count == 0 and not roundup_article:
+            self.git_pub.deploy(len(sale_articles))
+
         # ステップ7: SNS投稿 (認証情報が設定されている場合のみ)
         if articles:
             self.social_pub.publish_batch(articles)
+
+        # ステップ7.5: セール期間中はプロモ投稿も追加
+        if self.sale_processor.get_upcoming_events():
+            self.social_pub.publish_sale_promo()
 
         # ステップ8: 処理済みURLをdedupに登録
         for item in new_items:
@@ -195,6 +216,25 @@ class Pipeline:
         except Exception as e:
             logger.error(f"[Roundup] まとめ記事生成エラー: {e}")
             return None
+
+    def _generate_sale_articles(self) -> list:
+        """セールイベントカレンダーに基づいてセール記事を生成"""
+        generated = []
+        try:
+            upcoming = self.sale_processor.get_upcoming_events()
+            for event in upcoming:
+                sale_key = f"sale://{event['slug']}"
+                if self.dedup.is_seen(sale_key):
+                    logger.info(f"[Sale] 既に生成済み: {event['name']}")
+                    continue
+                article = self.sale_processor.generate(event)
+                if article:
+                    self.dedup.mark_seen(sale_key)
+                    generated.append(article)
+                    logger.info(f"[Sale] セール記事生成: {event['name']}")
+        except Exception as e:
+            logger.error(f"[Sale] セール記事生成エラー: {e}")
+        return generated
 
     def _save_processed(self, articles):
         """デバッグ用: processedデータをJSON保存"""
