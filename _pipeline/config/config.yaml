@@ -1,0 +1,33 @@
+anthropic:
+  api_key: "${ANTHROPIC_API_KEY}"
+  # デフォルトモデル: haiku=安い・速い / sonnet=高品質
+  default_model: "claude-haiku-4-5"
+  featured_model: "claude-sonnet-4-6"
+  max_tokens: 4096
+  # 1ランあたりfeatured記事数 (高品質モデル使用)
+  featured_per_run: 1
+
+schedule:
+  # 毎日6時と18時に実行 (朝3件+夜2件=5件/日)
+  cron: "0 6,18 * * *"
+  enabled: false  # Windowsタスクスケジューラで管理するためfalseのまま
+
+pipeline:
+  max_articles_per_run: 5  # 1回あたり最大5件 (朝夕で計10件/日)
+  dedup_ttl_days: 30
+  # コレクター有効化リスト
+  collectors:
+    - rss
+    - reddit
+
+publishers:
+  github_pages:
+    site_dir: "site"
+    posts_dir: "site/_posts"
+    branch: "main"
+    dry_run: false  # GitHub Pages設定完了後はfalse
+    commit_message: "Add {count} new articles [{date}]"
+
+logging:
+  level: "INFO"
+  file: "logs/pipeline.log"

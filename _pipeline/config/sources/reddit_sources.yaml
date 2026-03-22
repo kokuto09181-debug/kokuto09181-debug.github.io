@@ -1,0 +1,40 @@
+subreddits:
+  - name: "gadgets"
+    sort: "hot"
+    limit: 10
+    min_score: 100
+    time_filter: "day"
+    category: "ガジェット"
+    enabled: true
+
+  - name: "hardware"
+    sort: "hot"
+    limit: 8
+    min_score: 50
+    time_filter: "day"
+    category: "PC・パーツ"
+    enabled: true
+
+  - name: "technology"
+    sort: "hot"
+    limit: 5
+    min_score: 200
+    time_filter: "day"
+    category: "テクノロジー"
+    enabled: true
+
+  - name: "Android"
+    sort: "hot"
+    limit: 5
+    min_score: 100
+    time_filter: "day"
+    category: "Android"
+    enabled: false
+
+  - name: "apple"
+    sort: "hot"
+    limit: 5
+    min_score: 100
+    time_filter: "day"
+    category: "Apple"
+    enabled: false

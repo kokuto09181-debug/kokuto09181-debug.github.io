@@ -1,0 +1,49 @@
+feeds:
+  - name: "The Verge"
+    url: "https://www.theverge.com/rss/index.xml"
+    category: "テクノロジー"
+    max_items: 5
+    min_body_words: 80
+    enabled: true
+
+  - name: "Engadget"
+    url: "https://www.engadget.com/rss.xml"
+    category: "ガジェット"
+    max_items: 5
+    min_body_words: 80
+    enabled: true
+
+  - name: "9to5Mac"
+    url: "https://9to5mac.com/feed/"
+    category: "Apple"
+    max_items: 3
+    min_body_words: 80
+    enabled: true
+
+  - name: "9to5Google"
+    url: "https://9to5google.com/feed/"
+    category: "Android"
+    max_items: 3
+    min_body_words: 80
+    enabled: true
+
+  - name: "Android Authority"
+    url: "https://www.androidauthority.com/feed/"
+    category: "Android"
+    max_items: 3
+    min_body_words: 80
+    enabled: true
+
+  - name: "GSMArena"
+    url: "https://www.gsmarena.com/rss-news-reviews.php3"
+    category: "スマートフォン"
+    max_items: 4
+    min_body_words: 50
+    enabled: true
+
+  - name: "TechCrunch"
+    url: "https://techcrunch.com/feed/"
+    category: "テクノロジー"
+    max_items: 3
+    min_body_words: 100
+    enabled: false  # TC記事は長いので必要なら有効化

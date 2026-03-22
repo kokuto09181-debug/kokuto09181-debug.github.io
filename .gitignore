@@ -1,0 +1,10 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+Gemfile.lock
+_pipeline/logs/*.log
+_pipeline/__pycache__/
+_pipeline/**/__pycache__/
+_pipeline/**/*.pyc
