@@ -1,8 +1,8 @@
 title: "ガジェット最新情報ブログ"
 description: "海外のガジェット・テクノロジー最新情報を日本語で分かりやすくお届けします"
 lang: ja
-url: ""  # 例: https://yourusername.github.io
-baseurl: ""  # サブディレクトリの場合: /repo-name
+url: "https://kokuto09181-debug.github.io"
+baseurl: ""
 
 timezone: Asia/Tokyo
 encoding: utf-8
@@ -24,7 +24,7 @@ feed:
 
 # SEO設定
 twitter:
-  username: yourtwitterhandle
+  username: ""  # Xアカウント取得後に設定
 
 # 除外ファイル
 exclude:

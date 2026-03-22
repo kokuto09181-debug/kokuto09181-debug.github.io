@@ -2,19 +2,24 @@
 layout: default
 ---
 
-<article class="post">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.thumbnail %}
+    <div class="post-thumbnail">
+      <img src="{{ page.thumbnail }}" alt="{{ page.title }}" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    {% endif %}
+
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+
     <div class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: "%Y年%-m月%-d日" }}
       </time>
       {% if page.categories %}
-        <span class="post-category">
-          {% for cat in page.categories %}
-            <a href="/category/{{ cat | slugify }}">{{ cat }}</a>
-          {% endfor %}
-        </span>
+        {% for cat in page.categories %}
+          <a href="/category/{{ cat | slugify }}" class="post-category">{{ cat }}</a>
+        {% endfor %}
       {% endif %}
     </div>
   </header>
@@ -27,7 +32,7 @@ layout: default
   </div>
   -->
 
-  <div class="post-content">
+  <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
 
@@ -39,6 +44,23 @@ layout: default
   </div>
   -->
 
+  <!-- SNSシェアボタン -->
+  <div class="share-buttons">
+    <p class="share-label">この記事をシェア</p>
+    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url | url_encode }}&hashtags=ガジェット,テクノロジー"
+       class="share-btn share-x" target="_blank" rel="noopener noreferrer">
+      𝕏 でシェア
+    </a>
+    <a href="https://www.threads.net/intent/post?text={{ page.title | url_encode }}%20{{ page.url | absolute_url | url_encode }}"
+       class="share-btn share-threads" target="_blank" rel="noopener noreferrer">
+      Threads でシェア
+    </a>
+    <a href="https://line.me/R/msg/text/?{{ page.title | url_encode }}%0A{{ page.url | absolute_url | url_encode }}"
+       class="share-btn share-line" target="_blank" rel="noopener noreferrer">
+      LINE でシェア
+    </a>
+  </div>
+
   <footer class="post-footer">
     {% if page.tags %}
     <div class="post-tags">
@@ -49,6 +71,51 @@ layout: default
     </div>
     {% endif %}
   </footer>
+
+  <!-- 前後の記事ナビ -->
+  <nav class="post-navigation">
+    {% if page.previous.url %}
+    <a href="{{ page.previous.url | relative_url }}" class="nav-prev">
+      <span class="nav-label">← 前の記事</span>
+      <span class="nav-title">{{ page.previous.title }}</span>
+    </a>
+    {% endif %}
+    {% if page.next.url %}
+    <a href="{{ page.next.url | relative_url }}" class="nav-next">
+      <span class="nav-label">次の記事 →</span>
+      <span class="nav-title">{{ page.next.title }}</span>
+    </a>
+    {% endif %}
+  </nav>
+
+  <!-- 関連記事 (同一カテゴリ最大3件) -->
+  {% assign related = site.posts | where_exp: "p", "p.url != page.url" %}
+  {% assign same_cat = "" | split: "" %}
+  {% for p in related %}
+    {% for c in p.categories %}
+      {% if page.categories contains c %}
+        {% unless same_cat contains p %}
+          {% assign same_cat = same_cat | push: p %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  {% if same_cat.size > 0 %}
+  <section class="related-posts">
+    <h2>関連記事</h2>
+    <ul>
+      {% for rp in same_cat limit:3 %}
+      <li>
+        {% if rp.thumbnail %}
+        <img src="{{ rp.thumbnail }}" alt="{{ rp.title }}" loading="lazy" onerror="this.style.display='none'">
+        {% endif %}
+        <a href="{{ rp.url | relative_url }}">{{ rp.title }}</a>
+        <time>{{ rp.date | date: "%Y年%-m月%-d日" }}</time>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
 </article>
 
 {% if page.schema_org %}
