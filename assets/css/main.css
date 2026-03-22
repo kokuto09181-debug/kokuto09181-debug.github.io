@@ -388,6 +388,95 @@ main.container {
   color: #888;
 }
 
+/* お問い合わせフォーム */
+.contact-form {
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 3px rgba(0,102,204,0.1);
+}
+
+.submit-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background: #0052a3;
+}
+
+.form-note {
+  margin-top: 16px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* 記事本文内の画像を見やすく */
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 1.5em 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: block;
+}
+
+.post-content figure {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.post-content figcaption {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 6px;
+}
+
+/* 広告枠 */
+.ad-unit {
+  margin: 24px 0;
+  text-align: center;
+}
+
 /* レスポンシブ */
 @media (max-width: 600px) {
   .post-title { font-size: 1.4rem; }
