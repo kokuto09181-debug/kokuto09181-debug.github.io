@@ -15,68 +15,77 @@ events:
       - "Apple"
     products:
       # --- オーディオ ---
-      - name: "Apple AirPods Pro 2（USB-C）"
+      - name: "Apple AirPods Pro 3"
         regular_price: 39800
         expected_sale_price: 32800
-        asin: "AirPods+Pro+2+USB-C"
-        rakuten_keyword: "AirPods Pro 2"
-        image_url: "https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg"
-        review_summary: "ノイキャン性能が圧倒的。iOS連携の便利さ、空間オーディオも好評。フィット感は人による。"
+        asin: "B0FQFQDN6K"
+        amazon_url: "https://www.amazon.co.jp/dp/B0FQFQDN6K"
+        review_summary: "H3チップ搭載でノイキャン性能が大幅向上。ヒアリング補助機能も搭載。空間オーディオも好評。"
         rating: "4.7/5"
         genre: "オーディオ"
-      - name: "Sony WF-1000XM5"
+      - name: "Sony WF-1000XM6"
         regular_price: 41800
         expected_sale_price: 33400
-        asin: "Sony+WF-1000XM5"
-        rakuten_keyword: "WF-1000XM5"
-        image_url: "https://m.media-amazon.com/images/I/61zxEfLFPnL._AC_SL1500_.jpg"
-        review_summary: "世界最高クラスのノイキャン。小型軽量化に成功。音質は全イヤホン中トップレベルとの評価。"
+        asin: "B0GL7VS33K"
+        amazon_url: "https://www.amazon.co.jp/dp/B0GL7VS33K"
+        review_summary: "世界最高クラスのノイキャン。統合プロセッサV2搭載。音質は全イヤホン中トップレベルとの評価。"
         rating: "4.6/5"
         genre: "オーディオ"
-      - name: "Sony WH-1000XM5"
-        regular_price: 50600
-        expected_sale_price: 38000
-        asin: "Sony+WH-1000XM5"
-        rakuten_keyword: "WH-1000XM5"
-        image_url: "https://m.media-amazon.com/images/I/51aXvjzcukL._AC_SL1500_.jpg"
-        review_summary: "ヘッドホンの定番。長時間装着でも疲れにくく、通話品質も良好。折りたたみ不可が惜しい。"
+      - name: "Sony WH-1000XM6"
+        regular_price: 59400
+        expected_sale_price: 47500
+        asin: "B0F77PMC1P"
+        amazon_url: "https://www.amazon.co.jp/dp/B0F77PMC1P"
+        review_summary: "最新フラッグシップヘッドホン。ノイキャン・音質ともに最高峰。長時間装着でも疲れにくい。"
         rating: "4.6/5"
         genre: "オーディオ"
       - name: "Anker Soundcore Liberty 4 NC"
         regular_price: 12990
         expected_sale_price: 8990
-        asin: "Anker+Soundcore+Liberty+4+NC"
-        rakuten_keyword: "Soundcore Liberty 4 NC"
-        image_url: "https://m.media-amazon.com/images/I/51sGxHrHYyL._AC_SL1500_.jpg"
+        asin: "B0C1P1N98V"
+        amazon_url: "https://www.amazon.co.jp/dp/B0C1P1N98V"
         review_summary: "1万円以下でノイキャン付き。コスパ最強との声多数。低音がやや強め。"
         rating: "4.4/5"
+        genre: "オーディオ"
+      - name: "Anker Soundcore Liberty 4 Pro"
+        regular_price: 17990
+        expected_sale_price: 13490
+        asin: "B0D7ZLPSJG"
+        amazon_url: "https://www.amazon.co.jp/dp/B0D7ZLPSJG"
+        review_summary: "クラウドノイキャン2.0搭載。原音に忠実なサウンド。タッチ操作の反応が良い。"
+        rating: "4.5/5"
+        genre: "オーディオ"
+      - name: "JBL Charge 5"
+        regular_price: 24200
+        expected_sale_price: 16800
+        asin: "B0928Y5TPD"
+        amazon_url: "https://www.amazon.co.jp/dp/B0928Y5TPD"
+        review_summary: "パワフルな低音が人気。IP67防水でアウトドアに最適。モバイルバッテリー機能も便利。"
+        rating: "4.7/5"
         genre: "オーディオ"
 
       # --- スマートデバイス ---
       - name: "Echo Dot 第5世代"
         regular_price: 7980
         expected_sale_price: 2980
-        asin: "Echo+Dot+第5世代"
-        rakuten_keyword: "Echo Dot 第5世代"
-        image_url: "https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SL1000_.jpg"
+        asin: "B09B8SZLLG"
+        amazon_url: "https://www.amazon.co.jp/dp/B09B8SZLLG"
         review_summary: "Amazonセールの定番。音質は値段以上。スマートホームの入口として最適との声。"
         rating: "4.5/5"
         genre: "スマートデバイス"
       - name: "Fire TV Stick 4K Max（第2世代）"
         regular_price: 9980
         expected_sale_price: 5980
-        asin: "Fire+TV+Stick+4K+Max"
-        rakuten_keyword: "Fire TV Stick 4K Max"
-        image_url: "https://m.media-amazon.com/images/I/51CgKGfMelL._AC_SL1000_.jpg"
+        asin: "B0BW37QY2V"
+        amazon_url: "https://www.amazon.co.jp/dp/B0BW37QY2V"
         review_summary: "4K対応で動作サクサク。Wi-Fi 6E対応。アプリの起動が速くストレスフリーとの声が多い。"
         rating: "4.5/5"
         genre: "スマートデバイス"
       - name: "Kindle Paperwhite（第12世代）"
         regular_price: 22980
         expected_sale_price: 16980
-        asin: "Kindle+Paperwhite"
-        rakuten_keyword: "Kindle Paperwhite"
-        image_url: "https://m.media-amazon.com/images/I/61MKQ66MR3L._AC_SL1000_.jpg"
+        asin: "B0CFPL6CFY"
+        amazon_url: "https://www.amazon.co.jp/dp/B0CFPL6CFY"
         review_summary: "7インチ大画面化で読みやすさ向上。防水で風呂読書派にも人気。バッテリー持ちが優秀。"
         rating: "4.6/5"
         genre: "スマートデバイス"
@@ -85,19 +94,17 @@ events:
       - name: "Anker Prime 67W 充電器"
         regular_price: 5490
         expected_sale_price: 3990
-        asin: "Anker+Prime+67W"
-        rakuten_keyword: "Anker Prime 67W"
-        image_url: "https://m.media-amazon.com/images/I/61TjCrAHBCL._AC_SL1500_.jpg"
+        asin: "B0C5CBV6L3"
+        amazon_url: "https://www.amazon.co.jp/dp/B0C5CBV6L3"
         review_summary: "超コンパクトで67W出力。MacBook Airも充電可能。旅行に最適との評価。"
         rating: "4.7/5"
         genre: "充電器・アクセサリ"
-      - name: "Anker PowerCore 10000 PD"
-        regular_price: 4490
-        expected_sale_price: 3190
-        asin: "Anker+PowerCore+10000+PD"
-        rakuten_keyword: "Anker PowerCore 10000"
-        image_url: "https://m.media-amazon.com/images/I/61dCyTLBY9L._AC_SL1500_.jpg"
-        review_summary: "軽量コンパクトで持ち運びに最適。iPhone 2回以上充電可能。安定のAnker品質。"
+      - name: "Anker 735 Charger（65W）"
+        regular_price: 5990
+        expected_sale_price: 4490
+        asin: "B09W9M89WS"
+        amazon_url: "https://www.amazon.co.jp/dp/B09W9M89WS"
+        review_summary: "3ポート搭載で65W出力。MacBookとスマホ同時充電可能。コンパクトで持ち運びやすい。"
         rating: "4.6/5"
         genre: "充電器・アクセサリ"
 
@@ -105,32 +112,29 @@ events:
       - name: "iPad Air M3（11インチ）"
         regular_price: 98800
         expected_sale_price: 88900
-        asin: "iPad+Air+M3"
-        rakuten_keyword: "iPad Air M3"
-        image_url: "https://m.media-amazon.com/images/I/61NGnpjoRDL._AC_SL1500_.jpg"
+        asin: "B0DZ8F9B86"
+        amazon_url: "https://www.amazon.co.jp/dp/B0DZ8F9B86"
         review_summary: "M3チップで性能十分。Apple Pencil Pro対応。コスパ重視のiPadユーザーに最適。"
         rating: "4.7/5"
         genre: "タブレット"
-      - name: "Samsung Galaxy Tab S10 FE"
-        regular_price: 69800
-        expected_sale_price: 57800
-        asin: "Galaxy+Tab+S10+FE"
-        rakuten_keyword: "Galaxy Tab S10 FE"
-        image_url: "https://m.media-amazon.com/images/I/61Y4VWV7kBL._AC_SL1500_.jpg"
-        review_summary: "Android最強クラスのタブレット。Sペン付属。動画視聴とメモ取りに好評。"
-        rating: "4.4/5"
-        genre: "タブレット"
 
-      # --- ヘッドホン・スピーカー ---
-      - name: "JBL Charge 5"
-        regular_price: 24200
-        expected_sale_price: 16800
-        asin: "JBL+Charge+5"
-        rakuten_keyword: "JBL Charge 5"
-        image_url: "https://m.media-amazon.com/images/I/71Te-mBTTLL._AC_SL1500_.jpg"
-        review_summary: "パワフルな低音が人気。IP67防水でアウトドアに最適。モバイルバッテリー機能も便利。"
-        rating: "4.7/5"
-        genre: "オーディオ"
+      # --- スマートホーム・ネットワーク ---
+      - name: "SwitchBot Hub 2"
+        regular_price: 8980
+        expected_sale_price: 6480
+        asin: "B0BM8VS13P"
+        amazon_url: "https://www.amazon.co.jp/dp/B0BM8VS13P"
+        review_summary: "Matter対応のスマートリモコン。温湿度計付き。家電のスマート化が簡単にできると好評。"
+        rating: "4.3/5"
+        genre: "スマートホーム"
+      - name: "TP-Link Deco X50（3パック）"
+        regular_price: 27800
+        expected_sale_price: 19800
+        asin: "B0BSTMHPJ2"
+        amazon_url: "https://www.amazon.co.jp/dp/B0BSTMHPJ2"
+        review_summary: "メッシュWi-Fi入門に最適。設定が簡単で広い家でもWi-Fiが途切れないと好評。"
+        rating: "4.4/5"
+        genre: "スマートホーム"
 
   - name: "楽天お買い物マラソン 2026年4月"
     slug: "rakuten-marathon-2026-04"

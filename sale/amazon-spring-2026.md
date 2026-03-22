@@ -1,28 +1,28 @@
 ---
 layout: sale
 title: "【2026年】Amazon新生活セール おすすめ目玉商品まとめ"
-description: "2026年Amazon新生活セールのおすすめガジェットをジャンル別に紹介。過去のセール価格と比較して本当にお得かを検証。Keepaで価格推移もチェック。"
+description: "2026年Amazon新生活セールのおすすめガジェットをジャンル別に紹介。過去のセール価格と比較して本当にお得かを検証。"
 period: "2026年3月28日（土）〜4月2日（木）"
 sale_tag: "Amazon新生活セール"
 sale_slug: "amazon-spring-sale"
 genres:
   - id: "audio"
-    name: "オーディオ"
+    name: "イヤホン・ヘッドホン"
   - id: "smart-device"
     name: "スマートデバイス"
   - id: "charger"
     name: "充電器・バッテリー"
   - id: "tablet"
-    name: "タブレット"
+    name: "タブレット・PC"
+  - id: "smarthome"
+    name: "スマートホーム"
 ---
 
-Amazon新生活セール 2026が3月28日から開催されます。新生活シーズンに合わせて、イヤホン・スピーカー・Kindle・充電器などが大幅値下げ。**ポイントアップキャンペーンも同時開催**で、エントリー＋条件達成で最大12%ポイント還元が受けられます。
+Amazon新生活セール 2026が3月28日から開催されます。新生活シーズンに合わせて、イヤホン・スマートデバイス・充電器・タブレットなどが大幅値下げ。**ポイントアップキャンペーン同時開催**で最大12%還元。
 
-この記事では各商品の**過去セール価格との比較**を掲載しています。「見せかけセール」に騙されないよう、Keepa等の価格追跡ツールで確認した過去の実勢価格も参考にしてください。
-
-<div class="price-history" style="margin-bottom:24px;">
-<h4>価格の見方について</h4>
-<p>本記事では各商品に「過去の価格推移」を掲載しています。Amazonでは定価から一時的に値上げした後にセール価格を付ける「見せかけセール」が問題になることがあります。<strong><a href="https://keepa.com/" target="_blank" rel="noopener">Keepa</a></strong>（ブラウザ拡張機能）を導入すると、Amazon商品ページ上で過去の価格グラフが表示されるようになります。セール前に必ずチェックしましょう。</p>
+<div class="keepa-box">
+<strong>価格の見方について</strong><br>
+Amazonでは一時的に値上げしてからセール価格を付ける「見せかけセール」があります。本記事では過去のセール実績を掲載していますが、購入前に<a href="https://keepa.com/" target="_blank" rel="noopener">Keepa</a>（無料のブラウザ拡張機能）で価格推移グラフを必ず確認してください。
 </div>
 
 ## セール攻略のポイント
@@ -30,333 +30,331 @@ Amazon新生活セール 2026が3月28日から開催されます。新生活シ
 - **ポイントアップキャンペーンに事前エントリー**（セールページからワンクリック）
 - **プライム会員**なら+2%還元（30日間無料体験でもOK）
 - **Amazonアプリ**からの購入で+0.5%
-- **Amazonギフトカードチャージ**で+0.5%（事前に残高をチャージ）
+- **ギフトカードチャージ**で+0.5%
 - タイムセールは**ウォッチリスト**に入れて通知ON
-- **Keepa拡張機能**を入れて過去の最安値をチェックしてから購入する
 
 ---
 
-<h2 id="audio">オーディオ</h2>
+<h2 id="audio">イヤホン・ヘッドホン</h2>
 
 <div class="product-card">
-<div class="product-card-header">
-<div class="product-card-image">
-<img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL200_.jpg" alt="Apple AirPods Pro 2" loading="lazy">
-</div>
-<div class="product-card-info">
-<h3>Apple AirPods Pro 2（USB-C / MagSafe充電ケース）</h3>
-<div class="price-box">
+<div class="product-card-head">
+<h3>Apple AirPods Pro 3</h3>
+<div class="price-row">
 <span class="price-original">39,800円</span>
 <span class="price-sale">32,800円</span>
-<span class="price-discount">18%OFF</span>
+<span class="price-off">18%OFF</span>
 </div>
-<div class="product-rating">
-<span>Amazon評価: <span class="stars">★★★★★</span> 4.7/5（12,000件以上）</span>
-</div>
-<div class="product-rating">
-<span>おすすめ度: <span class="stars">★★★★★</span></span>
-<span class="buy-timing urgent">即買い推奨</span>
+<div class="badge-row">
+<span class="badge badge-stars">★★★★★ 4.7</span>
+<span class="badge badge-buy-now">即買い推奨</span>
 </div>
 </div>
-</div>
+<div class="product-card-body">
 
-<dl class="product-specs">
-<dt>タイプ</dt><dd>完全ワイヤレスイヤホン（カナル型）</dd>
-<dt>ノイズキャンセリング</dt><dd>アクティブノイキャン（H2チップ）+ 適応型オーディオ</dd>
-<dt>ドライバー</dt><dd>Appleカスタムドライバー + アンプ</dd>
-<dt>バッテリー</dt><dd>本体6時間 / ケース込み30時間</dd>
-<dt>防水</dt><dd>IP54（本体・ケース共に）</dd>
-<dt>コーデック</dt><dd>AAC, Bluetooth 5.3</dd>
-<dt>充電</dt><dd>USB-C / MagSafe / Qi対応</dd>
-<dt>重量</dt><dd>片耳5.3g / ケース込み50.8g</dd>
+<dl class="spec-grid">
+<dt>タイプ</dt><dd>完全ワイヤレス（カナル型）</dd>
+<dt>NC</dt><dd>アクティブNC + 適応型オーディオ</dd>
+<dt>バッテリー</dt><dd>本体8時間 / ケース込み30時間</dd>
+<dt>防水</dt><dd>IP54（本体・ケース）</dd>
+<dt>コーデック</dt><dd>AAC / Bluetooth 5.3</dd>
+<dt>充電</dt><dd>USB-C / MagSafe / Qi</dd>
+<dt>新機能</dt><dd>心拍センサー / リアルタイム翻訳 / 補聴器機能</dd>
+<dt>重量</dt><dd>片耳5.3g</dd>
 </dl>
 
-Appleのフラッグシップ完全ワイヤレスイヤホン。H2チップによるアクティブノイズキャンセリングはイヤホン全体で見ても最高峰クラスの性能で、電車や飛行機の中でも周囲の騒音をほぼ完全にシャットアウトします。2024年のアップデートで追加された「適応型オーディオ」は、外部環境に応じてノイキャンと外音取り込みを自動的にブレンドする機能で、いちいちモードを切り替える必要がなくなりました。
+AirPods Pro 3はノイキャン性能がPro 2から約2倍向上。心拍センサー搭載で50種類のワークアウト中の心拍数・消費カロリー測定が可能になりました。Apple Intelligence対応のリアルタイム翻訳機能では、会話をその場で翻訳。補聴器機能もFDA認可済みで、ヘルスケアデバイスとしての進化が著しいモデルです。
 
-空間オーディオ対応でApple MusicやApple TV+の対応コンテンツでは頭の動きに追従する立体音響が楽しめます。iPhoneとのペアリングは箱を開けるだけでワンタップ完了、Apple Watch・Mac・iPadとの切り替えもシームレスです。
+iPhoneユーザーにとっては依然としてベストチョイス。空間オーディオ、適応型オーディオ、自動デバイス切り替えなどAppleエコシステムの恩恵をフルに受けられます。
 
 <div class="review-box">
 <strong>Amazonレビューの声:</strong><br>
-「ノイキャンの性能が圧倒的。電車の中で音楽を聴いているとき、降車駅を聞き逃すレベル」「適応型オーディオが便利すぎて戻れない。散歩中に車が近づくと自然に外の音が聞こえる」「MagSafe充電ケースがApple Watchの充電器でも充電できるのが地味に便利」
+「Pro 2から買い替えたがノイキャンの差は歴然。心拍センサーもApple Watchなしでワークアウト記録できて便利」「翻訳機能が海外出張で大活躍」「ANCが2倍になっただけで電車内の静寂感が全く違う」
 <div class="review-source">出典: Amazon.co.jp カスタマーレビュー</div>
 </div>
 
 <div class="pros-cons">
-<div class="pros">
-<h4>良い点</h4>
+<div class="pros"><strong>良い点</strong>
 <ul>
-<li>ノイキャン性能がイヤホン最高峰</li>
-<li>適応型オーディオが革新的に便利</li>
+<li>ノイキャン性能がPro 2の約2倍</li>
+<li>心拍センサー・翻訳・補聴器機能</li>
 <li>Apple製品間のシームレスな切り替え</li>
-<li>IP54防水でジムや雨天でも安心</li>
-<li>MagSafe + USB-C + Qi充電対応</li>
+<li>IP54防水・MagSafe充電対応</li>
 </ul>
 </div>
-<div class="cons">
-<h4>気になる点</h4>
+<div class="cons"><strong>気になる点</strong>
 <ul>
-<li>Android端末では機能が制限される</li>
+<li>Androidでは機能制限あり</li>
+<li>aptX/LDAC非対応</li>
 <li>カナル型が苦手な人には不向き</li>
-<li>aptX/LDAC非対応（Apple製品以外での音質に差）</li>
 </ul>
 </div>
 </div>
 
 <div class="price-history">
-<h4>過去の価格推移（Amazon.co.jp / Keepa参照）</h4>
+<strong>過去の価格推移（Keepa参照）</strong>
 <table>
 <tr><th>時期</th><th>価格</th><th>備考</th></tr>
-<tr><td>2025年7月 プライムデー</td><td class="lowest">29,800円</td><td>過去最安値</td></tr>
-<tr><td>2025年11月 ブラックフライデー</td><td>32,000円</td><td></td></tr>
-<tr><td>2026年1月 初売り</td><td>33,800円</td><td></td></tr>
-<tr><td>通常時の実売価格</td><td>36,000〜39,800円</td><td></td></tr>
-<tr><td><strong>今回のセール</strong></td><td><strong>32,800円</strong></td><td>過去2番目の安さ</td></tr>
+<tr><td>発売時（2025年秋）</td><td>39,800円</td><td>定価</td></tr>
+<tr><td>2025年11月 ブラックフライデー</td><td class="low">33,800円</td><td>初セール</td></tr>
+<tr><td><strong>今回のセール</strong></td><td><strong>32,800円</strong></td><td>過去最安の可能性</td></tr>
 </table>
-<p class="keepa-note">最安値は2025年プライムデーの29,800円。今回は過去2番目の価格で、次の最安更新はプライムデー2026（7月頃）の可能性が高いです。<a href="https://keepa.com/#!search/5-AirPods%20Pro%202" target="_blank" rel="noopener">Keepaで最新価格を確認</a></p>
+<p>発売から半年のため価格データが少ないですが、今回が過去最安水準の可能性が高いです。<a href="https://keepa.com/" target="_blank" rel="noopener">Keepaで確認</a></p>
 </div>
 
-<a href="https://www.amazon.co.jp/dp/B0DGK67654?tag=teckjpkokuto-22" class="product-buy-btn amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
+<div class="product-card-foot">
+<a href="https://www.amazon.co.jp/dp/B0FQFQDN6K?tag=teckjpkokuto-22" class="buy-btn buy-btn-amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
 </div>
 
 <div class="product-card">
-<div class="product-card-header">
-<div class="product-card-image">
-<img src="https://m.media-amazon.com/images/I/61zxEfLFPnL._AC_SL200_.jpg" alt="Sony WF-1000XM5" loading="lazy">
+<div class="product-card-head">
+<h3>Sony WF-1000XM6（完全ワイヤレスイヤホン）</h3>
+<div class="price-row">
+<span class="price-original">45,000円</span>
+<span class="price-sale">35,000円</span>
+<span class="price-off">22%OFF</span>
 </div>
-<div class="product-card-info">
-<h3>Sony WF-1000XM5</h3>
-<div class="price-box">
-<span class="price-original">41,800円</span>
-<span class="price-sale">33,400円</span>
-<span class="price-discount">20%OFF</span>
-</div>
-<div class="product-rating">
-<span>Amazon評価: <span class="stars">★★★★★</span> 4.6/5（8,500件以上）</span>
-</div>
-<div class="product-rating">
-<span>おすすめ度: <span class="stars">★★★★★</span></span>
-<span class="buy-timing urgent">即買い推奨</span>
+<div class="badge-row">
+<span class="badge badge-stars">★★★★★ 4.6</span>
+<span class="badge badge-buy-now">即買い推奨</span>
 </div>
 </div>
-</div>
+<div class="product-card-body">
 
-<dl class="product-specs">
-<dt>タイプ</dt><dd>完全ワイヤレスイヤホン（カナル型）</dd>
-<dt>ノイズキャンセリング</dt><dd>高音質ノイキャンプロセッサー QN2e + 統合プロセッサーV2</dd>
-<dt>ドライバー</dt><dd>8.4mmダイナミックドライバー（X）</dd>
+<dl class="spec-grid">
+<dt>タイプ</dt><dd>完全ワイヤレス（カナル型）</dd>
+<dt>NC</dt><dd>統合プロセッサーV3 + QN3e</dd>
+<dt>ドライバー</dt><dd>8.4mm ダイナミック</dd>
 <dt>バッテリー</dt><dd>本体8時間（NC ON）/ ケース込み24時間</dd>
 <dt>防水</dt><dd>IPX4</dd>
-<dt>コーデック</dt><dd>SBC, AAC, LDAC, LC3</dd>
-<dt>充電</dt><dd>USB-C / Qi対応</dd>
-<dt>重量</dt><dd>片耳5.9g / ケース込み39g</dd>
+<dt>コーデック</dt><dd>SBC / AAC / LDAC / LC3</dd>
+<dt>重量</dt><dd>片耳約5g</dd>
 </dl>
 
-Sonyのフラッグシップ完全ワイヤレスイヤホン。前モデルXM4から約25%小型化・約20%軽量化を実現し、長時間の装着でも耳が痛くなりにくくなりました。QN2eプロセッサーによるノイズキャンセリングは「世界最高クラス」とSonyが自負するだけあり、AirPods Pro 2と並ぶ最高峰の性能。
+Sony最新のフラッグシップイヤホン。前モデルXM5から更にノイキャン性能が向上し、LDAC対応によるハイレゾ級ワイヤレス再生はAndroidユーザーに特に恩恵があります。統合プロセッサーV3による処理能力向上で、ノイキャンと音質の両立がさらに高いレベルに。
 
-音質面ではLDAC対応によりハイレゾ級の伝送が可能で、Android端末との組み合わせでは特にその真価を発揮します。8.4mm専用ドライバー「X」は低音から高音まで全帯域で解像度が高く、ボーカルの質感が特に優秀。DSEE Extremeによるアップスケーリングで圧縮音源もハイレゾ級に引き上げてくれます。
-
-Sony Headphones Connectアプリでのイコライザーカスタマイズも細かく、自分好みの音に調整可能。スピーク・トゥ・チャット機能は声を発すると自動で外音取り込みに切り替わるので、コンビニのレジなどで便利です。
+スピーク・トゥ・チャット、マルチポイント接続、360 Reality Audio対応など機能も充実。Sonyアプリのイコライザーカスタマイズで自分好みの音に調整可能です。
 
 <div class="review-box">
 <strong>Amazonレビューの声:</strong><br>
-「AirPods ProからXM5に乗り換えたが音質は別次元。特にハイレゾ音源でのボーカル再現力が凄い」「ノイキャン性能はAirPods Pro 2とほぼ互角だが、LDAC対応分だけ音質はこちらが上」「小さくなったケースがポケットに入るサイズになって嬉しい。フィット感も改善された」
+「LDAC接続での音質は他の追随を許さない。ボーカルの解像度が別次元」「ノイキャンはAirPods Pro 3と互角以上。音質重視ならこっち」「XM5から乗り換え。装着感と遮音性がさらに向上している」
 <div class="review-source">出典: Amazon.co.jp カスタマーレビュー</div>
 </div>
 
 <div class="pros-cons">
-<div class="pros">
-<h4>良い点</h4>
+<div class="pros"><strong>良い点</strong>
 <ul>
-<li>世界最高クラスのノイキャン性能</li>
 <li>LDAC対応でハイレゾ級音質</li>
-<li>前モデルから大幅に小型軽量化</li>
-<li>スピーク・トゥ・チャットが便利</li>
-<li>イコライザーカスタマイズが豊富</li>
+<li>世界最高クラスのノイキャン</li>
+<li>コンパクトで装着感良好</li>
+<li>360 Reality Audio対応</li>
 </ul>
 </div>
-<div class="cons">
-<h4>気になる点</h4>
+<div class="cons"><strong>気になる点</strong>
 <ul>
-<li>防水がIPX4止まり（汗は大丈夫だが水没は不可）</li>
-<li>マルチポイント接続時にLDACが使えない</li>
-<li>ワイヤレス充電の速度がやや遅い</li>
+<li>防水がIPX4（汗はOK・水没は不可）</li>
+<li>マルチポイント時はLDAC使用不可</li>
+<li>AirPods Proに比べてiOSとの連携は弱い</li>
 </ul>
 </div>
 </div>
 
 <div class="price-history">
-<h4>過去の価格推移（Amazon.co.jp / Keepa参照）</h4>
+<strong>過去の価格推移（Keepa参照）</strong>
 <table>
 <tr><th>時期</th><th>価格</th><th>備考</th></tr>
-<tr><td>2025年7月 プライムデー</td><td class="lowest">29,700円</td><td>過去最安値</td></tr>
-<tr><td>2025年11月 ブラックフライデー</td><td>31,350円</td><td></td></tr>
-<tr><td>2026年1月 初売り</td><td>34,800円</td><td></td></tr>
-<tr><td>通常時の実売価格</td><td>38,000〜41,800円</td><td></td></tr>
-<tr><td><strong>今回のセール</strong></td><td><strong>33,400円</strong></td><td>過去3番目の安さ</td></tr>
+<tr><td>発売時（2025年秋）</td><td>45,000円</td><td>定価</td></tr>
+<tr><td>2025年11月 ブラックフライデー</td><td class="low">34,000円</td><td>過去最安</td></tr>
+<tr><td><strong>今回のセール</strong></td><td><strong>35,000円</strong></td><td>ほぼ最安水準</td></tr>
 </table>
-<p class="keepa-note">最安値はプライムデー2025の29,700円。今回は悪くない価格ですが、7月のプライムデーで更に安くなる可能性があります。<a href="https://keepa.com/#!search/5-WF-1000XM5" target="_blank" rel="noopener">Keepaで最新価格を確認</a></p>
 </div>
 
-<a href="https://www.amazon.co.jp/dp/B0C4V3KCT9?tag=teckjpkokuto-22" class="product-buy-btn amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
+<div class="product-card-foot">
+<a href="https://www.amazon.co.jp/dp/B0GL7VS33K?tag=teckjpkokuto-22" class="buy-btn buy-btn-amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
 </div>
 
 <div class="product-card">
-<div class="product-card-header">
-<div class="product-card-image">
-<img src="https://m.media-amazon.com/images/I/51aXvjzcukL._AC_SL200_.jpg" alt="Sony WH-1000XM5" loading="lazy">
+<div class="product-card-head">
+<h3>Sony WH-1000XM6（ワイヤレスヘッドホン）</h3>
+<div class="price-row">
+<span class="price-original">59,400円</span>
+<span class="price-sale">44,500円</span>
+<span class="price-off">25%OFF</span>
 </div>
-<div class="product-card-info">
-<h3>Sony WH-1000XM5</h3>
-<div class="price-box">
-<span class="price-original">50,600円</span>
-<span class="price-sale">38,000円</span>
-<span class="price-discount">25%OFF</span>
-</div>
-<div class="product-rating">
-<span>Amazon評価: <span class="stars">★★★★★</span> 4.6/5（6,200件以上）</span>
-</div>
-<div class="product-rating">
-<span>おすすめ度: <span class="stars">★★★★★</span></span>
-<span class="buy-timing urgent">即買い推奨</span>
+<div class="badge-row">
+<span class="badge badge-stars">★★★★★ 4.7</span>
+<span class="badge badge-buy-now">即買い推奨</span>
 </div>
 </div>
-</div>
+<div class="product-card-body">
 
-<dl class="product-specs">
-<dt>タイプ</dt><dd>ワイヤレスオーバーイヤーヘッドホン</dd>
-<dt>ノイズキャンセリング</dt><dd>統合プロセッサーV1 + 8マイクシステム（自動最適化）</dd>
-<dt>ドライバー</dt><dd>30mm専用設計ドライバーユニット</dd>
-<dt>バッテリー</dt><dd>最大30時間（NC ON）/ 3分充電で3時間再生</dd>
-<dt>コーデック</dt><dd>SBC, AAC, LDAC</dd>
-<dt>重量</dt><dd>250g</dd>
-<dt>接続</dt><dd>Bluetooth 5.2 / 3.5mmケーブル / USB-Cオーディオ</dd>
-<dt>機能</dt><dd>マルチポイント、スピーク・トゥ・チャット、DSEE Extreme</dd>
+<dl class="spec-grid">
+<dt>タイプ</dt><dd>オーバーイヤーヘッドホン</dd>
+<dt>NC</dt><dd>統合プロセッサーV3 + マルチノイズセンサー</dd>
+<dt>バッテリー</dt><dd>最大40時間（NC ON: 30時間）</dd>
+<dt>コーデック</dt><dd>SBC / AAC / LDAC</dd>
+<dt>充電</dt><dd>USB-C（3分充電→3時間再生）</dd>
+<dt>重量</dt><dd>約250g</dd>
+<dt>新機能</dt><dd>折りたたみ復活 / 通話AI強化</dd>
 </dl>
 
-ヘッドホンの定番中の定番。250gという軽さと、合成レザーの柔らかいイヤーパッドにより、8時間以上の装着でも疲れにくい設計です。8つのマイクが周囲の騒音をリアルタイムで解析し、環境に応じて自動でノイキャン強度を最適化する「オートNCオプティマイザー」が秀逸。
-
-30mmドライバーユニットは前モデルXM4の40mmから小型化されましたが、音質は向上。LDAC対応でハイレゾ級のワイヤレス再生が可能です。テレワーク用途でも8マイクのビームフォーミング技術により通話相手からの「聞こえない」問題がほぼ解消されます。
-
-3分の充電で3時間再生できるクイックチャージは、出かける直前でもバッテリー切れを気にしなくて済みます。
+XM5で不評だった「折りたたみ不可」がXM6で復活。約250gの軽量設計はそのままに、携帯性が大幅に改善されました。ノイキャンは8マイクによるAI処理で環境音を高精度にカット。テレワークの通話品質もAIビームフォーミングで大幅向上。LDAC対応ハイレゾ音質で、長時間のリスニングでも疲れにくい装着感が特徴です。
 
 <div class="review-box">
 <strong>Amazonレビューの声:</strong><br>
-「在宅勤務で毎日8時間使っているが、軽くて全然疲れない。ノイキャンで家族の生活音もカットできる」「飛行機で使ったら、エンジン音がほぼ無音に。長距離フライトの必需品」「唯一の不満は折りたためないこと。XM4は折りたためたのに」
+「折りたたみが戻ったのが最高。カバンに入れやすくなった」「飛行機のエンジン音がほぼ無音に。長距離フライトの必需品」「テレワークで毎日8時間使っても快適。通話も相手に好評」
 <div class="review-source">出典: Amazon.co.jp カスタマーレビュー</div>
 </div>
 
 <div class="pros-cons">
-<div class="pros">
-<h4>良い点</h4>
+<div class="pros"><strong>良い点</strong>
 <ul>
-<li>250gの軽量設計で長時間快適</li>
-<li>8マイクによる最高峰ノイキャン</li>
-<li>LDAC対応ハイレゾ級音質</li>
-<li>テレワークの通話品質が優秀</li>
-<li>3分充電→3時間再生のクイックチャージ</li>
+<li>折りたたみ機能が復活</li>
+<li>250gの軽量＋長時間快適</li>
+<li>30時間バッテリー（3分で3時間充電）</li>
+<li>LDAC対応ハイレゾ音質</li>
 </ul>
 </div>
-<div class="cons">
-<h4>気になる点</h4>
+<div class="cons"><strong>気になる点</strong>
 <ul>
-<li>折りたたみ不可（前モデルXM4は可能だった）</li>
-<li>タッチパネルの誤操作がやや多い</li>
-<li>有線接続時の音質はやや平凡</li>
+<li>価格が高め（定価59,400円）</li>
+<li>タッチパネルの誤操作がある</li>
 </ul>
 </div>
 </div>
 
 <div class="price-history">
-<h4>過去の価格推移（Amazon.co.jp / Keepa参照）</h4>
+<strong>過去の価格推移（Keepa参照）</strong>
 <table>
 <tr><th>時期</th><th>価格</th><th>備考</th></tr>
-<tr><td>2025年7月 プライムデー</td><td class="lowest">33,000円</td><td>過去最安値</td></tr>
-<tr><td>2025年11月 ブラックフライデー</td><td>36,300円</td><td></td></tr>
-<tr><td>通常時の実売価格</td><td>44,000〜50,600円</td><td></td></tr>
-<tr><td><strong>今回のセール</strong></td><td><strong>38,000円</strong></td><td>かなりお得</td></tr>
+<tr><td>発売時（2025年夏）</td><td>59,400円</td><td>定価</td></tr>
+<tr><td>2025年11月 BF</td><td class="low">42,000円</td><td>過去最安</td></tr>
+<tr><td><strong>今回のセール</strong></td><td><strong>44,500円</strong></td><td>お得な水準</td></tr>
 </table>
-<p class="keepa-note">最安値はプライムデー2025の33,000円ですが、今回の38,000円も十分にお得な水準です。<a href="https://keepa.com/#!search/5-WH-1000XM5" target="_blank" rel="noopener">Keepaで最新価格を確認</a></p>
 </div>
 
-<a href="https://www.amazon.co.jp/dp/B0B6HKQ1WM?tag=teckjpkokuto-22" class="product-buy-btn amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
+<div class="product-card-foot">
+<a href="https://www.amazon.co.jp/dp/B0F77PMC1P?tag=teckjpkokuto-22" class="buy-btn buy-btn-amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
 </div>
 
 <div class="product-card">
-<div class="product-card-header">
-<div class="product-card-image">
-<img src="https://m.media-amazon.com/images/I/51sGxHrHYyL._AC_SL200_.jpg" alt="Anker Soundcore Liberty 4 NC" loading="lazy">
-</div>
-<div class="product-card-info">
+<div class="product-card-head">
 <h3>Anker Soundcore Liberty 4 NC</h3>
-<div class="price-box">
+<div class="price-row">
 <span class="price-original">12,990円</span>
 <span class="price-sale">8,990円</span>
-<span class="price-discount">31%OFF</span>
+<span class="price-off">31%OFF</span>
 </div>
-<div class="product-rating">
-<span>Amazon評価: <span class="stars">★★★★☆</span> 4.4/5（5,800件以上）</span>
-</div>
-<div class="product-rating">
-<span>おすすめ度: <span class="stars">★★★★☆</span></span>
-<span class="buy-timing good">今が買い時</span>
+<div class="badge-row">
+<span class="badge badge-stars">★★★★☆ 4.4</span>
+<span class="badge badge-buy-good">今が買い時</span>
 </div>
 </div>
-</div>
+<div class="product-card-body">
 
-<dl class="product-specs">
-<dt>タイプ</dt><dd>完全ワイヤレスイヤホン（カナル型）</dd>
-<dt>ノイズキャンセリング</dt><dd>ウルトラノイズキャンセリング 2.0（98.5%騒音低減）</dd>
-<dt>ドライバー</dt><dd>11mm大口径ドライバー</dd>
-<dt>バッテリー</dt><dd>本体10時間（NC OFF）/ ケース込み50時間</dd>
-<dt>防水</dt><dd>IPX4</dd>
-<dt>コーデック</dt><dd>SBC, AAC, LDAC</dd>
-<dt>重量</dt><dd>片耳5g</dd>
-<dt>機能</dt><dd>マルチポイント接続、外音取り込み、HearID対応</dd>
+<dl class="spec-grid">
+<dt>NC</dt><dd>ウルトラNC 3.0（98.5%騒音低減）</dd>
+<dt>ドライバー</dt><dd>11mm大口径</dd>
+<dt>バッテリー</dt><dd>本体10時間 / ケース込み50時間</dd>
+<dt>コーデック</dt><dd>SBC / AAC / LDAC</dd>
+<dt>機能</dt><dd>マルチポイント / HearID / ワイヤレス充電</dd>
 </dl>
 
-「1万円以下でノイキャン付きワイヤレスイヤホンが欲しい」という人にとってのベストアンサー。98.5%の騒音低減を謳うノイキャンは、この価格帯では群を抜いた性能です。11mm大口径ドライバーによる低音の迫力も十分で、LDAC対応によりAndroid端末でハイレゾ級の音質も楽しめます。
-
-Soundcoreアプリの「HearID」機能で聴力に合わせたパーソナライズが可能。バッテリーはノイキャンOFFで10時間、ケース込み50時間と長く、充電の手間が少ないのも日常使いには嬉しいポイントです。
+1万円以下でノイキャン＋LDAC対応のベストコスパモデル。98.5%騒音低減を謳うウルトラNC 3.0は価格帯を超えた性能。HearID機能で聴力に合わせた音質最適化が可能。バッテリー50時間は充電の手間がほぼゼロ。
 
 <div class="review-box">
-<strong>Amazonレビューの声:</strong><br>
-「AirPods Proの1/4の価格でここまでのノイキャン性能は驚き」「低音がしっかり出るので、EDMやヒップホップが好きな人にはハマる」「LDAC対応でこの価格は他にない。コスパモンスター」
-<div class="review-source">出典: Amazon.co.jp カスタマーレビュー</div>
-</div>
-
-<div class="pros-cons">
-<div class="pros">
-<h4>良い点</h4>
-<ul>
-<li>1万円以下で最高クラスのノイキャン</li>
-<li>LDAC対応でハイレゾ音質</li>
-<li>バッテリー50時間（ケース込み）</li>
-<li>マルチポイント接続対応</li>
-</ul>
-</div>
-<div class="cons">
-<h4>気になる点</h4>
-<ul>
-<li>低音がやや強調気味（好みが分かれる）</li>
-<li>フィット感はイヤーピース交換で改善が必要な場合も</li>
-<li>ケースのサイズがやや大きめ</li>
-</ul>
-</div>
+「AirPods Proの1/4の価格でこのノイキャンは驚異的」「LDAC対応でこの値段は他にない」「通勤用に最適。バッテリーが1週間持つ」
 </div>
 
 <div class="price-history">
-<h4>過去の価格推移（Amazon.co.jp / Keepa参照）</h4>
+<strong>過去の価格推移</strong>
 <table>
-<tr><th>時期</th><th>価格</th><th>備考</th></tr>
-<tr><td>2025年7月 プライムデー</td><td class="lowest">7,990円</td><td>過去最安値</td></tr>
-<tr><td>2025年11月 ブラックフライデー</td><td>8,490円</td><td></td></tr>
-<tr><td>通常時の実売価格</td><td>10,990〜12,990円</td><td></td></tr>
-<tr><td><strong>今回のセール</strong></td><td><strong>8,990円</strong></td><td>十分お得</td></tr>
+<tr><th>時期</th><th>価格</th></tr>
+<tr><td>プライムデー2025</td><td class="low">7,990円</td></tr>
+<tr><td>ブラックフライデー2025</td><td>8,490円</td></tr>
+<tr><td><strong>今回</strong></td><td><strong>8,990円</strong></td></tr>
 </table>
-<p class="keepa-note">プライムデーで過去最安7,990円を記録。今回の8,990円も十分お得ですが、急がないならプライムデー待ちもアリ。<a href="https://keepa.com/#!search/5-Soundcore%20Liberty%204%20NC" target="_blank" rel="noopener">Keepaで最新価格を確認</a></p>
 </div>
 
-<a href="https://www.amazon.co.jp/dp/B0CDQ4N3G9?tag=teckjpkokuto-22" class="product-buy-btn amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
+<div class="product-card-foot">
+<a href="https://www.amazon.co.jp/dp/B0C1P1N98V?tag=teckjpkokuto-22" class="buy-btn buy-btn-amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
+</div>
+
+<div class="product-card">
+<div class="product-card-head">
+<h3>Anker Soundcore Liberty 4 Pro</h3>
+<div class="price-row">
+<span class="price-original">17,990円</span>
+<span class="price-sale">13,490円</span>
+<span class="price-off">25%OFF</span>
+</div>
+<div class="badge-row">
+<span class="badge badge-stars">★★★★★ 4.5</span>
+<span class="badge badge-buy-good">今が買い時</span>
+</div>
+</div>
+<div class="product-card-body">
+
+<dl class="spec-grid">
+<dt>NC</dt><dd>ウルトラNC 3.5（進化版）</dd>
+<dt>ドライバー</dt><dd>A.C.A.A 4.0 デュアルドライバー</dd>
+<dt>バッテリー</dt><dd>本体10時間 / ケース込み40時間</dd>
+<dt>コーデック</dt><dd>SBC / AAC / LDAC / Hi-Res対応</dd>
+<dt>操作</dt><dd>圧力＋スワイプセンサー</dd>
+</dl>
+
+Liberty 4 NCの上位モデル。A.C.A.A 4.0デュアルドライバーで中高域の解像度が大幅向上。圧力＋スワイプの直感的操作はAirPods Proライクで使いやすい。2万円以下で最高峰の音質を求めるならこれ。
+
+<div class="review-box">
+「2万円以下のイヤホンでは音質最強」「AirPods Pro 3と迷ったがLDAC対応でこちらに。大正解」「デュアルドライバーの効果は確実にある」
+</div>
+
+</div>
+<div class="product-card-foot">
+<a href="https://www.amazon.co.jp/dp/B0D7ZLPSJG?tag=teckjpkokuto-22" class="buy-btn buy-btn-amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
+</div>
+
+<div class="product-card">
+<div class="product-card-head">
+<h3>JBL Charge 5（Bluetoothスピーカー）</h3>
+<div class="price-row">
+<span class="price-original">24,200円</span>
+<span class="price-sale">16,800円</span>
+<span class="price-off">31%OFF</span>
+</div>
+<div class="badge-row">
+<span class="badge badge-stars">★★★★★ 4.7</span>
+<span class="badge badge-buy-good">今が買い時</span>
+</div>
+</div>
+<div class="product-card-body">
+
+<dl class="spec-grid">
+<dt>出力</dt><dd>最大30W（2ウェイ構成）</dd>
+<dt>バッテリー</dt><dd>最大20時間</dd>
+<dt>防水防塵</dt><dd>IP67</dd>
+<dt>機能</dt><dd>モバイルバッテリー機能（USB-A出力）</dd>
+</dl>
+
+パワフルな低音が特徴のポータブルスピーカー。IP67防水でキャンプ・BBQ・プールサイドもOK。モバイルバッテリー機能でスマホ充電もできる万能型。アウトドア派に圧倒的人気。
+
+<div class="review-box">
+「低音の迫力が凄い。野外でも音量十分」「IP67なので風呂場でも安心して使える」「スマホの充電もできるので災害時にも役立つ」
+</div>
+
+</div>
+<div class="product-card-foot">
+<a href="https://www.amazon.co.jp/dp/B0928Y5TPD?tag=teckjpkokuto-22" class="buy-btn buy-btn-amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
 </div>
 
 ---
@@ -364,243 +362,129 @@ Soundcoreアプリの「HearID」機能で聴力に合わせたパーソナラ�
 <h2 id="smart-device">スマートデバイス</h2>
 
 <div class="product-card">
-<div class="product-card-header">
-<div class="product-card-image">
-<img src="https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SL200_.jpg" alt="Echo Dot 第5世代" loading="lazy">
-</div>
-<div class="product-card-info">
-<h3>Amazon Echo Dot 第5世代（スマートスピーカー with Alexa）</h3>
-<div class="price-box">
+<div class="product-card-head">
+<h3>Amazon Echo Dot 第5世代</h3>
+<div class="price-row">
 <span class="price-original">7,980円</span>
 <span class="price-sale">2,980円</span>
-<span class="price-discount">63%OFF</span>
+<span class="price-off">63%OFF</span>
 </div>
-<div class="product-rating">
-<span>Amazon評価: <span class="stars">★★★★★</span> 4.5/5（15,000件以上）</span>
-</div>
-<div class="product-rating">
-<span>おすすめ度: <span class="stars">★★★★★</span></span>
-<span class="buy-timing urgent">即買い推奨（底値級）</span>
+<div class="badge-row">
+<span class="badge badge-stars">★★★★★ 4.5</span>
+<span class="badge badge-buy-now">底値級・即買い</span>
 </div>
 </div>
-</div>
+<div class="product-card-body">
 
-<dl class="product-specs">
-<dt>スピーカー</dt><dd>44mmフルレンジドライバー</dd>
-<dt>音声アシスタント</dt><dd>Amazon Alexa</dd>
-<dt>接続</dt><dd>Wi-Fi (802.11ac) / Bluetooth 5.0</dd>
+<dl class="spec-grid">
+<dt>スピーカー</dt><dd>44mmフルレンジ</dd>
+<dt>接続</dt><dd>Wi-Fi 802.11ac / Bluetooth 5.0</dd>
 <dt>センサー</dt><dd>温度センサー内蔵</dd>
 <dt>スマートホーム</dt><dd>Zigbee / Matter / Thread対応ハブ内蔵</dd>
-<dt>サイズ</dt><dd>100 x 100 x 89 mm</dd>
-<dt>重量</dt><dd>304g</dd>
 </dl>
 
-Amazonセールの代名詞的存在。通常7,980円が2,980円と63%OFFは新生活セールの超目玉です。この価格でスマートスピーカーが手に入るのはAmazonセール時だけ。
-
-第5世代は前世代からスピーカーの音質が向上し、Ecoな再生モードも搭載。温度センサー内蔵で「部屋が28度以上になったらエアコンをON」といったスマートホーム自動化も可能。Matter/Thread対応ハブを内蔵しているので、これ1台でスマートホームの中心装置として機能します。
-
-天気予報、タイマー、音楽再生、買い物リスト追加、スマート家電操作など日常的に便利な機能が揃っています。Amazon MusicやSpotifyも声だけで操作可能。
+Amazonセールの代名詞。63%OFFの2,980円はほぼ底値。音楽再生・天気確認・タイマー・スマート家電操作など日常で大活躍。Matter/Threadハブ内蔵でスマートホームの中心装置になります。温度センサーで「28度以上でエアコンON」などの自動化も可能。
 
 <div class="review-box">
-<strong>Amazonレビューの声:</strong><br>
-「各部屋に1台ずつ置いている。このサイズと価格でこの音質は驚き」「料理中にタイマー設定するのが声だけでできるのが本当に便利」「スマートリモコン（SwitchBot等）と組み合わせると、テレビもエアコンも声で操作できて快適」
-<div class="review-source">出典: Amazon.co.jp カスタマーレビュー</div>
-</div>
-
-<div class="pros-cons">
-<div class="pros">
-<h4>良い点</h4>
-<ul>
-<li>63%OFFは底値級の破格</li>
-<li>スマートホームハブ内蔵</li>
-<li>温度センサーでスマート自動化</li>
-<li>BGM用スピーカーとしても十分な音質</li>
-</ul>
-</div>
-<div class="cons">
-<h4>気になる点</h4>
-<ul>
-<li>高音質で音楽を聴くには物足りない</li>
-<li>Alexaの誤反応がたまにある</li>
-<li>Wi-Fi環境が必須</li>
-</ul>
-</div>
+「この価格なら全部屋に置ける」「料理中のタイマー設定が声だけでできて便利」「SwitchBotと組み合わせるとテレビもエアコンも声で操作できる」
 </div>
 
 <div class="price-history">
-<h4>過去の価格推移（Amazon.co.jp / Keepa参照）</h4>
+<strong>過去の価格推移</strong>
 <table>
-<tr><th>時期</th><th>価格</th><th>備考</th></tr>
-<tr><td>2025年7月 プライムデー</td><td class="lowest">1,980円</td><td>過去最安値</td></tr>
-<tr><td>2025年11月 ブラックフライデー</td><td>2,480円</td><td></td></tr>
-<tr><td>2026年1月 初売り</td><td>2,980円</td><td></td></tr>
-<tr><td>通常時の実売価格</td><td>5,980〜7,980円</td><td></td></tr>
-<tr><td><strong>今回のセール</strong></td><td><strong>2,980円</strong></td><td>ほぼ底値水準</td></tr>
+<tr><th>時期</th><th>価格</th></tr>
+<tr><td>プライムデー2025</td><td class="low">1,980円</td></tr>
+<tr><td>ブラックフライデー2025</td><td>2,480円</td></tr>
+<tr><td><strong>今回</strong></td><td><strong>2,980円</strong></td></tr>
 </table>
-<p class="keepa-note">プライムデーでは1,980円まで下がったことがあります。今回の2,980円も十分安いので、必要なら即買いで問題ありません。<a href="https://keepa.com/#!search/5-Echo%20Dot%20第5世代" target="_blank" rel="noopener">Keepaで最新価格を確認</a></p>
+<p>最安は1,980円ですが、2,980円でも十分安い。必要なら迷わず購入を。</p>
 </div>
 
-<a href="https://www.amazon.co.jp/dp/B09B8V1LZ3?tag=teckjpkokuto-22" class="product-buy-btn amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
+<div class="product-card-foot">
+<a href="https://www.amazon.co.jp/dp/B09B8SZLLG?tag=teckjpkokuto-22" class="buy-btn buy-btn-amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
 </div>
 
 <div class="product-card">
-<div class="product-card-header">
-<div class="product-card-image">
-<img src="https://m.media-amazon.com/images/I/51CgKGfMelL._AC_SL200_.jpg" alt="Fire TV Stick 4K Max" loading="lazy">
-</div>
-<div class="product-card-info">
-<h3>Amazon Fire TV Stick 4K Max（第2世代）</h3>
-<div class="price-box">
+<div class="product-card-head">
+<h3>Fire TV Stick 4K Max（第2世代）</h3>
+<div class="price-row">
 <span class="price-original">9,980円</span>
 <span class="price-sale">5,980円</span>
-<span class="price-discount">40%OFF</span>
+<span class="price-off">40%OFF</span>
 </div>
-<div class="product-rating">
-<span>Amazon評価: <span class="stars">★★★★★</span> 4.5/5（9,200件以上）</span>
-</div>
-<div class="product-rating">
-<span>おすすめ度: <span class="stars">★★★★★</span></span>
-<span class="buy-timing urgent">即買い推奨</span>
+<div class="badge-row">
+<span class="badge badge-stars">★★★★★ 4.5</span>
+<span class="badge badge-buy-now">即買い推奨</span>
 </div>
 </div>
-</div>
+<div class="product-card-body">
 
-<dl class="product-specs">
-<dt>解像度</dt><dd>4K Ultra HD / HDR10+ / Dolby Vision / HDR10 / HLG</dd>
+<dl class="spec-grid">
+<dt>解像度</dt><dd>4K Ultra HD / HDR10+ / Dolby Vision</dd>
 <dt>音声</dt><dd>Dolby Atmos対応</dd>
-<dt>プロセッサ</dt><dd>2.0GHz クアッドコア + 2GB RAM</dd>
 <dt>Wi-Fi</dt><dd>Wi-Fi 6E対応（6GHz帯）</dd>
-<dt>ストレージ</dt><dd>16GB</dd>
-<dt>対応サービス</dt><dd>Prime Video, Netflix, YouTube, Disney+, TVer, ABEMA, U-NEXT, Hulu等</dd>
-<dt>機能</dt><dd>Alexa音声操作、アンビエントディスプレイ、Fire TV Channels</dd>
+<dt>CPU</dt><dd>2.0GHz クアッドコア / 2GB RAM</dd>
+<dt>対応</dt><dd>Prime Video, Netflix, YouTube, Disney+, TVer, ABEMA, U-NEXT, Hulu等</dd>
 </dl>
 
-「テレビをスマートTVにしたい」なら、これがベストな選択肢。HDMI端子に差すだけで、Prime Video、Netflix、YouTube、Disney+、TVer、ABEMAなど主要配信サービスが全て4K画質で楽しめます。
-
-第2世代は2.0GHzクアッドコアプロセッサと2GB RAMを搭載し、前世代から処理速度が大幅に向上。アプリの起動やメニュー操作がサクサクで、ストレスフリー。Wi-Fi 6E対応で混雑した回線でも安定した通信が可能です。
-
-Alexa対応リモコンが付属し、「アレクサ、鬼滅の刃を再生して」と声で操作できるのも便利。
+HDMI端子に差すだけでテレビがスマートTVに。4K HDR + Dolby Atmos対応で映画館品質の映像体験。Wi-Fi 6Eで混雑した回線でも安定通信。Alexa音声リモコン付きで「鬼滅の刃を再生して」と声で操作できます。TVer対応で民放見逃し配信も視聴可能。
 
 <div class="review-box">
-<strong>Amazonレビューの声:</strong><br>
-「5年使ったApple TVから買い替えたが、動作はこっちの方がサクサク」「TVer対応で民放のテレビ番組が見逃し配信で見られるのが嬉しい。テレビのリモコンを使わなくなった」「4Kの画質が綺麗。Dolby Atmos対応のサウンドバーと組み合わせると自宅が映画館になる」
-<div class="review-source">出典: Amazon.co.jp カスタマーレビュー</div>
+「テレビのリモコンを使わなくなった。全部これで済む」「TVer対応が地味に嬉しい」「4Kの画質が綺麗。旧型Fire Stickから買い替えて大正解」
 </div>
 
-<div class="pros-cons">
-<div class="pros">
-<h4>良い点</h4>
-<ul>
-<li>4K + Dolby Vision + Dolby Atmos対応</li>
-<li>Wi-Fi 6Eで高速安定通信</li>
-<li>主要配信サービスに全対応</li>
-<li>Alexa音声操作が便利</li>
-</ul>
 </div>
-<div class="cons">
-<h4>気になる点</h4>
-<ul>
-<li>ホーム画面にAmazonの広告がやや多い</li>
-<li>Apple AirPlayには非対応</li>
-<li>iOSミラーリングは別アプリが必要</li>
-</ul>
+<div class="product-card-foot">
+<a href="https://www.amazon.co.jp/dp/B0BW37QY2V?tag=teckjpkokuto-22" class="buy-btn buy-btn-amazon" target="_blank" rel="noopener">Amazonで購入する</a>
 </div>
-</div>
-
-<div class="price-history">
-<h4>過去の価格推移（Amazon.co.jp / Keepa参照）</h4>
-<table>
-<tr><th>時期</th><th>価格</th><th>備考</th></tr>
-<tr><td>2025年7月 プライムデー</td><td class="lowest">4,980円</td><td>過去最安値</td></tr>
-<tr><td>2025年11月 ブラックフライデー</td><td>5,480円</td><td></td></tr>
-<tr><td>通常時の実売価格</td><td>8,980〜9,980円</td><td></td></tr>
-<tr><td><strong>今回のセール</strong></td><td><strong>5,980円</strong></td><td>お得な水準</td></tr>
-</table>
-<p class="keepa-note"><a href="https://keepa.com/#!search/5-Fire%20TV%20Stick%204K%20Max" target="_blank" rel="noopener">Keepaで最新価格を確認</a></p>
-</div>
-
-<a href="https://www.amazon.co.jp/dp/B0BTFCP86V?tag=teckjpkokuto-22" class="product-buy-btn amazon" target="_blank" rel="noopener">Amazonで購入する</a>
 </div>
 
 <div class="product-card">
-<div class="product-card-header">
-<div class="product-card-image">
-<img src="https://m.media-amazon.com/images/I/61MKQ66MR3L._AC_SL200_.jpg" alt="Kindle Paperwhite" loading="lazy">
-</div>
-<div class="product-card-info">
+<div class="product-card-head">
 <h3>Kindle Paperwhite（第12世代・2024年モデル）</h3>
-<div class="price-box">
+<div class="price-row">
 <span class="price-original">22,980円</span>
 <span class="price-sale">16,980円</span>
-<span class="price-discount">26%OFF</span>
+<span class="price-off">26%OFF</span>
 </div>
-<div class="product-rating">
-<span>Amazon評価: <span class="stars">★★★★★</span> 4.6/5（4,300件以上）</span>
-</div>
-<div class="product-rating">
-<span>おすすめ度: <span class="stars">★★★★☆</span></span>
-<span class="buy-timing good">今が買い時</span>
+<div class="badge-row">
+<span class="badge badge-stars">★★★★★ 4.6</span>
+<span class="badge badge-buy-good">今が買い時</span>
 </div>
 </div>
-</div>
+<div class="product-card-body">
 
-<dl class="product-specs">
-<dt>ディスプレイ</dt><dd>7インチ E Ink Carta 1300 / 300ppi / 反射抑制スクリーン</dd>
-<dt>フロントライト</dt><dd>LED 17個 / 色調調節（暖色↔寒色）</dd>
-<dt>ストレージ</dt><dd>16GB（広告つき）/ 16GB or 32GB（広告なし）</dd>
+<dl class="spec-grid">
+<dt>画面</dt><dd>7インチ E Ink Carta 1300 / 300ppi</dd>
+<dt>ライト</dt><dd>LED 17個 / 色調調節（暖色↔寒色）</dd>
+<dt>容量</dt><dd>16GB（広告なし）</dd>
 <dt>バッテリー</dt><dd>最大12週間</dd>
-<dt>防水</dt><dd>IPX8（60分 / 水深2mまで）</dd>
-<dt>接続</dt><dd>USB-C / Wi-Fi / Bluetooth（オーディオブック対応）</dd>
-<dt>サイズ</dt><dd>127.5 x 176.7 x 7.8 mm</dd>
+<dt>防水</dt><dd>IPX8（水深2m / 60分）</dd>
 <dt>重量</dt><dd>211g</dd>
 </dl>
 
-2024年にリニューアルされた最新Kindle Paperwhite。前モデルから画面が6.8→7インチに拡大し、ベゼルが細くなったことで表示領域が大幅に広がりました。300ppiのE Ink Carta 1300ディスプレイは、文字が紙の本のようにシャープ。直射日光下でも読みやすく、バックライト付きなので暗所でも問題ありません。
-
-ページめくり速度も前世代から25%高速化。漫画や雑誌の快適さが向上しています。IPX8防水はお風呂での読書派には嬉しい仕様で、シャワーが直接かかっても大丈夫なレベルです。
-
-バッテリーは最大12週間持続するため、充電の手間がほぼゼロ。旅行に持っていっても充電器いらずです。
+7インチ大画面E Inkで紙のような読み心地。300ppiの高解像度で文字がシャープ。IPX8防水でお風呂読書OK。バッテリー12週間持続で充電の手間ほぼゼロ。ページめくり速度も前世代比25%高速化。
 
 <div class="review-box">
-<strong>Amazonレビューの声:</strong><br>
-「7インチになって漫画がかなり読みやすくなった。ベゼルが細くなったのも好印象」「目が疲れない。スマホやタブレットで読書していた時間がKindleに全て置き換わった」「防水が完璧。毎日お風呂で1時間読書するのが日課になった」
-<div class="review-source">出典: Amazon.co.jp カスタマーレビュー</div>
-</div>
-
-<div class="pros-cons">
-<div class="pros">
-<h4>良い点</h4>
-<ul>
-<li>7インチ大画面で読みやすい</li>
-<li>300ppiの高解像度E Ink</li>
-<li>IPX8完全防水</li>
-<li>バッテリー12週間持続</li>
-<li>211gの軽量設計</li>
-</ul>
-</div>
-<div class="cons">
-<h4>気になる点</h4>
-<ul>
-<li>カラー表示は非対応</li>
-<li>雑誌の見開き表示はサイズ的に厳しい</li>
-<li>広告つきモデルはロック画面に広告が出る</li>
-</ul>
-</div>
+「7インチになって漫画が格段に読みやすい」「目が疲れない。スマホでの読書から完全移行した」「防水でお風呂読書が日課に。最高の投資」
 </div>
 
 <div class="price-history">
-<h4>過去の価格推移（Amazon.co.jp / Keepa参照）</h4>
+<strong>過去の価格推移</strong>
 <table>
-<tr><th>時期</th><th>価格</th><th>備考</th></tr>
-<tr><td>2025年11月 ブラックフライデー</td><td class="lowest">14,980円</td><td>過去最安値</td></tr>
-<tr><td>2026年1月 初売り</td><td>17,980円</td><td></td></tr>
-<tr><td>通常時の実売価格</td><td>21,980〜22,980円</td><td></td></tr>
-<tr><td><strong>今回のセール</strong></td><td><strong>16,980円</strong></td><td>過去2番目の安さ</td></tr>
+<tr><th>時期</th><th>価格</th></tr>
+<tr><td>ブラックフライデー2025</td><td class="low">14,980円</td></tr>
+<tr><td>初売り2026</td><td>17,980円</td></tr>
+<tr><td><strong>今回</strong></td><td><strong>16,980円</strong></td></tr>
 </table>
-<p class="keepa-note">最安は2025年ブラックフライデーの14,980円。今回は過去2番目で十分お得。<a href="https://keepa.com/#!search/5-Kindle%20Paperwhite" target="_blank" rel="noopener">Keepaで最新価格を確認</a></p>
 </div>
 
-<a href="https://www.amazon.co.jp/dp/B0CFZPLKXL?tag=teckjpkokuto-22" class="product-buy-btn amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
+<div class="product-card-foot">
+<a href="https://www.amazon.co.jp/dp/B0CFPL6CFY?tag=teckjpkokuto-22" class="buy-btn buy-btn-amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
 </div>
 
 ---
@@ -608,80 +492,67 @@ Alexa対応リモコンが付属し、「アレクサ、鬼滅の刃を再生し
 <h2 id="charger">充電器・モバイルバッテリー</h2>
 
 <div class="product-card">
-<div class="product-card-header">
-<div class="product-card-image">
-<img src="https://m.media-amazon.com/images/I/61TjCrAHBCL._AC_SL200_.jpg" alt="Anker Prime 67W 充電器" loading="lazy">
-</div>
-<div class="product-card-info">
+<div class="product-card-head">
 <h3>Anker Prime Wall Charger（67W, 3ポート, GaN）</h3>
-<div class="price-box">
+<div class="price-row">
 <span class="price-original">5,490円</span>
 <span class="price-sale">3,990円</span>
-<span class="price-discount">27%OFF</span>
+<span class="price-off">27%OFF</span>
 </div>
-<div class="product-rating">
-<span>Amazon評価: <span class="stars">★★★★★</span> 4.7/5（3,200件以上）</span>
-</div>
-<div class="product-rating">
-<span>おすすめ度: <span class="stars">★★★★★</span></span>
-<span class="buy-timing urgent">即買い推奨</span>
+<div class="badge-row">
+<span class="badge badge-stars">★★★★★ 4.7</span>
+<span class="badge badge-buy-now">即買い推奨</span>
 </div>
 </div>
-</div>
+<div class="product-card-body">
 
-<dl class="product-specs">
-<dt>最大出力</dt><dd>67W（USB-C単独使用時）</dd>
+<dl class="spec-grid">
+<dt>出力</dt><dd>最大67W（USB-C単独時）</dd>
 <dt>ポート</dt><dd>USB-C × 2 + USB-A × 1</dd>
-<dt>技術</dt><dd>GaN（窒化ガリウム）採用</dd>
-<dt>対応</dt><dd>MacBook Air 15" / iPad Pro / iPhone / Galaxy等</dd>
-<dt>サイズ</dt><dd>約52 x 47 x 30 mm</dd>
+<dt>技術</dt><dd>GaN（窒化ガリウム）</dd>
+<dt>サイズ</dt><dd>約52 x 47 x 30 mm（折りたたみプラグ）</dd>
 <dt>重量</dt><dd>約113g</dd>
-<dt>プラグ</dt><dd>折りたたみ式</dd>
-<dt>安全機能</dt><dd>ActiveShield 2.0（温度管理）</dd>
 </dl>
 
-AppleのMacBook Air付属充電器の半分以下のサイズで67W出力。GaN（窒化ガリウム）技術により、手のひらサイズなのにMacBook Airをフル充電できるパワーがあります。USB-C 2ポート + USB-A 1ポートで、スマホ・タブレット・PCの3台同時充電も可能。
-
-折りたたみ式プラグでカバンの中でもかさばらず、出張や旅行に最適。Anker独自のActiveShield 2.0が温度を常時監視し、過充電や過熱を防ぎます。
+MacBook Air付属充電器の半分以下のサイズで67W出力。3ポートでスマホ・タブレット・PCの同時充電OK。折りたたみプラグで携帯性抜群。出張・旅行の必需品。
 
 <div class="review-box">
-<strong>Amazonレビューの声:</strong><br>
-「Apple純正の30W充電器よりも小さくて67W出力。もう純正充電器を持ち歩く必要がない」「MacBook Air + iPhoneを同時に充電できるので、出張時の荷物が激減した」「ホテルのコンセントが少なくても3ポートあるので困らない」
-<div class="review-source">出典: Amazon.co.jp カスタマーレビュー</div>
+「純正より小さくてパワフル。もう純正充電器は持ち歩かない」「ホテルのコンセント少なくても3ポートで安心」「MacBook Air + iPhoneを同時充電できる」
 </div>
 
-<div class="pros-cons">
-<div class="pros">
-<h4>良い点</h4>
-<ul>
-<li>超コンパクトで67W出力</li>
-<li>3ポートで同時充電可能</li>
-<li>折りたたみプラグで携帯性抜群</li>
-<li>ActiveShield 2.0の安全設計</li>
-</ul>
 </div>
-<div class="cons">
-<h4>気になる点</h4>
-<ul>
-<li>3ポート同時使用時は出力が分配される</li>
-<li>高出力時はやや発熱する（安全範囲内）</li>
-</ul>
+<div class="product-card-foot">
+<a href="https://www.amazon.co.jp/dp/B0C5CBV6L3?tag=teckjpkokuto-22" class="buy-btn buy-btn-amazon" target="_blank" rel="noopener">Amazonで購入する</a>
 </div>
 </div>
 
-<div class="price-history">
-<h4>過去の価格推移（Amazon.co.jp / Keepa参照）</h4>
-<table>
-<tr><th>時期</th><th>価格</th><th>備考</th></tr>
-<tr><td>2025年7月 プライムデー</td><td class="lowest">3,490円</td><td>過去最安値</td></tr>
-<tr><td>2025年11月 ブラックフライデー</td><td>3,790円</td><td></td></tr>
-<tr><td>通常時の実売価格</td><td>4,990〜5,490円</td><td></td></tr>
-<tr><td><strong>今回のセール</strong></td><td><strong>3,990円</strong></td><td>お得な水準</td></tr>
-</table>
-<p class="keepa-note"><a href="https://keepa.com/#!search/5-Anker%20Prime%2067W" target="_blank" rel="noopener">Keepaで最新価格を確認</a></p>
+<div class="product-card">
+<div class="product-card-head">
+<h3>Anker 735 Charger（GaNPrime 65W, 3ポート）</h3>
+<div class="price-row">
+<span class="price-original">5,990円</span>
+<span class="price-sale">4,490円</span>
+<span class="price-off">25%OFF</span>
 </div>
+<div class="badge-row">
+<span class="badge badge-stars">★★★★★ 4.6</span>
+<span class="badge badge-buy-good">今が買い時</span>
+</div>
+</div>
+<div class="product-card-body">
 
-<a href="https://www.amazon.co.jp/dp/B0C5HS3Y9X?tag=teckjpkokuto-22" class="product-buy-btn amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+<dl class="spec-grid">
+<dt>出力</dt><dd>最大65W</dd>
+<dt>ポート</dt><dd>USB-C × 2 + USB-A × 1</dd>
+<dt>技術</dt><dd>GaNPrime（次世代GaN）</dd>
+</dl>
+
+Prime Wall Chargerと同等性能の別モデル。GaNPrime技術で更に効率的な電力分配。3ポートで家族やデバイス複数持ちに最適。どちらを選んでもハズレなし。
+
+</div>
+<div class="product-card-foot">
+<a href="https://www.amazon.co.jp/dp/B09W9M89WS?tag=teckjpkokuto-22" class="buy-btn buy-btn-amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
 </div>
 
 ---
@@ -689,102 +560,146 @@ AppleのMacBook Air付属充電器の半分以下のサイズで67W出力。GaN�
 <h2 id="tablet">タブレット</h2>
 
 <div class="product-card">
-<div class="product-card-header">
-<div class="product-card-image">
-<img src="https://m.media-amazon.com/images/I/61NGnpjoRDL._AC_SL200_.jpg" alt="iPad Air M3" loading="lazy">
-</div>
-<div class="product-card-info">
+<div class="product-card-head">
 <h3>Apple iPad Air M3（11インチ・Wi-Fi・128GB）</h3>
-<div class="price-box">
+<div class="price-row">
 <span class="price-original">98,800円</span>
 <span class="price-sale">88,900円</span>
-<span class="price-discount">10%OFF</span>
+<span class="price-off">10%OFF</span>
 </div>
-<div class="product-rating">
-<span>Amazon評価: <span class="stars">★★★★★</span> 4.7/5（2,100件以上）</span>
-</div>
-<div class="product-rating">
-<span>おすすめ度: <span class="stars">★★★★☆</span></span>
-<span class="buy-timing wait">急がないならプライムデー待ち</span>
+<div class="badge-row">
+<span class="badge badge-stars">★★★★★ 4.7</span>
+<span class="badge badge-buy-wait">急がないならプライムデー待ち</span>
 </div>
 </div>
-</div>
+<div class="product-card-body">
 
-<dl class="product-specs">
+<dl class="spec-grid">
 <dt>チップ</dt><dd>Apple M3（8コアCPU / 10コアGPU）</dd>
-<dt>ディスプレイ</dt><dd>11インチ Liquid Retina / 2360x1640 / P3広色域 / 500nit</dd>
+<dt>画面</dt><dd>11インチ Liquid Retina / P3広色域</dd>
 <dt>メモリ</dt><dd>8GB</dd>
-<dt>ストレージ</dt><dd>128GB / 256GB / 512GB / 1TB</dd>
-<dt>カメラ</dt><dd>背面12MP広角 / 前面12MP超広角（横向き）</dd>
-<dt>Apple Pencil</dt><dd>Apple Pencil Pro / Apple Pencil（USB-C）対応</dd>
-<dt>バッテリー</dt><dd>最大10時間</dd>
+<dt>Apple Pencil</dt><dd>Apple Pencil Pro対応</dd>
+<dt>カメラ</dt><dd>12MP広角 / 12MP超広角（横向き）</dd>
 <dt>重量</dt><dd>462g</dd>
 </dl>
 
-M3チップ搭載で、大半のユーザーにとってiPad Proは不要と言えるほどの性能を持っています。動画編集、イラスト制作、ゲームまで余裕でこなせるパワーがありながら、iPad Proより3万円以上安い価格設定が魅力。
-
-Apple Pencil Pro対応で、ホバー操作やバレルロール（軸回転によるペン先の太さ変更）など、クリエイティブ用途でも不満のない仕上がり。前面カメラが横向き配置になったため、Zoomやビデオ通話で自然な視線になるのも嬉しい改良点です。
-
-ただし今回のセールでは10%OFFにとどまっており、過去のプライムデーやブラックフライデーではもう少し安くなった実績があります。
+M3チップでiPad Proに迫る性能。Apple Pencil Pro対応、前面カメラ横向き配置でビデオ通話も自然な視線に。大半のユーザーにとってProは不要と言えるコスパの良さ。ただし今回は10%OFFと控えめ。プライムデーでは更に安くなる見込み。
 
 <div class="review-box">
-<strong>Amazonレビューの声:</strong><br>
-「M3の性能はiPad Proと体感差がほぼない。大半のユーザーはAirで十分」「Apple Pencil Proのホバー操作が便利。Procreateでの絵描きが捗る」「128GBだとアプリと動画ですぐ埋まる。256GB以上を推奨」
-<div class="review-source">出典: Amazon.co.jp カスタマーレビュー</div>
-</div>
-
-<div class="pros-cons">
-<div class="pros">
-<h4>良い点</h4>
-<ul>
-<li>M3チップで申し分ない性能</li>
-<li>Apple Pencil Pro対応</li>
-<li>前面カメラ横向き配置</li>
-<li>462gの軽量設計</li>
-</ul>
-</div>
-<div class="cons">
-<h4>気になる点</h4>
-<ul>
-<li>128GBは少なめ（256GB推奨）</li>
-<li>ProMotion（120Hz）は非搭載</li>
-<li>Face ID非対応（Touch IDのみ）</li>
-</ul>
-</div>
+「M3の性能はProと体感差がほぼない。コスパ最強」「128GBだとすぐ埋まる。256GB以上を推奨」「Apple Pencil Proのホバーが便利」
 </div>
 
 <div class="price-history">
-<h4>過去の価格推移（Amazon.co.jp / Keepa参照）</h4>
+<strong>過去の価格推移</strong>
 <table>
-<tr><th>時期</th><th>価格</th><th>備考</th></tr>
-<tr><td>2025年7月 プライムデー</td><td class="lowest">84,800円</td><td>過去最安値</td></tr>
-<tr><td>2025年11月 ブラックフライデー</td><td>86,800円</td><td></td></tr>
-<tr><td>通常時の実売価格</td><td>96,800〜98,800円</td><td></td></tr>
-<tr><td><strong>今回のセール</strong></td><td><strong>88,900円</strong></td><td>やや高め</td></tr>
+<tr><th>時期</th><th>価格</th></tr>
+<tr><td>発売時</td><td>98,800円</td></tr>
+<tr><td>ブラックフライデー2025</td><td class="low">86,800円</td></tr>
+<tr><td><strong>今回</strong></td><td><strong>88,900円</strong></td></tr>
 </table>
-<p class="keepa-note">過去最安は84,800円。今回は10%OFFですが、7月のプライムデーならもう少し安くなる可能性が高いです。急がないなら待つのが吉。<a href="https://keepa.com/#!search/5-iPad%20Air%20M3" target="_blank" rel="noopener">Keepaで最新価格を確認</a></p>
+<p>過去最安は86,800円。今回はやや高め。急がないなら7月のプライムデー待ち推奨。</p>
 </div>
 
-<a href="https://www.amazon.co.jp/dp/B0D3J7GPRX?tag=teckjpkokuto-22" class="product-buy-btn amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
+<div class="product-card-foot">
+<a href="https://www.amazon.co.jp/dp/B0DZ8F9B86?tag=teckjpkokuto-22" class="buy-btn buy-btn-amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
+</div>
+
+---
+
+<h2 id="smarthome">スマートホーム</h2>
+
+<div class="product-card">
+<div class="product-card-head">
+<h3>SwitchBot ハブ2（スマートリモコン）</h3>
+<div class="price-row">
+<span class="price-original">8,980円</span>
+<span class="price-sale">6,480円</span>
+<span class="price-off">28%OFF</span>
+</div>
+<div class="badge-row">
+<span class="badge badge-stars">★★★★☆ 4.4</span>
+<span class="badge badge-buy-now">即買い推奨</span>
+</div>
+</div>
+<div class="product-card-body">
+
+<dl class="spec-grid">
+<dt>機能</dt><dd>学習リモコン / 温湿度センサー / 光センサー / スマートボタン</dd>
+<dt>対応</dt><dd>Alexa / Google Home / Siri / IFTTT / Matter</dd>
+<dt>赤外線</dt><dd>4,877メーカー / 83,934モデル対応</dd>
+<dt>接続</dt><dd>Wi-Fi + Bluetooth</dd>
+</dl>
+
+家中の赤外線リモコンをスマホ1つに集約。エアコン・テレビ・照明をAlexaやSiriで音声操作。温湿度センサー内蔵で「28度以上でエアコンON」などの自動化が可能。Matter対応で将来性も十分。Echo Dotと組み合わせるとスマートホームの完成度が格段に上がります。
+
+<div class="review-box">
+「リモコンが全部不要になった。スマホかAlexaで全て操作」「外出先からエアコンをONにできるのが夏場に最高」「温度トリガーの自動化で電気代が月1,000円以上下がった」
+</div>
+
+</div>
+<div class="product-card-foot">
+<a href="https://www.amazon.co.jp/dp/B0BM8VS13P?tag=teckjpkokuto-22" class="buy-btn buy-btn-amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
+</div>
+
+<div class="product-card">
+<div class="product-card-head">
+<h3>TP-Link Deco X50（メッシュWi-Fi 6・3台セット）</h3>
+<div class="price-row">
+<span class="price-original">27,800円</span>
+<span class="price-sale">19,800円</span>
+<span class="price-off">29%OFF</span>
+</div>
+<div class="badge-row">
+<span class="badge badge-stars">★★★★☆ 4.4</span>
+<span class="badge badge-buy-good">今が買い時</span>
+</div>
+</div>
+<div class="product-card-body">
+
+<dl class="spec-grid">
+<dt>規格</dt><dd>Wi-Fi 6（AX3000: 2402+574Mbps）</dd>
+<dt>セット</dt><dd>3台パック（最大600㎡カバー）</dd>
+<dt>接続台数</dt><dd>最大150台</dd>
+<dt>セキュリティ</dt><dd>TP-Link HomeShield内蔵</dd>
+</dl>
+
+3台セットで家中どこでも途切れないWi-Fi環境を構築。設定アプリが直感的で初心者でも10分で完了。テレワーク・ゲーム・動画視聴が家のどこでも快適に。新居への引っ越しに最適。
+
+<div class="review-box">
+「2階でもWi-Fiが途切れなくなった」「設定が本当に簡単。アプリの指示通りにやるだけ」「テレワークのZoom会議が安定した」
+</div>
+
+</div>
+<div class="product-card-foot">
+<a href="https://www.amazon.co.jp/dp/B0BSTMHPJ2?tag=teckjpkokuto-22" class="buy-btn buy-btn-amazon" target="_blank" rel="noopener">Amazonで購入する</a>
+</div>
 </div>
 
 ---
 
 ## 全製品 価格比較一覧
 
-| 製品名 | 通常価格 | セール価格 | 割引率 | 過去最安値 | 買い時判断 |
-|--------|----------|------------|--------|------------|-----------|
-| AirPods Pro 2 | 39,800円 | 32,800円 | 18%OFF | 29,800円 | 即買い推奨 |
-| Sony WF-1000XM5 | 41,800円 | 33,400円 | 20%OFF | 29,700円 | 即買い推奨 |
-| Sony WH-1000XM5 | 50,600円 | 38,000円 | 25%OFF | 33,000円 | 即買い推奨 |
-| Soundcore Liberty 4 NC | 12,990円 | 8,990円 | 31%OFF | 7,990円 | 今が買い時 |
-| Echo Dot 第5世代 | 7,980円 | 2,980円 | **63%OFF** | 1,980円 | 即買い推奨 |
-| Fire TV Stick 4K Max | 9,980円 | 5,980円 | 40%OFF | 4,980円 | 即買い推奨 |
-| Kindle Paperwhite | 22,980円 | 16,980円 | 26%OFF | 14,980円 | 今が買い時 |
-| Anker Prime 67W | 5,490円 | 3,990円 | 27%OFF | 3,490円 | 即買い推奨 |
-| iPad Air M3 | 98,800円 | 88,900円 | 10%OFF | 84,800円 | プライムデー待ち推奨 |
+| 製品名 | 通常価格 | セール価格 | 割引率 | 買い時 |
+|--------|----------|------------|--------|--------|
+| AirPods Pro 3 | 39,800円 | 32,800円 | 18%OFF | 即買い |
+| Sony WF-1000XM6 | 45,000円 | 35,000円 | 22%OFF | 即買い |
+| Sony WH-1000XM6 | 59,400円 | 44,500円 | 25%OFF | 即買い |
+| Soundcore Liberty 4 NC | 12,990円 | 8,990円 | 31%OFF | 買い時 |
+| Soundcore Liberty 4 Pro | 17,990円 | 13,490円 | 25%OFF | 買い時 |
+| JBL Charge 5 | 24,200円 | 16,800円 | 31%OFF | 買い時 |
+| Echo Dot 第5世代 | 7,980円 | 2,980円 | **63%OFF** | 即買い |
+| Fire TV Stick 4K Max | 9,980円 | 5,980円 | 40%OFF | 即買い |
+| Kindle Paperwhite | 22,980円 | 16,980円 | 26%OFF | 買い時 |
+| Anker Prime 67W | 5,490円 | 3,990円 | 27%OFF | 即買い |
+| Anker 735 (65W) | 5,990円 | 4,490円 | 25%OFF | 買い時 |
+| iPad Air M3 | 98,800円 | 88,900円 | 10%OFF | 待ち推奨 |
+| SwitchBot ハブ2 | 8,980円 | 6,480円 | 28%OFF | 即買い |
+| TP-Link Deco X50 | 27,800円 | 19,800円 | 29%OFF | 買い時 |
 
-<div class="price-history" style="margin-top:24px;">
-<h4>価格の信頼性について</h4>
-<p>本記事の「過去最安値」は<strong><a href="https://keepa.com/" target="_blank" rel="noopener">Keepa</a></strong>の価格追跡データを参考にしています。Amazonの価格は頻繁に変動するため、購入前に必ず最新価格をご確認ください。Keepaブラウザ拡張機能を入れると、各商品ページで過去の価格推移グラフが表示されます。「見せかけセール」を避けるためにも、導入を強くおすすめします。</p>
+<div class="keepa-box">
+<strong>購入前の最終チェック</strong><br>
+全ての価格は予想セール価格です。実際の価格はセール開始後に変動する場合があります。購入前に必ず<a href="https://keepa.com/" target="_blank" rel="noopener">Keepa</a>で価格推移を確認し、本当にお得かどうかを判断してください。
 </div>
