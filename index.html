@@ -21,7 +21,7 @@ title: "最新ガジェット・テクノロジーニュース"
             {{ post.date | date: "%Y年%-m月%-d日" }}
           </time>
           {% for cat in post.categories %}
-            <span class="post-category"><a href="/category/{{ cat | slugify }}/">{{ cat }}</a></span>
+            <span class="post-category"><a href="/category/{% assign _cd = site.data.categories[cat] %}{{ _cd.slug | default: cat | slugify }}/">{{ cat }}</a></span>
           {% endfor %}
         </div>
         {% if post.description %}
@@ -41,7 +41,7 @@ title: "最新ガジェット・テクノロジーニュース"
   <section class="top-section">
     <div class="section-header">
       <h2 class="section-title">{{ cat }}</h2>
-      <a href="/category/{{ cat | slugify }}/" class="section-more">もっと見る →</a>
+      <a href="/category/{% assign _cd = site.data.categories[cat] %}{{ _cd.slug | default: cat | slugify }}/" class="section-more">もっと見る →</a>
     </div>
     <div class="card-grid">
       {% for post in cat_posts limit:3 %}
@@ -79,7 +79,7 @@ title: "最新ガジェット・テクノロジーニュース"
         <div class="post-meta">
           <time>{{ post.date | date: "%Y年%-m月%-d日" }}</time>
           {% for cat in post.categories %}
-            <span class="post-category"><a href="/category/{{ cat | slugify }}/">{{ cat }}</a></span>
+            <span class="post-category"><a href="/category/{% assign _cd = site.data.categories[cat] %}{{ _cd.slug | default: cat | slugify }}/">{{ cat }}</a></span>
           {% endfor %}
         </div>
       </div>

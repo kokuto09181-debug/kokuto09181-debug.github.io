@@ -1,0 +1,18 @@
+スマートフォン:
+  slug: smartphone
+  name: スマートフォン
+Apple:
+  slug: apple
+  name: Apple
+Android:
+  slug: android
+  name: Android
+ガジェット:
+  slug: gadget
+  name: ガジェット
+テクノロジー:
+  slug: technology
+  name: テクノロジー
+PC・パーツ:
+  slug: pc-parts
+  name: PC・パーツ
