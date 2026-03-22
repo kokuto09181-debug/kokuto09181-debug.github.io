@@ -6,22 +6,29 @@ title: "最新ガジェット・テクノロジーニュース"
 <h1 style="font-size:1.5rem; margin-bottom:24px;">最新記事</h1>
 
 <ul class="post-list">
-  {% for post in site.posts limit:10 %}
+  {% for post in site.posts %}
   <li class="post-list-item">
-    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-    <div class="post-meta">
-      <time datetime="{{ post.date | date_to_xmlschema }}">
-        {{ post.date | date: "%Y年%-m月%-d日" }}
-      </time>
-      {% if post.categories %}
-        <span class="post-category">
-          {% for cat in post.categories %}<a href="#">{{ cat }}</a>{% endfor %}
-        </span>
+    {% if post.thumbnail %}
+    <div class="card-thumbnail">
+      <img src="{{ post.thumbnail }}" alt="{{ post.title }}" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    {% endif %}
+    <div class="card-body">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <div class="post-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%Y年%-m月%-d日" }}
+        </time>
+        {% if post.categories %}
+          <span class="post-category">
+            {% for cat in post.categories %}<a href="#">{{ cat }}</a>{% endfor %}
+          </span>
+        {% endif %}
+      </div>
+      {% if post.description %}
+        <p class="post-excerpt">{{ post.description }}</p>
       {% endif %}
     </div>
-    {% if post.description %}
-      <p class="post-excerpt">{{ post.description }}</p>
-    {% endif %}
   </li>
   {% endfor %}
 </ul>
