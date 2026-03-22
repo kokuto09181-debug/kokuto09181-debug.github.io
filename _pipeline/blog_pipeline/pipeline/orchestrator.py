@@ -14,6 +14,7 @@ from ..collectors.rss_collector import RSSCollector
 from ..collectors.reddit_collector import RedditCollector
 from ..collectors.dedup_store import DedupStore
 from ..processors.claude_processor import ClaudeProcessor
+from ..processors.roundup_processor import RoundupProcessor
 from ..publishers.jekyll_publisher import JekyllPublisher
 from ..publishers.git_publisher import GitPublisher
 from ..publishers.social_publisher import SocialPublisher
@@ -64,6 +65,13 @@ class Pipeline:
             dry_run=config.git_dry_run,
         )
         self.social_pub = SocialPublisher()
+
+        # まとめ記事プロセッサ (Sonnetモデルで高品質生成)
+        self.roundup_processor = RoundupProcessor(
+            api_key=config.api_key,
+            model=config.featured_model,
+            max_tokens=8192,
+        )
 
         # データディレクトリ作成
         RAW_DIR.mkdir(parents=True, exist_ok=True)
@@ -120,11 +128,21 @@ class Pipeline:
         if published_count > 0:
             self.git_pub.deploy(published_count)
 
-        # ステップ6: SNS投稿 (認証情報が設定されている場合のみ)
+        # ステップ6: まとめ記事を生成 (1日1回、朝のみ)
+        roundup_article = self._generate_roundup(raw_items)
+        if roundup_article:
+            if self.jekyll_pub.publish(roundup_article):
+                articles.append(roundup_article)
+                result.published += 1
+                if published_count == 0:
+                    # 通常記事がなくてもまとめ記事があればデプロイ
+                    self.git_pub.deploy(1)
+
+        # ステップ7: SNS投稿 (認証情報が設定されている場合のみ)
         if articles:
             self.social_pub.publish_batch(articles)
 
-        # ステップ7: 処理済みURLをdedupに登録
+        # ステップ8: 処理済みURLをdedupに登録
         for item in new_items:
             self.dedup.mark_seen(item.url)
 
@@ -160,6 +178,23 @@ class Pipeline:
         path = RAW_DIR / f"raw_{ts}.json"
         with open(path, "w", encoding="utf-8") as f:
             json.dump([item.to_dict() for item in items], f, ensure_ascii=False, indent=2)
+
+    def _generate_roundup(self, raw_items):
+        """まとめ記事を生成 (dedupで重複チェック)"""
+        try:
+            topic_idx = RoundupProcessor.get_topic_for_today()
+            roundup_slug = f"roundup-{datetime.utcnow().strftime('%Y%m')}"
+            # 今月既に同じタイプのまとめ記事を生成済みかチェック
+            if self.dedup.is_seen(f"roundup://{roundup_slug}"):
+                logger.info("[Roundup] 今月のまとめ記事は生成済み、スキップ")
+                return None
+            article = self.roundup_processor.generate(topic_idx, raw_items)
+            if article:
+                self.dedup.mark_seen(f"roundup://{article.slug}")
+            return article
+        except Exception as e:
+            logger.error(f"[Roundup] まとめ記事生成エラー: {e}")
+            return None
 
     def _save_processed(self, articles):
         """デバッグ用: processedデータをJSON保存"""

@@ -1,6 +1,12 @@
 - title: "ホーム"
   url: /
-- title: "このブログについて"
-  url: /about/
-- title: "お問い合わせ"
-  url: /contact/
+- title: "スマホ"
+  url: /category/smartphone/
+- title: "Apple"
+  url: /category/apple/
+- title: "Android"
+  url: /category/android/
+- title: "ガジェット"
+  url: /category/gadget/
+- title: "PC"
+  url: /category/pc-parts/

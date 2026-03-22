@@ -477,6 +477,148 @@ main.container {
   text-align: center;
 }
 
+/* トップページ セクション */
+.top-section {
+  margin-bottom: 40px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  border-left: 4px solid #0066cc;
+  padding-left: 12px;
+  margin: 0 0 16px;
+}
+
+.section-header .section-title {
+  margin-bottom: 0;
+}
+
+.section-more {
+  font-size: 0.85rem;
+  color: #0066cc;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.section-more:hover {
+  text-decoration: underline;
+}
+
+/* カテゴリ別カードグリッド */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card-compact {
+  display: block;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card-compact:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+}
+
+.card-compact-thumb {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  background: #eee;
+}
+
+.card-compact-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-compact-body {
+  padding: 10px 12px;
+}
+
+.card-compact-title {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-compact-body time {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* カテゴリCTA */
+.category-cta {
+  margin: 24px 0;
+  padding: 16px 20px;
+  background: #f0f7ff;
+  border-radius: 8px;
+  border-left: 4px solid #0066cc;
+}
+
+.category-cta a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: block;
+  margin: 4px 0;
+}
+
+.category-cta a:hover {
+  text-decoration: underline;
+}
+
+/* 購入リンクボタン (記事内) */
+.post-content a[href*="amazon.co.jp"],
+.post-content a[href*="rakuten.co.jp"] {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin: 4px 4px 4px 0;
+  transition: opacity 0.2s;
+}
+
+.post-content a[href*="amazon.co.jp"] {
+  background: #ff9900;
+  color: #111;
+}
+
+.post-content a[href*="rakuten.co.jp"] {
+  background: #bf0000;
+  color: #fff;
+}
+
+.post-content a[href*="amazon.co.jp"]:hover,
+.post-content a[href*="rakuten.co.jp"]:hover {
+  opacity: 0.85;
+}
+
 /* レスポンシブ */
 @media (max-width: 600px) {
   .post-title { font-size: 1.4rem; }
@@ -486,4 +628,6 @@ main.container {
   .post-list-item { flex-direction: column; }
   .post-list-item .card-thumbnail { width: 100%; height: 160px; }
   .related-posts ul { grid-template-columns: 1fr; }
+  .card-grid { grid-template-columns: 1fr; }
+  .card-compact-thumb { height: 160px; }
 }

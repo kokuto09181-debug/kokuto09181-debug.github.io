@@ -3,35 +3,91 @@ layout: default
 title: "最新ガジェット・テクノロジーニュース"
 ---
 
-<h1 style="font-size:1.5rem; margin-bottom:24px;">最新記事</h1>
-
-<ul class="post-list">
-  {% for post in site.posts %}
-  <li class="post-list-item">
-    {% if post.thumbnail %}
-    <div class="card-thumbnail">
-      <img src="{{ post.thumbnail }}" alt="{{ post.title }}" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    {% endif %}
-    <div class="card-body">
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      <div class="post-meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%Y年%-m月%-d日" }}
-        </time>
-        {% if post.categories %}
-          <span class="post-category">
-            {% for cat in post.categories %}<a href="#">{{ cat }}</a>{% endfor %}
-          </span>
+<!-- 最新5件をメインで表示 -->
+<section class="top-section">
+  <h2 class="section-title">最新記事</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit:5 %}
+    <li class="post-list-item">
+      {% if post.thumbnail %}
+      <div class="card-thumbnail">
+        <img src="{{ post.thumbnail }}" alt="{{ post.title }}" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      {% endif %}
+      <div class="card-body">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <div class="post-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%Y年%-m月%-d日" }}
+          </time>
+          {% for cat in post.categories %}
+            <span class="post-category"><a href="/category/{{ cat | slugify }}/">{{ cat }}</a></span>
+          {% endfor %}
+        </div>
+        {% if post.description %}
+          <p class="post-excerpt">{{ post.description | truncate: 100 }}</p>
         {% endif %}
       </div>
-      {% if post.description %}
-        <p class="post-excerpt">{{ post.description }}</p>
-      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<!-- カテゴリ別ピックアップ -->
+{% assign categories = "スマートフォン,Apple,ガジェット,テクノロジー" | split: "," %}
+{% for cat in categories %}
+  {% assign cat_posts = site.posts | where_exp: "p", "p.categories contains cat" %}
+  {% if cat_posts.size > 0 %}
+  <section class="top-section">
+    <div class="section-header">
+      <h2 class="section-title">{{ cat }}</h2>
+      <a href="/category/{{ cat | slugify }}/" class="section-more">もっと見る →</a>
     </div>
-  </li>
-  {% endfor %}
-</ul>
+    <div class="card-grid">
+      {% for post in cat_posts limit:3 %}
+      <a href="{{ post.url | relative_url }}" class="card-compact">
+        {% if post.thumbnail %}
+        <div class="card-compact-thumb">
+          <img src="{{ post.thumbnail }}" alt="{{ post.title }}" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        {% endif %}
+        <div class="card-compact-body">
+          <span class="card-compact-title">{{ post.title | truncate: 50 }}</span>
+          <time>{{ post.date | date: "%m/%d" }}</time>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}
+
+<!-- 全記事一覧（6件目以降） -->
+{% if site.posts.size > 5 %}
+<section class="top-section">
+  <h2 class="section-title">過去の記事</h2>
+  <ul class="post-list">
+    {% for post in site.posts offset:5 limit:20 %}
+    <li class="post-list-item">
+      {% if post.thumbnail %}
+      <div class="card-thumbnail">
+        <img src="{{ post.thumbnail }}" alt="{{ post.title }}" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      {% endif %}
+      <div class="card-body">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <div class="post-meta">
+          <time>{{ post.date | date: "%Y年%-m月%-d日" }}</time>
+          {% for cat in post.categories %}
+            <span class="post-category"><a href="/category/{{ cat | slugify }}/">{{ cat }}</a></span>
+          {% endfor %}
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
 
 {% if site.posts.size == 0 %}
 <p style="color:#888; text-align:center; padding:40px 0;">

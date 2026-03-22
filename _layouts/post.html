@@ -44,6 +44,13 @@ layout: default
   </div>
   -->
 
+  <!-- カテゴリ別おすすめ記事への誘導 -->
+  <div class="category-cta">
+    {% for cat in page.categories %}
+    <a href="/category/{{ cat | slugify }}/">{{ cat }}の最新記事をもっと見る →</a>
+    {% endfor %}
+  </div>
+
   <!-- SNSシェアボタン -->
   <div class="share-buttons">
     <p class="share-label">この記事をシェア</p>
