@@ -12,8 +12,7 @@
 - 通常価格: {{ "{:,}".format(p.regular_price) }}円
 - セール予想価格: {{ "{:,}".format(p.expected_sale_price) }}円
 - 割引率: 約{{ ((1 - p.expected_sale_price / p.regular_price) * 100) | round(0) | int }}%OFF
-- Amazon: https://www.amazon.co.jp/s?k={{ p.asin }}&tag=teckjpkokuto-22
-- 楽天: https://search.rakuten.co.jp/search/mall/{{ p.rakuten_keyword }}/
+{% if p.amazon_url %}- Amazon商品ページ: {{ p.amazon_url }}?tag=teckjpkokuto-22{% else %}- Amazon検索: https://www.amazon.co.jp/s?k={{ p.asin }}&tag=teckjpkokuto-22{% endif %}
 {% if p.image_url %}- 商品画像: {{ p.image_url }}{% endif %}
 {% if p.review_summary %}- レビュー要約: {{ p.review_summary }}{% endif %}
 {% if p.rating %}- 評価: {{ p.rating }}{% endif %}

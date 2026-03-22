@@ -1,25 +1,19 @@
 ---
 layout: default
 title: "セール・キャンペーン情報"
-description: "Amazon・楽天の最新セール情報とおすすめガジェットをジャンル別にまとめています。通常価格との比較で本当にお得な商品だけを厳選。"
+description: "Amazonの最新セール情報とおすすめガジェットをジャンル別にまとめています。過去の価格推移と比較して本当にお得な商品だけを厳選。"
 ---
 
 <section class="sale-hub">
   <h1 class="sale-hub-title">セール・キャンペーン情報</h1>
-  <p class="sale-hub-desc">Amazon・楽天の最新セール情報をジャンル別に整理。通常価格と比較して本当にお得な商品だけを厳選してお届けします。</p>
+  <p class="sale-hub-desc">Amazonの最新セール情報をジャンル別に整理。Keepaの価格追跡データを参考に、過去の最安値と比較して本当にお得な商品だけをお届けします。</p>
 
   <div class="sale-event-grid">
     <a href="/sale/amazon-spring-2026/" class="sale-event-card sale-event-active">
-      <span class="sale-event-badge">開催中</span>
+      <span class="sale-event-badge">開催予定</span>
       <h2>Amazon新生活セール 2026</h2>
       <p class="sale-event-period">2026年3月28日〜4月2日</p>
-      <p class="sale-event-desc">新生活に必要なガジェットが最大50%OFF。Echo、Fire TV、Kindleなど定番商品が大幅値下げ。</p>
-    </a>
-    <a href="/sale/rakuten-marathon-202604/" class="sale-event-card">
-      <span class="sale-event-badge sale-event-upcoming">まもなく</span>
-      <h2>楽天お買い物マラソン 4月</h2>
-      <p class="sale-event-period">2026年4月9日〜4月16日</p>
-      <p class="sale-event-desc">ポイント最大46.5倍。Apple Watch、充電器、Wi-Fiルーターがお買い得。</p>
+      <p class="sale-event-desc">新生活に必要なガジェットが最大63%OFF。AirPods Pro、Echo Dot、Fire TV Stick、Kindle Paperwhiteなど人気商品を過去価格と比較して紹介。</p>
     </a>
   </div>
 
@@ -38,12 +32,12 @@ description: "Amazon・楽天の最新セール情報とおすすめガジェッ
     <a href="/sale/amazon-spring-2026/#charger" class="genre-card">
       <span class="genre-icon">🔋</span>
       <span class="genre-name">充電器・バッテリー</span>
-      <span class="genre-count">Anker, UGREENなど</span>
+      <span class="genre-count">Anker充電器など</span>
     </a>
     <a href="/sale/amazon-spring-2026/#tablet" class="genre-card">
       <span class="genre-icon">📋</span>
       <span class="genre-name">タブレット</span>
-      <span class="genre-count">iPad Air, Galaxy Tabなど</span>
+      <span class="genre-count">iPad Airなど</span>
     </a>
   </div>
 
