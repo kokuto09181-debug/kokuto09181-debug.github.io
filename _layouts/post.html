@@ -18,11 +18,20 @@ layout: default
       </time>
       {% if page.categories %}
         {% for cat in page.categories %}
-          <a href="/category/{{ cat | slugify }}" class="post-category">{{ cat }}</a>
+          <a href="/category/{{ cat | slugify }}/" class="post-category">{{ cat }}</a>
         {% endfor %}
       {% endif %}
+      <span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">GadgetPost編集部</span>
+      </span>
     </div>
   </header>
+
+  <!-- 目次 (JavaScript で自動生成) -->
+  <nav class="toc" id="toc">
+    <p class="toc-title">この記事の目次</p>
+    <ol class="toc-list" id="toc-list"></ol>
+  </nav>
 
   <!-- 記事上部 広告枠 (審査通過後に有効化) -->
   <!--
@@ -125,8 +134,56 @@ layout: default
   {% endif %}
 </article>
 
-{% if page.schema_org %}
+<!-- JSON-LD 構造化データ -->
 <script type="application/ld+json">
-{{ page.schema_org }}
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | default: site.description | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Organization",
+    "name": "GadgetPost編集部",
+    "url": "{{ '/about/' | absolute_url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ '/assets/images/logo.png' | absolute_url }}"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }{% if page.thumbnail %},
+  "image": {{ page.thumbnail | jsonify }}{% endif %}{% if page.keywords %},
+  "keywords": {{ page.keywords | default: page.tags | jsonify }}{% endif %}
+}
 </script>
-{% endif %}
+
+<!-- 目次生成 + 検索機能のJS -->
+<script>
+// ToC自動生成
+(function(){
+  var content = document.querySelector('.post-content');
+  var tocList = document.getElementById('toc-list');
+  var toc = document.getElementById('toc');
+  if (!content || !tocList) return;
+  var headings = content.querySelectorAll('h2');
+  if (headings.length < 2) { toc.style.display = 'none'; return; }
+  headings.forEach(function(h, i) {
+    h.id = 'section-' + i;
+    var li = document.createElement('li');
+    var a = document.createElement('a');
+    a.href = '#section-' + i;
+    a.textContent = h.textContent;
+    li.appendChild(a);
+    tocList.appendChild(li);
+  });
+})();
+</script>
