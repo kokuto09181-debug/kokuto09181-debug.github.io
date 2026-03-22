@@ -1,9 +1,9 @@
-{%- case include.name -%}
-{%- when "スマートフォン" -%}smartphone
-{%- when "Apple" -%}apple
-{%- when "Android" -%}android
-{%- when "ガジェット" -%}gadget
-{%- when "テクノロジー" -%}technology
-{%- when "PC・パーツ" -%}pc-parts
-{%- else -%}{{ include.name | slugify }}
-{%- endcase -%}
+{%- assign _s = include.name -%}
+{%- if _s == "スマートフォン" -%}smartphone
+{%- elsif _s == "Apple" -%}apple
+{%- elsif _s == "Android" -%}android
+{%- elsif _s == "ガジェット" -%}gadget
+{%- elsif _s == "テクノロジー" -%}technology
+{%- elsif _s == "PC・パーツ" -%}pc-parts
+{%- else -%}{{ _s | slugify }}
+{%- endif -%}
