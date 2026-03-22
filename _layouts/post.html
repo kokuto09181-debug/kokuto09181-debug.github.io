@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%Y年%-m月%-d日" }}
+      </time>
+      {% if page.categories %}
+        <span class="post-category">
+          {% for cat in page.categories %}
+            <a href="/category/{{ cat | slugify }}">{{ cat }}</a>
+          {% endfor %}
+        </span>
+      {% endif %}
+    </div>
+  </header>
+
+  <!-- 記事上部 広告枠 (審査通過後に有効化) -->
+  <!--
+  <div class="ad-unit ad-top">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+  -->
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <!-- 記事下部 広告枠 (審査通過後に有効化) -->
+  <!--
+  <div class="ad-unit ad-bottom">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+  -->
+
+  <footer class="post-footer">
+    {% if page.tags %}
+    <div class="post-tags">
+      タグ:
+      {% for tag in page.tags %}
+        <a href="/tag/{{ tag | slugify }}" class="tag">{{ tag }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </footer>
+</article>
+
+{% if page.schema_org %}
+<script type="application/ld+json">
+{{ page.schema_org }}
+</script>
+{% endif %}

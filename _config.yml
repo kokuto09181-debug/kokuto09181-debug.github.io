@@ -1,0 +1,38 @@
+title: "ガジェット最新情報ブログ"
+description: "海外のガジェット・テクノロジー最新情報を日本語で分かりやすくお届けします"
+lang: ja
+url: ""  # 例: https://yourusername.github.io
+baseurl: ""  # サブディレクトリの場合: /repo-name
+
+timezone: Asia/Tokyo
+encoding: utf-8
+
+# Jekyll設定
+markdown: kramdown
+highlighter: rouge
+permalink: /posts/:year/:month/:title/
+
+# プラグイン
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# フィード設定
+feed:
+  posts_limit: 20
+
+# SEO設定
+twitter:
+  username: yourtwitterhandle
+
+# 除外ファイル
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+
+# ページネーション (jekyll-paginate使用時)
+paginate: 10
+paginate_path: "/page:num/"
