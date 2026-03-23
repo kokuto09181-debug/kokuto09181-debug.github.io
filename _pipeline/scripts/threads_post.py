@@ -25,28 +25,23 @@ SALE_START = date(2026, 3, 28)
 SALE_END   = date(2026, 4, 2)
 BLOG_URL   = "https://gadgetpost.uk/sale/amazon-spring-2026/"
 
-# ===== ハッシュタグ =====
-_TAGS_BASE   = "#ガジェット #Amazon #テック"
-_TAGS_SALE   = "#Amazonセール #お得情報 #セール"
-_TAGS_AUDIO  = "#イヤホン #ワイヤレスイヤホン #ノイキャン"
-_TAGS_DEVICE = "#スマートホーム #ガジェット好き"
-_TAGS_FOLLOW = "#フォロー歓迎 #ガジェット好きと繋がりたい"
-_AUDIO_KEYS  = {"airpods_pro3", "sony_wf_xm6", "sony_wh_xm6", "liberty4nc", "jbl_charge5"}
+# ===== ハッシュタグ（Threads仕様: 1投稿1タグのみ有効）=====
+_AUDIO_KEYS = {"airpods_pro3", "sony_wf_xm6", "sony_wh_xm6", "liberty4nc", "jbl_charge5"}
 
 def _build_hashtags(category: str, product: dict = None) -> str:
-    parts = [_TAGS_BASE]
     today = date.today()
     is_sale  = SALE_START <= today <= SALE_END
     pre_sale = (SALE_START - today) <= timedelta(days=3) and today < SALE_START
-    if is_sale or pre_sale or category in ("sale_product", "point_tips", "sale_countdown", "pre_sale"):
-        parts.append(_TAGS_SALE)
-    if product and product.get("key") in _AUDIO_KEYS:
-        parts.append(_TAGS_AUDIO)
-    else:
-        parts.append(_TAGS_DEVICE)
+
+    if is_sale or pre_sale or category in ("sale_product", "sale_countdown", "pre_sale"):
+        return "#Amazonセール"
+    if category == "point_tips":
+        return "#お得情報"
     if category == "follow":
-        parts.append(_TAGS_FOLLOW)
-    return " ".join(parts)
+        return "#ガジェット好きと繋がりたい"
+    if product and product.get("key") in _AUDIO_KEYS:
+        return "#イヤホン"
+    return "#ガジェット"
 
 # ===== 商品データ（静的・LLM不要）=====
 PRODUCTS = [
