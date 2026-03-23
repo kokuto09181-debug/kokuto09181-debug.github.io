@@ -1,0 +1,100 @@
+name: Threads 自動投稿
+
+on:
+  schedule:
+    # セール前・通常期: 1日2回（JST 8時・19時）
+    - cron: '0 23 * * *'   # JST 8:00  (UTC 23:00 前日)
+    - cron: '0 10 * * *'   # JST 19:00 (UTC 10:00)
+
+    # セール期間中の追加スロット（3/28〜4/2）
+    # JST 7時・10時・12時・15時・18時・21時
+    - cron: '0 22 * * *'   # JST 7:00  (UTC 22:00 前日)
+    - cron: '0  1 * * *'   # JST 10:00 (UTC 01:00)
+    - cron: '0  3 * * *'   # JST 12:00 (UTC 03:00)
+    - cron: '0  6 * * *'   # JST 15:00 (UTC 06:00)
+    - cron: '0  9 * * *'   # JST 18:00 (UTC 09:00)
+    - cron: '0 12 * * *'   # JST 21:00 (UTC 12:00)
+
+  workflow_dispatch:        # 手動実行（テスト用）
+    inputs:
+      dry_run:
+        description: 'テスト実行（投稿しない）'
+        type: boolean
+        default: true
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write       # 投稿履歴をコミットするため
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Python 3.11 セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: '_pipeline/requirements.txt'
+
+      - name: 依存パッケージをインストール
+        run: pip install requests pyyaml
+
+      - name: セール期間チェック（非セール時は追加スロットをスキップ）
+        id: check_schedule
+        run: |
+          python3 - <<'EOF'
+          from datetime import date, timezone, timedelta
+          import os
+
+          JST = timezone(timedelta(hours=9))
+          today = date.today()
+          sale_start = date(2026, 3, 28)
+          sale_end   = date(2026, 4, 2)
+          is_sale = sale_start <= today <= sale_end
+          pre_sale = (sale_start - today).days <= 3 and today < sale_start
+
+          # 通常期に追加スロット（10,12,15,18,21時）で起動した場合はスキップ
+          import subprocess, sys
+          from datetime import datetime
+          now_jst = datetime.now(JST)
+          hour_jst = now_jst.hour
+          extra_hours = {10, 12, 15, 18, 21}  # セール中のみ使う時間帯
+
+          should_skip = (not is_sale and not pre_sale) and hour_jst in extra_hours
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f"should_skip={'true' if should_skip else 'false'}\n")
+              f.write(f"is_sale={'true' if is_sale else 'false'}\n")
+              f.write(f"hour_jst={hour_jst}\n")
+
+          print(f"JST {hour_jst}時 | is_sale={is_sale} | skip={should_skip}")
+          EOF
+
+      - name: Threads に投稿
+        if: steps.check_schedule.outputs.should_skip == 'false'
+        env:
+          THREADS_USER_ID:     ${{ secrets.THREADS_USER_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: |
+          DRY_RUN="${{ github.event.inputs.dry_run }}"
+          if [ "$DRY_RUN" = "true" ]; then
+            python _pipeline/scripts/threads_post.py --dry-run
+          else
+            python _pipeline/scripts/threads_post.py
+          fi
+
+      - name: 投稿履歴をコミット
+        if: >
+          steps.check_schedule.outputs.should_skip == 'false' &&
+          github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _pipeline/data/threads_post_history.json
+          # 変更がある場合のみコミット
+          git diff --cached --quiet || git commit -m "chore: update threads post history [skip ci]"
+          git push
