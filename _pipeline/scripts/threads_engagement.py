@@ -45,7 +45,12 @@ def load_cookies() -> list:
         print("[ERROR] THREADS_COOKIES_JSON が未設定")
         sys.exit(1)
     try:
-        return json.loads(raw)
+        cookies = json.loads(raw)
+        # Playwrightはdomain指定時にpathが必須
+        for c in cookies:
+            if "domain" in c and "path" not in c:
+                c["path"] = "/"
+        return cookies
     except json.JSONDecodeError as e:
         print(f"[ERROR] THREADS_COOKIES_JSON のJSON解析失敗: {e}")
         sys.exit(1)
