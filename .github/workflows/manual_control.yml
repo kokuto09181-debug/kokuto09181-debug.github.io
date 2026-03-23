@@ -1,0 +1,98 @@
+name: 手動コントロール（スマホ対応）
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: '実行するアクション'
+        required: true
+        type: choice
+        options:
+          - 'threads_post_now'        # 今すぐThreadsに投稿
+          - 'threads_post_dry_run'    # 投稿内容プレビュー（投稿しない）
+          - 'engagement_run'          # いいね・フォロー実行
+          - 'engagement_dry_run'      # いいね・フォロー プレビュー
+          - 'weekly_report'           # 週次レポートを今すぐ生成
+          - 'reset_post_history'      # 投稿履歴をリセット（全テンプレートをリセット）
+
+jobs:
+  control:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Python 3.11 セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 基本パッケージをインストール
+        run: pip install requests pyyaml
+
+      # ===== threads_post_now =====
+      - name: 今すぐ投稿
+        if: github.event.inputs.action == 'threads_post_now'
+        env:
+          THREADS_USER_ID:      ${{ secrets.THREADS_USER_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: python _pipeline/scripts/threads_post.py
+
+      # ===== threads_post_dry_run =====
+      - name: 投稿プレビュー
+        if: github.event.inputs.action == 'threads_post_dry_run'
+        run: python _pipeline/scripts/threads_post.py --dry-run
+
+      # ===== engagement_run =====
+      - name: Playwrightインストール（エンゲージメント用）
+        if: github.event.inputs.action == 'engagement_run'
+        run: |
+          pip install playwright
+          playwright install chromium --with-deps
+
+      - name: いいね・フォロー実行
+        if: github.event.inputs.action == 'engagement_run'
+        env:
+          THREADS_COOKIES_JSON: ${{ secrets.THREADS_COOKIES_JSON }}
+        run: python _pipeline/scripts/threads_engagement.py
+
+      # ===== engagement_dry_run =====
+      - name: いいね・フォロー プレビュー
+        if: github.event.inputs.action == 'engagement_dry_run'
+        run: python _pipeline/scripts/threads_engagement.py --dry-run
+
+      # ===== weekly_report =====
+      - name: 週次レポート生成
+        if: github.event.inputs.action == 'weekly_report'
+        env:
+          THREADS_USER_ID:      ${{ secrets.THREADS_USER_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: python _pipeline/scripts/threads_weekly_report.py
+
+      # ===== reset_post_history =====
+      - name: 投稿履歴リセット
+        if: github.event.inputs.action == 'reset_post_history'
+        run: |
+          echo '{"posted": [], "product_index": 0}' > _pipeline/data/threads_post_history.json
+          echo "[OK] 投稿履歴をリセットしました"
+
+      # ===== コミット（変更があるアクションのみ） =====
+      - name: 変更をコミット
+        if: >
+          github.event.inputs.action == 'threads_post_now' ||
+          github.event.inputs.action == 'engagement_run'   ||
+          github.event.inputs.action == 'weekly_report'    ||
+          github.event.inputs.action == 'reset_post_history'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _pipeline/data/
+          git diff --cached --quiet || git commit -m "chore: manual control - ${{ github.event.inputs.action }} [skip ci]"
+          git push
