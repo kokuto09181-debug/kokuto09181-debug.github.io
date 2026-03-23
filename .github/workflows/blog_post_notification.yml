@@ -1,0 +1,33 @@
+name: ブログ新着記事 Threads通知
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '_posts/**'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: リポジトリをチェックアウト（履歴2件）
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Python 3.11 セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存パッケージをインストール
+        run: pip install requests pyyaml
+
+      - name: Threads に新着記事を投稿
+        env:
+          THREADS_USER_ID:      ${{ secrets.THREADS_USER_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: python _pipeline/scripts/blog_post_notifier.py
