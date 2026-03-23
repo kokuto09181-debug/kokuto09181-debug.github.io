@@ -1148,6 +1148,78 @@ main.container {
 
 .price-history a { color: #0066cc; }
 
+/* 商品画像 */
+.product-img {
+  display: block;
+  max-width: 180px;
+  max-height: 180px;
+  width: auto;
+  height: auto;
+  margin: 0 auto 16px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+/* ポイント行 */
+.point-row {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #2a7a2a;
+  font-weight: 600;
+}
+
+.point-row .point-max {
+  background: #e6f4ea;
+  border: 1px solid #68b56b;
+  border-radius: 6px;
+  padding: 4px 10px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.point-row .effective-price {
+  color: #cc0000;
+  font-weight: 800;
+  font-size: 1.0rem;
+}
+
+/* ポイントキャンペーン表 */
+.point-campaign-box {
+  background: #f0f7ff;
+  border: 1px solid #b3d4f5;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin: 20px 0;
+}
+
+.point-campaign-box h3 {
+  font-size: 1rem;
+  margin: 0 0 12px;
+  color: #0050aa;
+}
+
+.point-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.point-table th {
+  background: #0050aa;
+  color: #fff;
+  padding: 7px 10px;
+  text-align: left;
+}
+
+.point-table td {
+  padding: 7px 10px;
+  border-bottom: 1px solid #d0e4f7;
+}
+
+.point-table tr:last-child td { border-bottom: none; }
+.point-table .total-row td { font-weight: 700; color: #cc0000; background: #fff0f0; }
+.point-table .cond { color: #555; font-size: 0.8rem; }
+
 /* カードフッター（購入ボタン） */
 .product-card-foot {
   padding: 0 24px 20px;
