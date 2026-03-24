@@ -37,6 +37,7 @@ class ClaudeProcessor:
         失敗した場合はNoneを返す
         """
         model = self.featured_model if item.is_featured else self.default_model
+        layout_type = self._detect_layout_type(item)
         prompt = self._build_prompt(item)
 
         for attempt in range(3):
@@ -60,6 +61,7 @@ class ClaudeProcessor:
                     keywords=article_data.get("keywords", []),
                     category=article_data.get("category", item.category),
                     slug=generate_slug(article_data.get("title", item.title)),
+                    layout_type=layout_type,
                     model_used=model,
                 )
                 logger.info(f"[Processor] 生成成功: {article.ja_title[:30]}...")
@@ -92,15 +94,29 @@ class ClaudeProcessor:
         logger.info(f"[Processor] {len(articles)}/{len(items)}件 生成完了")
         return articles
 
+    @staticmethod
+    def _detect_layout_type(item: FeedItem) -> str:
+        """カテゴリ・タイトルからレイアウト種別を判定"""
+        text = (item.title + " " + item.category).lower()
+        review_kw = ["review", "レビュー", "実機", "使ってみた", "開封", "hands-on"]
+        comparison_kw = ["比較", "vs", " or ", "どっち", "comparison", "versus", "選び方"]
+        if any(k in text for k in comparison_kw):
+            return "comparison"
+        if any(k in text for k in review_kw):
+            return "review"
+        return "general"
+
     def _build_prompt(self, item: FeedItem) -> str:
         """Jinja2テンプレートからプロンプトを生成"""
         template = self.jinja_env.get_template("article_generation.j2")
         body_excerpt = item.body[:1500] if item.body else "(本文なし)"
+        layout_type = self._detect_layout_type(item)
         return template.render(
             title=item.title,
             url=item.url,
             category=item.category,
             body_excerpt=body_excerpt,
+            layout_type=layout_type,
         )
 
     @staticmethod
