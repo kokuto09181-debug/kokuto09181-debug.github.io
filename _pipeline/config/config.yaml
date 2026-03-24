@@ -2,7 +2,7 @@ anthropic:
   api_key: "${ANTHROPIC_API_KEY}"
   # デフォルトモデル: haiku=安い・速い / sonnet=高品質
   default_model: "claude-haiku-4-5-20251001"
-  featured_model: "claude-sonnet-4-6"
+  featured_model: "claude-haiku-4-5-20251001"
   max_tokens: 4096
   # 1ランあたりfeatured記事数 (高品質モデル使用)
   featured_per_run: 1
