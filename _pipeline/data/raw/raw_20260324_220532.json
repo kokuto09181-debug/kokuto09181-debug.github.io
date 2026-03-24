@@ -1,0 +1,82 @@
+[
+  {
+    "url": "https://www.theverge.com/policy/899910/meta-new-mexico-jury-verdict",
+    "title": "Meta misled users about its products’ safety, jury decides",
+    "source": "rss:The Verge",
+    "category": "テクノロジー",
+    "body": "Meta willfully violated New Mexico law by misleading users about the safety of its products and engaging in an unconscionable trade practice, a jury found. The company will face a $375 million penalty for the violations, awarding the maximum penalty of $5,000 per violation for 37,500 violations across two counts. The jury decided against Meta on every count, though it declined to award a penalty as high as the state sought, which would have been closer to $2 billion. It's a landmark verdict delivered just one day after closing arguments . New Mexico argued that Meta had flouted state law by misleading consumers and facilitating child predato … Read the full story at The Verge.",
+    "published_at": "2026-03-24T21:54:29",
+    "score": 0,
+    "thumbnail_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23951496/VRG_Illo_STK169_L_Normand_MarkZuckerburg_Negative.jpg?quality=90&strip=all&crop=0,0,100,100",
+    "image_urls": [
+      "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23951496/VRG_Illo_STK169_L_Normand_MarkZuckerburg_Negative.jpg?quality=90&strip=all&crop=0,0,100,100"
+    ],
+    "author": "Lauren Feiner",
+    "collected_at": "2026-03-24T22:05:29.787576",
+    "is_featured": true
+  },
+  {
+    "url": "https://www.theverge.com/science/899891/nasa-moon-base-mars-nuclear-power-jared-isaacman",
+    "title": "NASA wants to put a $20 billion base on the Moon",
+    "source": "rss:The Verge",
+    "category": "テクノロジー",
+    "body": "NASA's Artemis II Space Launch System rocket and Orion spacecraft. | AFP via Getty Images NASA Administrator Jared Isaacman has big plans for the future of the agency, including the construction of a $20 billion lunar base that he said will establish an \"enduring presence\" on the Moon. Isaacman announced the news during NASA's Ignition event on Tuesday, where he also described goals to launch a nuclear-powered spacecraft to Mars, as reported earlier by the New York Times . As a result of plans to establish a base on the Moon, NASA announced that it's pausing its Gateway project \"in its current form,\" which would've launched a space station orbiting the Moon. Instead, NASA plans to \"shift focus to infrastructure that enables susta … Read the full story at The Verge.",
+    "published_at": "2026-03-24T21:47:24",
+    "score": 0,
+    "thumbnail_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/gettyimages-2256133481.jpg?quality=90&strip=all&crop=0,0,100,100",
+    "image_urls": [
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/gettyimages-2256133481.jpg?quality=90&strip=all&crop=0,0,100,100"
+    ],
+    "author": "Emma Roth",
+    "collected_at": "2026-03-24T22:05:29.788698",
+    "is_featured": false
+  },
+  {
+    "url": "https://www.theverge.com/policy/899855/ice-airports-tsa-shutdown-dhs-jfk",
+    "title": "What is ICE actually doing at the airport?",
+    "source": "rss:The Verge",
+    "category": "テクノロジー",
+    "body": "I arrived at John F. Kennedy International Airport nearly five hours before my domestic flight. This is not my way - usually I roll up to the airport 30 minutes before boarding - but not even I have enough hubris to think that my good luck is more powerful than a partial government shutdown. Congress has yet to pass a bill funding the Department of Homeland Security, meaning thousands of federal employees from TSA to the Coast Guard are working without pay - or, in the case of TSA, calling out of work, causing staff shortages and hourslong security lines at airports across the country. On Monday, President Donald Trump deployed between 100 … Read the full story at The Verge.",
+    "published_at": "2026-03-24T21:17:28",
+    "score": 0,
+    "thumbnail_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/gettyimages-2267587817.jpg?quality=90&strip=all&crop=0,0,100,100",
+    "image_urls": [
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/gettyimages-2267587817.jpg?quality=90&strip=all&crop=0,0,100,100"
+    ],
+    "author": "Gaby Del Valle",
+    "collected_at": "2026-03-24T22:05:29.789491",
+    "is_featured": false
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/899850/openai-sora-ai-chatgpt",
+    "title": "OpenAI just gave up on Sora and its billion-dollar Disney deal",
+    "source": "rss:The Verge",
+    "category": "テクノロジー",
+    "body": "A frame from a Sora 2-generated video. | Image: OpenAI On Tuesday afternoon, OpenAI announced \"We're saying goodbye to Sora,\" the video generation tool that it launched at the end of 2024, and centered in a massive licensing deal with Disney only a few months ago. The Wall Street Journal reported the move earlier, saying that OpenAI boss Sam Altman had informed staff that both the TikTok-like Sora app and API access for developers would be discontinued, with no plans to roll the feature into ChatGPT as had previously been rumored . According to The Hollywood Reporter , as a result, the deal Disney announced in December, saying it would invest $1 billion in OpenAI , license its characters for use  … Read the full story at The Verge.",
+    "published_at": "2026-03-24T21:08:10",
+    "score": 0,
+    "thumbnail_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/ai-label-1.png?quality=90&strip=all&crop=0,0,100,100",
+    "image_urls": [
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/ai-label-1.png?quality=90&strip=all&crop=0,0,100,100"
+    ],
+    "author": "Richard Lawler",
+    "collected_at": "2026-03-24T22:05:29.790497",
+    "is_featured": false
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/899823/arm-agi-cpu-meta",
+    "title": "Arm’s first CPU ever will plug into Meta’s AI datacenters later this year",
+    "source": "rss:The Verge",
+    "category": "テクノロジー",
+    "body": "After decades of only licensing its chip designs for others to use, UK-based Arm revealed the first chip it's producing on its own, and the first customer. Dubbed the Arm AGI CPU, it's another chip designed for inference, or running the cloud processing for AI tools like AI agents that can continue to spawn more and more tasks to run at once. The first company in line to use it is Meta, which has reportedly struggled to launch its own AI chips. Meta says it's both the lead partner and co-developer , and plans to work on \"multiple generations\" of the datacenter CPUs, for use along with hardware from other vendors like Nvidia and AMD . Arm cust … Read the full story at The Verge.",
+    "published_at": "2026-03-24T20:43:14",
+    "score": 0,
+    "thumbnail_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/20260216_VISION25_ExplodedTight_Chip-01-16x9_16bit_v2-1200x675-1.jpg?quality=90&strip=all&crop=0,0,100,100",
+    "image_urls": [
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/20260216_VISION25_ExplodedTight_Chip-01-16x9_16bit_v2-1200x675-1.jpg?quality=90&strip=all&crop=0,0,100,100"
+    ],
+    "author": "Richard Lawler",
+    "collected_at": "2026-03-24T22:05:29.791470",
+    "is_featured": false
+  }
+]
