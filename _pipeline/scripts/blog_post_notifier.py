@@ -1,10 +1,10 @@
 """
 ブログ新着記事 → Threads通知スクリプト
 - _posts/ の新規ファイルを検出してThreadsに投稿
+- 複数記事が同時追加された場合は最も注目度の高い1件のみ投稿（連投防止）
 - GitHub Actions: push時に実行
 """
 
-import json
 import os
 import subprocess
 import sys
@@ -18,7 +18,7 @@ ROOT      = Path(__file__).parent.parent.parent   # site/
 POSTS_DIR = ROOT / "_posts"
 
 BLOG_BASE = "https://gadgetpost.uk"
-HASHTAGS  = "#ガジェット #テック #新着記事"
+HASHTAG   = "#ガジェット"   # Threads仕様: 1投稿1タグのみ有効
 
 
 def get_new_post_files() -> list[Path]:
@@ -53,14 +53,32 @@ def parse_front_matter(path: Path) -> dict:
         return {}
 
 
-def build_post_url(path: Path, fm: dict) -> str:
-    # Jekyll URLパターン: /posts/YYYY/MM/title/  (_config.yml: permalink: /posts/:year/:month/:title/)
-    # :title = ファイル名からYYYY-MM-DD-を除いた部分をそのまま使う（タイムスタンプも含む）
-    stem = path.stem  # 例: 2026-03-22-spotifyai-20260325230354
+def pick_best(files: list[Path]) -> Path:
+    """複数ある場合は最も注目度の高い1件を選ぶ（セール記事 > レビュー > 一般）"""
+    sale_kw = ["sale", "セール", "割引", "off", "お得"]
+    review_kw = ["review", "レビュー", "比較", "おすすめ"]
+
+    def score(p: Path) -> int:
+        name = p.stem.lower()
+        fm = parse_front_matter(p)
+        title = (fm.get("title", "") + " " + name).lower()
+        if any(k in title for k in sale_kw):
+            return 2
+        if any(k in title for k in review_kw):
+            return 1
+        return 0
+
+    return max(files, key=score)
+
+
+def build_post_url(path: Path) -> str:
+    # Jekyll URLパターン: /posts/YYYY/MM/title/
+    # :title = ファイル名からYYYY-MM-DD-を除いた部分（タイムスタンプ含む）
+    stem = path.stem
     parts = stem.split("-")
-    if len(parts) >= 3:
+    if len(parts) >= 4:
         year, month = parts[0], parts[1]
-        slug = "-".join(parts[3:])   # YYYY-MM-DD- の後をすべてslugにする
+        slug = "-".join(parts[3:])
         return f"{BLOG_BASE}/posts/{year}/{month}/{slug}/"
     return BLOG_BASE
 
@@ -68,22 +86,33 @@ def build_post_url(path: Path, fm: dict) -> str:
 def build_text(fm: dict, url: str) -> str:
     title = fm.get("title", "新着記事")
     desc  = fm.get("description", "")
+    tags  = fm.get("tags", []) or []
+    category = fm.get("categories", ["ガジェット"])
+    if isinstance(category, list):
+        category = category[0] if category else "ガジェット"
 
-    text = f"📝 新着記事\n\n{title}"
+    # 冒頭：カテゴリラベル
+    lines = [f"📝 {category}の新着記事", "", title]
+
+    # 説明文（あれば）
     if desc:
-        # 80文字以内に収める
-        short = desc[:80] + ("…" if len(desc) > 80 else "")
-        text += f"\n\n{short}"
-    text += f"\n\n{url}\n\n{HASHTAGS}"
+        short = desc[:100] + ("…" if len(desc) > 100 else "")
+        lines += ["", short]
+
+    # 詳細はリンクから
+    lines += ["", f"👇 詳細はこちら", url, "", HASHTAG]
+
+    text = "\n".join(lines)
     return text[:500]
 
 
-def post_to_threads(text: str) -> bool:
+def post_to_threads(text: str) -> str | None:
+    """投稿成功時はpost_id、失敗時はNone"""
     user_id = os.environ.get("THREADS_USER_ID", "")
     token   = os.environ.get("THREADS_ACCESS_TOKEN", "")
     if not user_id or not token:
         print("[ERROR] THREADS_USER_ID / THREADS_ACCESS_TOKEN が未設定")
-        return False
+        return None
 
     base = "https://graph.threads.net/v1.0"
     r1 = requests.post(
@@ -93,7 +122,7 @@ def post_to_threads(text: str) -> bool:
     )
     if r1.status_code != 200:
         print(f"[ERROR] コンテナ作成失敗: {r1.status_code} {r1.text[:200]}")
-        return False
+        return None
 
     container_id = r1.json().get("id", "")
     time.sleep(3)
@@ -104,10 +133,11 @@ def post_to_threads(text: str) -> bool:
         timeout=15,
     )
     if r2.status_code == 200:
-        print(f"[OK] 投稿成功: {r2.json().get('id','')}")
-        return True
+        post_id = r2.json().get("id", "")
+        print(f"[OK] 投稿成功: {post_id}")
+        return post_id
     print(f"[ERROR] 公開失敗: {r2.status_code} {r2.text[:200]}")
-    return False
+    return None
 
 
 def main():
@@ -118,20 +148,24 @@ def main():
         print("[SKIP] 新着記事なし")
         return
 
-    for path in new_files:
-        fm  = parse_front_matter(path)
-        url = build_post_url(path, fm)
-        text = build_text(fm, url)
+    # 複数記事でも最も注目度の高い1件だけ投稿（連投防止）
+    path = pick_best(new_files)
+    print(f"[INFO] 投稿対象: {path.name}（{len(new_files)}件中1件選択）")
 
-        print("=" * 50)
-        sys.stdout.buffer.write((text + "\n").encode("utf-8"))
-        print("=" * 50)
+    fm   = parse_front_matter(path)
+    url  = build_post_url(path)
+    text = build_text(fm, url)
 
-        if dry_run:
-            print("[DRY-RUN] 投稿スキップ")
-            continue
+    print("=" * 50)
+    sys.stdout.buffer.write((text + "\n").encode("utf-8"))
+    print("=" * 50)
+    print(f"URL: {url}")
 
-        post_to_threads(text)
+    if dry_run:
+        print("[DRY-RUN] 投稿スキップ")
+        return
+
+    post_to_threads(text)
 
 
 if __name__ == "__main__":
