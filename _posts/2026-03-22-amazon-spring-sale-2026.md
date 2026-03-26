@@ -34,6 +34,8 @@ source_name: "sale-event"
 
 #### Apple AirPods Pro 3
 
+<img src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0FQFQDN6K&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=teckjpkokuto-22" alt="Apple AirPods Pro 3" class="product-img">
+
 ~~39,800円~~ → **32,800円（約18%OFF）**
 
 Apple最新フラッグシップの完全ワイヤレスイヤホン。H3チップ搭載によりノイズキャンセリング性能が従来比で大幅に向上し、補聴器グレードのヒアリング補助機能も搭載。空間オーディオのクオリティも高く、iPhoneユーザーなら迷わず選べる一台です。
@@ -49,6 +51,8 @@ Amazonレビューでは「ノイキャンが別次元に進化した」「AirPo
 ---
 
 #### Sony WF-1000XM6
+
+<img src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0GL7VS33K&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=teckjpkokuto-22" alt="Sony WF-1000XM6" class="product-img">
 
 ~~41,800円~~ → **33,400円（約20%OFF）**
 
@@ -66,6 +70,8 @@ Amazonレビューでは「全イヤホン中で音質はトップレベル」�
 
 #### Anker Soundcore Liberty 4 NC
 
+<img src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0C1P1N98V&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=teckjpkokuto-22" alt="Anker Soundcore Liberty 4 NC" class="product-img">
+
 ~~12,990円~~ → **8,990円（約31%OFF）**
 
 1万円以下でノイズキャンセリングを手に入れたいなら最有力候補。98dBという高いノイキャン性能を持ちながらこの価格帯は驚異的です。低音強めのドンシャリサウンドが好きな方にはぴったりです。
@@ -81,6 +87,8 @@ Amazonレビューでは「この価格でこのノイキャンはおかしい�
 ---
 
 #### Anker Soundcore Liberty 4 Pro
+
+<img src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0D7ZLPSJG&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=teckjpkokuto-22" alt="Anker Soundcore Liberty 4 Pro" class="product-img">
 
 ~~17,990円~~ → **13,490円（約25%OFF）**
 
@@ -100,6 +108,8 @@ Amazonレビューでは「タッチ操作が他製品と比べて段違いに�
 
 #### Sony WH-1000XM6
 
+<img src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0F77PMC1P&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=teckjpkokuto-22" alt="Sony WH-1000XM6" class="product-img">
+
 ~~59,400円~~ → **47,500円（約20%OFF）**
 
 Sonyヘッドホンの最新フラッグシップ。ノイキャン・音質・装着感の三拍子がそろった完成度の高い製品です。最大30時間のバッテリー持続と折りたたみ機構による携帯性も魅力。テレワークや長距離移動のお供に最適です。
@@ -117,6 +127,8 @@ Amazonレビューでは「つけていることを忘れるほど軽い」「�
 ### 🔊 Bluetoothスピーカー
 
 #### JBL Charge 5
+
+<img src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0928Y5TPD&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=teckjpkokuto-22" alt="JBL Charge 5" class="product-img">
 
 ~~24,200円~~ → **16,800円（約31%OFF）**
 
@@ -136,6 +148,8 @@ Amazonレビューでは「キャンプで大活躍」「音量最大でも音�
 
 #### Echo Dot 第5世代
 
+<img src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09B8SZLLG&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=teckjpkokuto-22" alt="Echo Dot 第5世代" class="product-img">
+
 ~~7,980円~~ → **2,980円（約63%OFF）**
 
 今回のセールで最大の割引率を誇る目玉商品。音質は1,000円台のスピーカーとは比較にならないクオリティで、スマートホームのハブとしてAlexaルーティン設定・照明操作・タイマー管理など多彩な使い方が可能です。
@@ -152,6 +166,8 @@ Amazonレビューでは「最初の一台として完璧」「家に一個あ�
 
 #### Fire TV Stick 4K Max（第2世代）
 
+<img src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0BW37QY2V&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=teckjpkokuto-22" alt="Fire TV Stick 4K Max" class="product-img">
+
 ~~9,980円~~ → **5,980円（約40%OFF）**
 
 4K・HDR対応でサクサク動作するAmazonのストリーミングデバイス最上位モデル。Wi-Fi 6E対応により混雑した環境でも安定した通信が可能。Netflix・Disney+・Prime Videoを大画面テレビで楽しみたい方に最適です。
@@ -167,6 +183,8 @@ Amazonレビューでは「古いテレビがスマートTV化できた」「ア
 ---
 
 #### Kindle Paperwhite（第12世代）
+
+<img src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0CFPL6CFY&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=teckjpkokuto-22" alt="Kindle Paperwhite 第12世代" class="product-img">
 
 ~~22,980円~~ → **16,980円（約26%OFF）**
 
@@ -186,6 +204,8 @@ Amazonレビューでは「大画面になってマンガが読みやすくな�
 
 #### Anker Prime 67W 充電器
 
+<img src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0C5CBV6L3&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=teckjpkokuto-22" alt="Anker Prime 67W充電器" class="product-img">
+
 ~~5,490円~~ → **3,990円（約27%OFF）**
 
 67Wの出力をコンセント1口のコンパクトボディに凝縮。MacBook AirをフルスピードでPD充電でき、iPhoneやAndroid端末にも対応。旅行や出張時のかさばりを減らしたい方に特におすすめです。
@@ -201,6 +221,8 @@ Amazonレビューでは「純正アダプターを全部これに置き換え�
 ---
 
 #### Anker 735 Charger（65W）
+
+<img src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09W9M89WS&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=teckjpkokuto-22" alt="Anker 735 Charger 65W" class="product-img">
 
 ~~5,990円~~ → **4,490円（約25%OFF）**
 
@@ -220,6 +242,8 @@ Amazonレビューでは「3ポートあるのにこのコンパクトさは異�
 
 #### iPad Air M3（11インチ）
 
+<img src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0DZ8F9B86&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=teckjpkokuto-22" alt="iPad Air M3 11インチ" class="product-img">
+
 ~~98,800円~~ → **88,900円（約10%OFF）**
 
 Apple M3チップ搭載で処理性能は全タスクにおいて余裕十分。Apple Pencil Proに対応しており、クリエイター・学生・ビジネスユーザーに幅広く支持されています。iPadシリーズの中でコスパが最も高い一台です。
@@ -238,6 +262,8 @@ Amazonレビューでは「動画編集もサクサク」「Apple Pencilの書�
 
 #### SwitchBot Hub 2
 
+<img src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0BM8VS13P&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=teckjpkokuto-22" alt="SwitchBot Hub 2" class="product-img">
+
 ~~8,980円~~ → **6,480円（約28%OFF）**
 
 Matter規格対応のスマートリモコンハブ。エアコン・テレビ・照明など赤外線リモコン対応家電をまとめてスマートフォンや音声で操作できます。本体に温湿度センサーを内蔵しており、室内環境モニタリングにも役立ちます。
@@ -253,6 +279,8 @@ Amazonレビューでは「設定が拍子抜けするほど簡単」「古い�
 ---
 
 #### TP-Link Deco X50（3パック）
+
+<img src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0BSTMHPJ2&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=teckjpkokuto-22" alt="TP-Link Deco X50 3パック" class="product-img">
 
 ~~27,800円~~ → **19,800円（約29%OFF）**
 
