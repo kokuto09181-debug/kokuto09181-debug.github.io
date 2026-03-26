@@ -37,4 +37,4 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add _pipeline/data/reports/
           git diff --cached --quiet || git commit -m "chore: add weekly threads report [skip ci]"
-          git push
+          git pull --rebase && git push

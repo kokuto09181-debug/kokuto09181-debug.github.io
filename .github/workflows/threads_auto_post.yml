@@ -103,4 +103,4 @@ jobs:
             || true
           # 変更がある場合のみコミット
           git diff --cached --quiet || git commit -m "chore: update threads post history [skip ci]"
-          git push
+          git pull --rebase && git push
