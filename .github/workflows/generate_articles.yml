@@ -44,5 +44,6 @@ jobs:
           git add _posts/ _pipeline/data/
           git diff --staged --quiet || (
             git commit -m "Auto: $(TZ='Asia/Tokyo' date +'%Y-%m-%d %H:%M JST') 記事追加" &&
+            git pull --rebase &&
             git push
           )
