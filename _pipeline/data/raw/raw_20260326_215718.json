@@ -1,0 +1,83 @@
+[
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/902085/google-gemini-import-memory-chat-history",
+    "title": "Google is making it easier to import another AI’s memory into Gemini",
+    "source": "rss:The Verge",
+    "category": "テクノロジー",
+    "body": "Google is rolling out two new Gemini tools on Thursday which could attract users who are thinking about switching their preferred AI chatbot but don't want to \"retrain\" a new AI. Gemini's new \"Import Memory\" and \"Import Chat History\" features help users quickly copy over everything their current AI already knows about them with a couple of pre-written prompts. To use the \"Import Memory\" tool, users copy and paste a suggested prompt from Gemini into their previous AI, then paste the output from the previous AI into Gemini, which should get Gemini caught up on their preferences. The \"Import Chat History\" feature has users request an export o … Read the full story at The Verge.",
+    "published_at": "2026-03-26T21:44:37",
+    "score": 0,
+    "thumbnail_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK255_Google_Gemini_B_474198.jpg?quality=90&strip=all&crop=0,0,100,100",
+    "image_urls": [
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK255_Google_Gemini_B_474198.jpg?quality=90&strip=all&crop=0,0,100,100"
+    ],
+    "author": "Stevie Bonifield",
+    "collected_at": "2026-03-26T21:57:15.635077",
+    "is_featured": true
+  },
+  {
+    "url": "https://www.theverge.com/tech/902048/apple-siri-ai-chatbot-update-ios-27",
+    "title": "Apple will reportedly allow other AI chatbots to plug into Siri",
+    "source": "rss:The Verge",
+    "category": "テクノロジー",
+    "body": "Siri currently has an integration with OpenAI’s ChatGPT. | Photo: Allison Johnson / The Verge Apple's iOS 27 update will allow users to choose the AI chatbot they want to link with Siri. That's according to a report from Bloomberg 's Mark Gurman , who says third-party chatbots downloaded from the App Store, like Google's Gemini or Anthropic's Claude, will be able to fetch replies for Siri - similar to how the voice assistant already works with OpenAI's ChatGPT . The new system, reportedly called \"Extensions,\" will give users the ability to enable or disable the chatbots they want to connect with Siri on the iPhone, iPad, and Mac, Bloomberg reports. The upcoming integrations will also work with the standalone app Apple reportedly plans … Read the full story at The Verge.",
+    "published_at": "2026-03-26T21:31:27",
+    "score": 0,
+    "thumbnail_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25698444/DSC08567_processed_2.jpg?quality=90&strip=all&crop=0,0,100,100",
+    "image_urls": [
+      "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25698444/DSC08567_processed_2.jpg?quality=90&strip=all&crop=0,0,100,100"
+    ],
+    "author": "Emma Roth",
+    "collected_at": "2026-03-26T21:57:15.636198",
+    "is_featured": false
+  },
+  {
+    "url": "https://www.theverge.com/gadgets/901836/anker-qi2-wireless-charging-iphone-magsafe-amazon-big-spring-sale-2026-deal",
+    "title": "Anker’s wireless charging pad offers Qi2 speeds for $15",
+    "source": "rss:The Verge",
+    "category": "テクノロジー",
+    "body": "The MagGo wireless charging pad is available in black (shown here) or white. | Image: Anker I’ve probably saved minutes of my life by using a wireless charging puck. Minutes! More valuable than that, I’ve saved myself from bending over numerous times to pick up my USB-C cable that somehow always ends up on the floor. Those with magnet-equipped phones (like the iPhone 12 or newer, or a Google Pixel 10 or 10 Pro phone) can reap similar benefits from a MagSafe-ready Qi2 charging puck. Anker’s MagGo 15W pad is one such model, and it’s down to $14.99 ($15 off) at Amazon and Walmart thanks to Amazon’s Big Spring Sale . Is 15W fast enough to quickly recharge your phone? If you define “quickly” as under an hour, then no. If you need a bunch of juice in just a few minutes, plugging in is your best bet. But is 15W perfect for leaving your phone to recharge overnight? Yes, indeed. Anker Qi2 15W wireless charging pad Anker’s low-cost charging pad has a five-foot USB-C cable, and the company claims you can leave your phone’s case on while you charge. It doesn’t include a wall adapter. Where to Buy: $29.99 $14.99 at Amazon (black) $29.99 $14.99 at Amazon (white) The MagGo Qi2 puck doesn’t include a wall adapter, although one is required for use (Anker recommends a 25W adapter that supports Power Delivery). Assuming you already have one of those, it’s a nice accessory that makes it even easier than it already was to charge not just your phone, but your AirPods, too. Anker’s product page mentions support for Samsung’s Galaxy Buds, so it’s likely that other earbud models that have wireless charging-ready cases will work with this charging pad, too.",
+    "published_at": "2026-03-26T21:00:00",
+    "score": 0,
+    "thumbnail_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/ankerqi2lead.jpg?quality=90&strip=all&crop=0,0,100,100",
+    "image_urls": [
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/ankerqi2lead.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/ankerqi2.jpg?w=300"
+    ],
+    "author": "Cameron Faulkner",
+    "collected_at": "2026-03-26T21:57:15.637931",
+    "is_featured": false
+  },
+  {
+    "url": "https://www.theverge.com/report/902005/apple-ai-playlist-playground-bad-at-music",
+    "title": "Apple’s AI Playlist Playground is bad at music",
+    "source": "rss:The Verge",
+    "category": "テクノロジー",
+    "body": "Apple Music: \"What do you want to hear?\" Me: \"Atmospheric instrumental black metal to write to.\" Apple Music: \"Here's three metal songs with vocals, a field recording , an ambient electronic track , and a piece of doom jazz .\" I am skeptical of AI's ability to serve up the music I want to begin with, but even I was caught slightly off guard by how underwhelming Apple's new Playlist Playground beta is. YouTube Music's AI playlist generator is far from perfect, but when I gave it the same prompt for instrumental black metal, it wasn't until the fifth track that it delivered something with lyrics, and that was the exception, rather than the ru … Read the full story at The Verge.",
+    "published_at": "2026-03-26T20:51:31",
+    "score": 0,
+    "thumbnail_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23925980/acastro_STK046_04.jpg?quality=90&strip=all&crop=0,0,100,100",
+    "image_urls": [
+      "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23925980/acastro_STK046_04.jpg?quality=90&strip=all&crop=0,0,100,100"
+    ],
+    "author": "Terrence O’Brien",
+    "collected_at": "2026-03-26T21:57:15.640050",
+    "is_featured": false
+  },
+  {
+    "url": "https://www.theverge.com/23901586/streaming-service-prices-netflix-disney-hulu-peacock-max",
+    "title": "Streaming keeps getting more expensive: all the latest price hikes",
+    "source": "rss:The Verge",
+    "category": "テクノロジー",
+    "body": "There’s more good stuff to watch than ever — if you can afford it. | Image: Amazon Death. Taxes. All your streaming services getting a little more expensive all the time. These are the new certainties in life, it seems. Netflix has raised the cost of its subscription repeatedly in recent years. Disney Plus, Prime Video, HBO Max, Paramount Plus, Peacock — practically any service you can name — charges more per month than it did a few years ago, and many of them have introduced ad breaks. As customers cancel cable more quickly than anyone expected, the studios and distributors are looking for a way to make up the lost revenue . Good shows, live sports, and movies are more in demand — and thus more expensive — than ever. And after a decade of spending money like it was going out of style because all investors cared about were subscriber numbers, companies are looking for any way they can to improve their bottom line. They’re cracking down on password sharing, canceling shows for the tax breaks, and even selling prized content to other platforms. But the most common strategy is simply to charge you, the viewer, more. We’re tracking all the price increases and other changes from streaming services so you can make sure you’re only paying for what you want. (We’ll also include discounts and deals, though those seem to happen less and less.) Here’s the latest: Netflix is raising prices again Amazon Prime Video nearly doubles the price to go ad-free and stream 4K video Crunchyroll is raising prices again Paramount Plus is getting a price hike in early 2026 HBO Max is raising prices for the third year in a row Apple TV Plus is getting more expensive and will cost $12.99 per month Roku’s new ad-free video service only costs $2.99 per month Peacock is raising its prices by $3 Max’s password sharing crackdown is about to get serious. Max is going to make you pay for people you share your password with Plex Pass is going up in price — and now you’ll need it for remote playback Max’s ad-supported tier is losing CNN and the Bleacher Report Amazon Music Unlimited is getting a price hike Netflix won the streaming wars, and we’re all about to pay for it Fubo’s cheapest streaming plan is now $85 per month Amazon’s push to make Prime Video profitable. Remember when Netflix was just $7.99? Netflix is raising prices again, as the standard plan goes up to $17.99 Discovery Plus is raising its prices YouTube TV is letting some subscribers hold off that price hike Sling TV’s streaming TV price goes up by $5.99 next month GeForce Now Founders won’t be subject to Nvidia’s upcoming 100-hour-a-month data cap. YouTube Premium subscribers are reporting price hikes around the globe Disney’s password-sharing crackdown starts ‘in earnest’ this September The price of Disney Plus is about to go up Paramount Plus is getting yet another price hike Max raises prices across its ad-free plans A Disney, Hulu, and Max streaming bundle is on the way Max price hike incoming. Peacock is gettin",
+    "published_at": "2026-03-26T19:13:26",
+    "score": 0,
+    "thumbnail_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24527598/FireTV2Series.jpg?quality=90&strip=all&crop=0,0,100,100",
+    "image_urls": [
+      "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24527598/FireTV2Series.jpg?quality=90&strip=all&crop=0,0,100,100"
+    ],
+    "author": "Verge Staff",
+    "collected_at": "2026-03-26T21:57:15.648441",
+    "is_featured": false
+  }
+]
