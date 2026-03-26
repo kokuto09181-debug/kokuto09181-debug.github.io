@@ -58,20 +58,21 @@ jobs:
           is_sale = sale_start <= today <= sale_end
           pre_sale = (sale_start - today).days <= 3 and today < sale_start
 
-          # 通常期に追加スロット（10,12,15,18,21時）で起動した場合はスキップ
-          import subprocess, sys
+          # セール中のみ使う時間帯（通常期・セール前はスキップ）
           from datetime import datetime
           now_jst = datetime.now(JST)
           hour_jst = now_jst.hour
-          extra_hours = {10, 12, 15, 18, 21}  # セール中のみ使う時間帯
+          # 7/10/12/15/18/21時はセール期間のみ有効。通常期・セール前は8時・19時のみ投稿
+          extra_hours = {7, 10, 12, 15, 18, 21}
 
-          should_skip = (not is_sale and not pre_sale) and hour_jst in extra_hours
+          should_skip = (not is_sale) and (hour_jst in extra_hours)
           with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
               f.write(f"should_skip={'true' if should_skip else 'false'}\n")
               f.write(f"is_sale={'true' if is_sale else 'false'}\n")
               f.write(f"hour_jst={hour_jst}\n")
 
-          print(f"JST {hour_jst}時 | is_sale={is_sale} | skip={should_skip}")
+          period = "セール中" if is_sale else ("セール前" if pre_sale else "通常期")
+          print(f"JST {hour_jst}時 | {period} | skip={should_skip}")
           EOF
 
       - name: Threads に投稿
