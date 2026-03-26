@@ -1,0 +1,32 @@
+name: Amazon価格確認＆自動更新
+
+on:
+  workflow_dispatch:   # リモートタスク・手動から起動
+
+jobs:
+  price-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 依存パッケージインストール
+        run: pip install requests
+
+      - name: Amazon価格取得＆threads_post.py更新
+        run: python _pipeline/scripts/price_check.py
+
+      - name: 変更をコミット＆プッシュ
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _pipeline/scripts/threads_post.py
+          git diff --staged --quiet || git commit -m "fix: Amazon新生活セール実際の価格に更新 ($(date '+%Y/%m/%d'))"
+          git pull --rebase
+          git push
