@@ -94,7 +94,10 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add _pipeline/data/threads_post_history.json
+          git add \
+            _pipeline/data/threads_post_history.json \
+            _pipeline/data/threads_posts_log.json \
+            || true
           # 変更がある場合のみコミット
           git diff --cached --quiet || git commit -m "chore: update threads post history [skip ci]"
           git push

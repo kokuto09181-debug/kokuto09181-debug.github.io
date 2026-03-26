@@ -10,7 +10,7 @@ import os
 import random
 import sys
 import time
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -20,6 +20,8 @@ import yaml
 ROOT           = Path(__file__).parent.parent          # _pipeline/
 TEMPLATES_PATH = ROOT / "config" / "threads_templates.yaml"
 HISTORY_PATH   = ROOT / "data"  / "threads_post_history.json"
+POSTS_LOG_PATH = ROOT / "data"  / "threads_posts_log.json"
+WEIGHTS_PATH   = ROOT / "data"  / "post_weights.json"
 
 SALE_START = date(2026, 3, 28)
 SALE_END   = date(2026, 4, 2)
@@ -104,6 +106,41 @@ def save_history(history: dict):
         json.dump(history, f, ensure_ascii=False, indent=2)
 
 
+def load_posts_log() -> list:
+    if POSTS_LOG_PATH.exists():
+        with open(POSTS_LOG_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    return []
+
+
+def save_posts_log(posts_log: list):
+    POSTS_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with open(POSTS_LOG_PATH, "w", encoding="utf-8") as f:
+        json.dump(posts_log, f, ensure_ascii=False, indent=2)
+
+
+def append_post_log(posts_log: list, post_id: str, category: str, text: str):
+    JST = timezone(timedelta(hours=9))
+    now = datetime.now(JST)
+    posts_log.append({
+        "post_id":    post_id,
+        "category":   category,
+        "text_preview": text[:60],
+        "hour":       now.hour,
+        "posted_at":  now.isoformat(),
+        "metrics":    None,
+        "metrics_fetched_at": None,
+    })
+
+
+def load_weights() -> dict:
+    """アナリストが生成したカテゴリ重みを読み込む"""
+    if WEIGHTS_PATH.exists():
+        with open(WEIGHTS_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
 def amazon_url(asin: str) -> str:
     return f"https://www.amazon.co.jp/dp/{asin}?tag=teckjpkokuto-22"
 
@@ -156,55 +193,80 @@ def next_product(history: dict) -> dict:
 
 # ===== テンプレート選択 =====
 
-def select_post(templates: dict, history: dict) -> tuple:
-    """(text, image_url_or_None) を返す"""
+def _weighted_roll(weights: dict, candidates: list[tuple]) -> int:
+    """(category, base_prob) のリストに重みを掛けてロールし選択インデックスを返す"""
+    adjusted = []
+    for cat, base in candidates:
+        w = weights.get(cat, 1.0)
+        adjusted.append(max(0.05, base * w))
+    total = sum(adjusted)
+    r = random.random() * total
+    cumul = 0.0
+    for i, v in enumerate(adjusted):
+        cumul += v
+        if r <= cumul:
+            return i
+    return len(adjusted) - 1
+
+
+def select_post(templates: dict, history: dict, weights: dict = None) -> tuple:
+    """(text, image_url_or_None, category) を返す"""
+    weights = weights.get("category_weights", {}) if weights else {}
     today = date.today()
     is_sale  = SALE_START <= today <= SALE_END
     pre_sale = (SALE_START - today) <= timedelta(days=3) and today < SALE_START
 
     if is_sale:
-        roll = random.random()
-        if roll < 0.45:
+        candidates = [
+            ("sale_product",   0.45),
+            ("point_tips",     0.25),
+            ("sale_countdown", 0.15),
+            ("comparison",     0.15),
+        ]
+        idx = _weighted_roll(weights, candidates)
+        cat = candidates[idx][0]
+
+        if cat == "sale_product":
             p = next_product(history)
             pool = templates.get("sale_product", {}).get(p["key"])
             if pool:
                 t = pick(pool, history, f"prod_{p['key']}")
                 text = fill(t, p, category="sale_product")
-                # 1枚目テンプレート（価格情報あり）は画像付き
                 img = p.get("image_url") if "{price}" in t else None
-                return text, img
+                return text, img, "sale_product"
+            # フォールバック
             t = pick(templates["general"], history, "general")
-            return fill(t, category="general"), None
-        elif roll < 0.70:
+            return fill(t, category="general"), None, "general"
+        elif cat == "point_tips":
             t = pick(templates["point_tips"], history, "point_tips")
-            return fill(t, category="point_tips"), None
-        elif roll < 0.85:
+            return fill(t, category="point_tips"), None, "point_tips"
+        elif cat == "sale_countdown":
             t = pick(templates["sale_countdown"], history, "countdown")
-            return fill(t, category="sale_countdown"), None
+            return fill(t, category="sale_countdown"), None, "sale_countdown"
         else:
             t = pick(templates["comparison"], history, "comparison")
-            return fill(t, category="comparison"), None
+            return fill(t, category="comparison"), None, "comparison"
 
     elif pre_sale:
         t = pick(templates["pre_sale"], history, "pre_sale")
-        return fill(t, category="pre_sale"), None
+        return fill(t, category="pre_sale"), None, "pre_sale"
 
     else:
-        roll = random.random()
-        if roll < 0.65:
-            t = pick(templates["general"], history, "general")
-            return fill(t, category="general"), None
-        elif roll < 0.85:
-            t = pick(templates["comparison"], history, "comparison")
-            return fill(t, category="comparison"), None
-        else:
-            t = pick(templates["follow"], history, "follow")
-            return fill(t, category="follow"), None
+        candidates = [
+            ("general",    0.65),
+            ("comparison", 0.20),
+            ("follow",     0.15),
+        ]
+        idx = _weighted_roll(weights, candidates)
+        cat = candidates[idx][0]
+        t = pick(templates[cat], history, cat)
+        return fill(t, category=cat), None, cat
 
 
 # ===== Threads API =====
 
-def post_to_threads(text: str, image_url: str = None) -> bool:
+def post_to_threads(text: str, image_url: str = None) -> str | None:
+    """投稿成功時は post_id(str) を返す。失敗時は None。"""
     user_id = os.environ.get("THREADS_USER_ID", "")
     token   = os.environ.get("THREADS_ACCESS_TOKEN", "")
     if not user_id or not token:
@@ -227,12 +289,12 @@ def post_to_threads(text: str, image_url: str = None) -> bool:
             # 画像投稿失敗時はテキストのみで再試行
             print("[INFO] テキスト投稿にフォールバック", flush=True)
             return post_to_threads(text, image_url=None)
-        return False
+        return None
 
     container_id = r1.json().get("id", "")
     if not container_id:
         print("[ERROR] container_id 取得失敗", flush=True)
-        return False
+        return None
 
     # 画像の場合はコンテナ処理を待つ（最大30秒）
     if image_url:
@@ -249,7 +311,7 @@ def post_to_threads(text: str, image_url: str = None) -> bool:
             if status == "ERROR":
                 err = rs.json().get("error_message", "")
                 print(f"[WARN] 画像処理エラー: {err} → テキスト投稿にフォールバック", flush=True)
-                return post_to_threads(text, image_url=None)
+                return post_to_threads(text, image_url=None)  # post_id or None
             print(f"[INFO] コンテナ処理中... ({status})", flush=True)
     else:
         time.sleep(3)
@@ -260,12 +322,13 @@ def post_to_threads(text: str, image_url: str = None) -> bool:
         timeout=15,
     )
     if r2.status_code == 200:
+        post_id = r2.json().get("id", "")
         mode = "画像付き" if image_url else "テキスト"
-        print(f"[OK] {mode}投稿成功: post_id={r2.json().get('id','')}", flush=True)
-        return True
+        print(f"[OK] {mode}投稿成功: post_id={post_id}", flush=True)
+        return post_id
     else:
         print(f"[ERROR] 公開失敗: {r2.status_code} {r2.text[:200]}", flush=True)
-        return False
+        return None
 
 
 # ===== メイン =====
@@ -273,16 +336,18 @@ def post_to_threads(text: str, image_url: str = None) -> bool:
 def main():
     dry_run = "--dry-run" in sys.argv
 
-    templates = load_templates()
-    history   = load_history()
+    templates  = load_templates()
+    history    = load_history()
+    weights    = load_weights()
+    posts_log  = load_posts_log()
 
-    text, image_url = select_post(templates, history)
+    text, image_url, category = select_post(templates, history, weights)
 
     # GitHub Actions ログに UTF-8 で出力
     sys.stdout.buffer.write(("=" * 50 + "\n").encode("utf-8"))
     sys.stdout.buffer.write((text + "\n").encode("utf-8"))
     sys.stdout.buffer.write(("=" * 50 + "\n").encode("utf-8"))
-    sys.stdout.buffer.write(f"文字数: {len(text)}\n".encode("utf-8"))
+    sys.stdout.buffer.write(f"文字数: {len(text)} | カテゴリ: {category}\n".encode("utf-8"))
     if image_url:
         sys.stdout.buffer.write(f"画像URL: {image_url}\n".encode("utf-8"))
     sys.stdout.buffer.flush()
@@ -292,9 +357,11 @@ def main():
         save_history(history)
         return
 
-    ok = post_to_threads(text, image_url=image_url)
-    if ok:
+    post_id = post_to_threads(text, image_url=image_url)
+    if post_id:
         save_history(history)
+        append_post_log(posts_log, post_id, category, text)
+        save_posts_log(posts_log)
     else:
         sys.exit(1)
 

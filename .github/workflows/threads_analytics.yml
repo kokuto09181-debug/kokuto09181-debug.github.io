@@ -1,0 +1,49 @@
+name: Threads 分析（フェッチャー + アナリスト）
+
+on:
+  schedule:
+    - cron: '0 17 * * *'   # JST 02:00 毎日深夜（投稿後24h経過分を取得）
+  workflow_dispatch:         # 手動実行
+
+jobs:
+  analytics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Python 3.11 セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: '_pipeline/requirements.txt'
+
+      - name: 依存パッケージをインストール
+        run: pip install requests
+
+      - name: フェッチャー実行（投稿メトリクス取得）
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: python _pipeline/scripts/threads_fetcher.py
+
+      - name: アナリスト実行（カテゴリ重み算出）
+        run: python _pipeline/scripts/threads_analyst.py
+
+      - name: 分析結果をコミット
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add \
+            _pipeline/data/threads_posts_log.json \
+            _pipeline/data/post_weights.json \
+            _pipeline/data/analytics_report.json \
+            || true
+          git diff --cached --quiet || \
+            git commit -m "chore: update threads analytics [skip ci]"
+          git push || true
