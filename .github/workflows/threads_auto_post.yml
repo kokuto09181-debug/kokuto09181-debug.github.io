@@ -7,11 +7,13 @@ on:
     - cron: '0 10 * * *'   # JST 19:00 (UTC 10:00)
 
     # セール期間中の追加スロット（3/28〜4/2）
-    # JST 7時・10時・12時・15時・18時・21時
+    # JST 7時・10時・12時・14時・15時・17時・18時・21時（合計10スロット/日）
     - cron: '0 22 * * *'   # JST 7:00  (UTC 22:00 前日)
     - cron: '0  1 * * *'   # JST 10:00 (UTC 01:00)
     - cron: '0  3 * * *'   # JST 12:00 (UTC 03:00)
+    - cron: '0  5 * * *'   # JST 14:00 (UTC 05:00)
     - cron: '0  6 * * *'   # JST 15:00 (UTC 06:00)
+    - cron: '0  8 * * *'   # JST 17:00 (UTC 08:00)
     - cron: '0  9 * * *'   # JST 18:00 (UTC 09:00)
     - cron: '0 12 * * *'   # JST 21:00 (UTC 12:00)
 
@@ -63,7 +65,7 @@ jobs:
           now_jst = datetime.now(JST)
           hour_jst = now_jst.hour
           # 7/10/12/15/18/21時はセール期間のみ有効。通常期・セール前は8時・19時のみ投稿
-          extra_hours = {7, 10, 12, 15, 18, 21}
+          extra_hours = {7, 10, 12, 14, 15, 17, 18, 21}
 
           should_skip = (not is_sale) and (hour_jst in extra_hours)
           with open(os.environ['GITHUB_OUTPUT'], 'a') as f:

@@ -233,23 +233,23 @@ def select_post(templates: dict, history: dict, weights: dict = None) -> tuple:
                 t = pick(pool, history, f"prod_{p['key']}")
                 text = fill(t, p, category="sale_product")
                 img = p.get("image_url") if "{price}" in t else None
-                return text, img, "sale_product"
+                return text, img, "sale_product", amazon_url(p["asin"])
             # フォールバック
             t = pick(templates["general"], history, "general")
-            return fill(t, category="general"), None, "general"
+            return fill(t, category="general"), None, "general", None
         elif cat == "point_tips":
             t = pick(templates["point_tips"], history, "point_tips")
-            return fill(t, category="point_tips"), None, "point_tips"
+            return fill(t, category="point_tips"), None, "point_tips", None
         elif cat == "sale_countdown":
             t = pick(templates["sale_countdown"], history, "countdown")
-            return fill(t, category="sale_countdown"), None, "sale_countdown"
+            return fill(t, category="sale_countdown"), None, "sale_countdown", None
         else:
             t = pick(templates["comparison"], history, "comparison")
-            return fill(t, category="comparison"), None, "comparison"
+            return fill(t, category="comparison"), None, "comparison", None
 
     elif pre_sale:
         t = pick(templates["pre_sale"], history, "pre_sale")
-        return fill(t, category="pre_sale"), None, "pre_sale"
+        return fill(t, category="pre_sale"), None, "pre_sale", None
 
     else:
         candidates = [
@@ -260,7 +260,7 @@ def select_post(templates: dict, history: dict, weights: dict = None) -> tuple:
         idx = _weighted_roll(weights, candidates)
         cat = candidates[idx][0]
         t = pick(templates[cat], history, cat)
-        return fill(t, category=cat), None, cat
+        return fill(t, category=cat), None, cat, None
 
 
 # ===== Threads API =====
@@ -331,6 +331,41 @@ def post_to_threads(text: str, image_url: str = None) -> str | None:
         return None
 
 
+def post_reply_to_threads(text: str, reply_to_id: str) -> bool:
+    """既存投稿へのリプライ（アフィリリンク用）"""
+    user_id = os.environ.get("THREADS_USER_ID", "")
+    token   = os.environ.get("THREADS_ACCESS_TOKEN", "")
+    base = "https://graph.threads.net/v1.0"
+
+    r1 = requests.post(
+        f"{base}/{user_id}/threads",
+        params={
+            "media_type":  "TEXT",
+            "text":        text,
+            "reply_to_id": reply_to_id,
+            "access_token": token,
+        },
+        timeout=15,
+    )
+    if r1.status_code != 200:
+        print(f"[WARN] リプライコンテナ作成失敗: {r1.status_code}", flush=True)
+        return False
+
+    container_id = r1.json().get("id", "")
+    time.sleep(3)
+
+    r2 = requests.post(
+        f"{base}/{user_id}/threads_publish",
+        params={"creation_id": container_id, "access_token": token},
+        timeout=15,
+    )
+    if r2.status_code == 200:
+        print(f"[OK] リプライ投稿成功: {r2.json().get('id','')}", flush=True)
+        return True
+    print(f"[WARN] リプライ公開失敗: {r2.status_code}", flush=True)
+    return False
+
+
 # ===== メイン =====
 
 def main():
@@ -341,7 +376,7 @@ def main():
     weights    = load_weights()
     posts_log  = load_posts_log()
 
-    text, image_url, category = select_post(templates, history, weights)
+    text, image_url, category, affiliate_url = select_post(templates, history, weights)
 
     # GitHub Actions ログに UTF-8 で出力
     sys.stdout.buffer.write(("=" * 50 + "\n").encode("utf-8"))
@@ -350,6 +385,8 @@ def main():
     sys.stdout.buffer.write(f"文字数: {len(text)} | カテゴリ: {category}\n".encode("utf-8"))
     if image_url:
         sys.stdout.buffer.write(f"画像URL: {image_url}\n".encode("utf-8"))
+    if affiliate_url:
+        sys.stdout.buffer.write(f"リプライURL: {affiliate_url}\n".encode("utf-8"))
     sys.stdout.buffer.flush()
 
     if dry_run:
@@ -362,6 +399,11 @@ def main():
         save_history(history)
         append_post_log(posts_log, post_id, category, text)
         save_posts_log(posts_log)
+        # セール商品はリプライにAmazonアフィリリンクを自動投稿
+        if affiliate_url:
+            time.sleep(5)  # 少し間を置いてからリプライ
+            reply_text = f"🛒 Amazonで確認はこちら\n{affiliate_url}"
+            post_reply_to_threads(reply_text, post_id)
     else:
         sys.exit(1)
 
