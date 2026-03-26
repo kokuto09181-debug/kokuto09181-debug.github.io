@@ -1,7 +1,9 @@
 name: Amazon価格確認＆自動更新
 
 on:
-  workflow_dispatch:   # リモートタスク・手動から起動
+  schedule:
+    - cron: '0 21 27 3 *'   # JST 3/28 06:00（UTC 3/27 21:00）セール開始日の朝
+  workflow_dispatch:         # 手動実行も可
 
 jobs:
   price-check:
