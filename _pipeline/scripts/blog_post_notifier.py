@@ -55,14 +55,12 @@ def parse_front_matter(path: Path) -> dict:
 
 def build_post_url(path: Path, fm: dict) -> str:
     # Jekyll URLパターン: /posts/YYYY/MM/title/  (_config.yml: permalink: /posts/:year/:month/:title/)
-    stem = path.stem  # 例: 2026-03-22-my-article-20260322083036
+    # :title = ファイル名からYYYY-MM-DD-を除いた部分をそのまま使う（タイムスタンプも含む）
+    stem = path.stem  # 例: 2026-03-22-spotifyai-20260325230354
     parts = stem.split("-")
     if len(parts) >= 3:
         year, month = parts[0], parts[1]
-        slug = "-".join(parts[3:])
-        # タイムスタンプ末尾(14桁)を除去
-        if len(parts[-1]) == 14 and parts[-1].isdigit():
-            slug = "-".join(parts[3:-1])
+        slug = "-".join(parts[3:])   # YYYY-MM-DD- の後をすべてslugにする
         return f"{BLOG_BASE}/posts/{year}/{month}/{slug}/"
     return BLOG_BASE
 
