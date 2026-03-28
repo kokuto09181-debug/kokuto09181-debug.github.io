@@ -4,29 +4,41 @@
       "pre_sale": {
         "avg_engagement_rate": 0.0,
         "avg_views": 0.0,
-        "samples": 3
+        "samples": 9
       }
     },
     "hour_stats": {
       "19": {
         "avg_views": 0.0,
-        "samples": 1
+        "samples": 2
       },
       "20": {
         "avg_views": 0.0,
-        "samples": 1
+        "samples": 3
       },
       "0": {
+        "avg_views": 0.0,
+        "samples": 2
+      },
+      "8": {
+        "avg_views": 0.0,
+        "samples": 1
+      },
+      "9": {
         "avg_views": 0.0,
         "samples": 1
       }
     },
-    "total_measured": 3
+    "total_measured": 9
   },
   "weights": {
     "category_weights": {},
-    "best_hours": [],
-    "total_analyzed": 3,
-    "generated_at": "2026-03-27T19:32:12.166891+00:00"
+    "best_hours": [
+      19,
+      20,
+      0
+    ],
+    "total_analyzed": 9,
+    "generated_at": "2026-03-28T17:59:13.317791+00:00"
   }
 }

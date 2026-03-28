@@ -1,6 +1,10 @@
 {
   "category_weights": {},
-  "best_hours": [],
-  "total_analyzed": 3,
-  "generated_at": "2026-03-27T19:32:12.166891+00:00"
+  "best_hours": [
+    19,
+    20,
+    0
+  ],
+  "total_analyzed": 9,
+  "generated_at": "2026-03-28T17:59:13.317791+00:00"
 }
