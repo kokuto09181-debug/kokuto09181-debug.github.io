@@ -373,5 +373,14 @@
     "posted_at": "2026-03-29T23:05:05.350432+09:00",
     "metrics": null,
     "metrics_fetched_at": null
+  },
+  {
+    "post_id": "18099370672786419",
+    "category": "sale_countdown",
+    "text_preview": "セール終了まで残り4日\n\n価格だけじゃなくポイント還元率も下がります\n7.5%→1%に戻るので実質価格の差は思ったより大",
+    "hour": 8,
+    "posted_at": "2026-03-30T08:04:27.631935+09:00",
+    "metrics": null,
+    "metrics_fetched_at": null
   }
 ]
