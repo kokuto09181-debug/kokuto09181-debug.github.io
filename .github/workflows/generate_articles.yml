@@ -1,9 +1,9 @@
 name: 記事自動生成
 
 on:
-  schedule:
-    - cron: '0 21 * * *'   # JST 毎朝6時 (UTC 21:00)
-    - cron: '0 9 * * *'    # JST 毎夕6時 (UTC 9:00)
+  # schedule:
+  #   - cron: '0 21 * * *'   # JST 毎朝6時 (UTC 21:00)
+  #   - cron: '0 9 * * *'    # JST 毎夕6時 (UTC 9:00)
   workflow_dispatch:        # GitHubから手動実行も可能
 
 jobs:

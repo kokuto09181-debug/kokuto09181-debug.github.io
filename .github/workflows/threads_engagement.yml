@@ -1,8 +1,8 @@
 name: Threads エンゲージメント（いいね・フォロー）
 
 on:
-  schedule:
-    - cron: '0 2 * * *'   # JST 11:00 (UTC 2:00) 毎日
+  # schedule:
+  #   - cron: '0 2 * * *'   # JST 11:00 (UTC 2:00) 毎日
   workflow_dispatch:
     inputs:
       dry_run:
