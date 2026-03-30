@@ -3,7 +3,6 @@
     "follow:2",
     "general:6",
     "follow:0",
-    "comparison:1",
     "general:0",
     "general:3",
     "general:2",
@@ -17,17 +16,13 @@
     "pre_sale:0",
     "prod_airpods_pro3:1",
     "prod_sony_wf_xm6:1",
-    "comparison:0",
     "prod_sony_wh_xm6:1",
-    "comparison:4",
     "prod_liberty4nc:1",
     "prod_echo_dot:1",
     "prod_fire_tv:1",
     "prod_kindle:0",
-    "comparison:2",
     "prod_anker_prime:0",
     "prod_switchbot:0",
-    "comparison:3",
     "countdown:1",
     "prod_ipad_air:1",
     "countdown:0",
@@ -35,7 +30,8 @@
     "countdown:2",
     "prod_deco_x50:1",
     "prod_airpods_pro3:0",
-    "point_tips:1"
+    "point_tips:1",
+    "comparison:4"
   ],
   "product_index": 1
 }
