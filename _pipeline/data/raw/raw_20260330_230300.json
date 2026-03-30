@@ -1,0 +1,86 @@
+[
+  {
+    "url": "https://www.theverge.com/gadgets/903555/aqara-u400-apple-home-key-uwb-smart-lock-amazon-big-spring-sale-2026-deal",
+    "title": "The first Apple Home Key-ready smart lock with UWB is cheaper during Amazon’s Big Spring Sale",
+    "source": "rss:The Verge",
+    "category": "テクノロジー",
+    "body": "There are so many great smart locks out there. But one of best models that iPhone owners should consider buying now is Aqara’s U400 , which offers hands-free unlocking when you get close enough. It has Apple’s U1 ultra-wideband chip integrated to authenticate you and unlock the door hands-free, so all that you have to do is open the door when you get home. This smart lock is discounted for the first time during the Big Spring Sale , costing $229.49 (originally $269.99) at Amazon . Aqara Smart Lock U400 Where to Buy: $269.99 at Aqara $269.99 $229.49 at Amazon As our reviewer Jennifer Pattison Tuohy put it in her hands-on impressions with the U400 , hands-free unlocking isn’t new — but this is the most reliable implementation she’s tried yet. Apple’s Home Key relies on a mix of Bluetooth and UWB to connect and authenticate, and you don’t need an extra app. In addition to using Home Key, you can unlock the U400 with a code on its touchscreen keypad, through a registered fingerprint, or with a regular ol’ key. This is a Matter-over-Thread lock, and it works with your choice of smart home ecosystems. You’ll just need a Thread border router (recent Apple TV models , the second-gen HomePod , and the HomePod Mini are just a few examples of border routers at varying prices) to let your devices communicate over Thread instead of purely over Wi-Fi, saving the doorbell’s battery along the way.",
+    "published_at": "2026-03-30T19:47:46",
+    "score": 0,
+    "thumbnail_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/IMG_3334.jpg?quality=90&strip=all&crop=0,0,100,100",
+    "image_urls": [
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/IMG_3334.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/258229_Aqara_U400_Smart_Lock_JTuohy_0001.jpg?w=300"
+    ],
+    "author": "Cameron Faulkner",
+    "collected_at": "2026-03-30T23:02:57.486814",
+    "is_featured": true
+  },
+  {
+    "url": "https://www.theverge.com/gadgets/903373/beats-powerbeats-fit-pro-2-earbuds-amazon-big-spring-sale-2026-deal",
+    "title": "Beats’ gym-friendly Powerbeats Fit are $30 off for Amazon’s Big Spring Sale",
+    "source": "rss:The Verge",
+    "category": "テクノロジー",
+    "body": "Every color of the Beats Powerbeats Fit are discounted. | Image: Apple For iPhone owners, the AirPods Pro 3 are a fantastic all-around set of wireless earbuds, even for working out. Their value is especially tough to beat at $199.99 ; however, even with five sizes of silicone tips, they aren’t the best fit for some people, or for some kinds of workouts. If earbuds tend to fall out of your ears, the Beats Powerbeats Fit are worth considering now that they’re on sale as part of Amazon’s Big Spring Sale , which drops them to an all-time low of $169.99 ($30 off) at Amazon , Best Buy , and B&H Photo . Beats Powerbeats Fit Where to Buy: $199.99 $169.96 at Amazon $199.99 $169.99 at Best Buy $199.95 $169.95 at B&H Photo The Powerbeats Fit, which launched in September , offer similar functionality for iPhone users as AirPods (namely, easy connectivity and hands-free Siri support), but their built-in silicone fin and ear tips should ensure a snug fit that you won’t get with a traditional pair of Apple earbuds. Like several recent Beats models, the Powerbeats Fit work great with Android, too, and charge via USB-C. The Powerbeats Fit debuted after the Beats Fit Pro and stellar Powerbeats Pro 2 , yet some complaints we had with the first-gen model remain. For instance, the Fit use Apple’s H1 wireless chip, not its newer H2 chip, which offers capabilities like better noise cancellation, adaptive audio, and conversation awareness in headphones that have it (the aforementioned Pro 2 have it). Also, its charging case is still quite large — even if it is smaller than the case that came with the original — and it doesn’t support wireless charging, which is a standard feature we expect to see in wireless earbuds at this price point. Beats Powerbeats Pro 2 Where to Buy: $249 $199.95 at Walmart $249 $199.95 at Amazon $249.99 $199.99 at Best Buy Those disadvantages won’t bother everyone, though. But if they bother you, there are a couple of alternatives to consider. If you’re on Android (and using a Pixel device, specifically), I suggest checking out the Google Pixel Buds Pro 2 , which are also currently on sale for $169.99 ($60 off) as part of Amazon’s sale event. Otherwise, spending an extra $30 (for a total of $199.99) will be enough to get the aforementioned Powerbeats Pro 2, which are the company’s best, most comfortable, and most feature-packed workout earbuds yet.",
+    "published_at": "2026-03-30T17:38:08",
+    "score": 0,
+    "thumbnail_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/beatspowerbeatsfit.jpg?quality=90&strip=all&crop=0,0,100,100",
+    "image_urls": [
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/beatspowerbeatsfit.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/Beats-Powerbeats-Fit-Lifestyle-Image.jpg?w=300",
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2025/01/257536_Powerbeats_Pro_2_AKrales_0299.jpg?w=300"
+    ],
+    "author": "Cameron Faulkner",
+    "collected_at": "2026-03-30T23:02:57.490920",
+    "is_featured": false
+  },
+  {
+    "url": "https://www.theverge.com/tech/903509/apple-iphone-google-android-video-calls-rcs-universal-profile-4-0",
+    "title": "A new RCS update could connect iPhone and Android video calls, someday",
+    "source": "rss:The Verge",
+    "category": "テクノロジー",
+    "body": "iPhone and Android users might be able to make interoperable video calls through their messaging apps - eventually. Last week, the GSM Association (GSMA) announced that the finalized RCS Universal Profile 4.0 standard will let users turn 1-to-1 or group RCS chats into video calls thanks to a feature called Messaging‑Initiated Video Calls (MIVC). \"MIVC will ensure the continuity of the conversation by allowing group members to join an ongoing video call that they could not accept when it started, as well as synchronise MIVC logs within the chat timeline,\" the GSMA says . \"When implemented, MIVC paves the way for the first natively supported v … Read the full story at The Verge.",
+    "published_at": "2026-03-30T17:19:31",
+    "score": 0,
+    "thumbnail_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/DSC01498.jpg?quality=90&strip=all&crop=0,0,100,100",
+    "image_urls": [
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/DSC01498.jpg?quality=90&strip=all&crop=0,0,100,100"
+    ],
+    "author": "Jay Peters",
+    "collected_at": "2026-03-30T23:02:57.491678",
+    "is_featured": false
+  },
+  {
+    "url": "https://www.theverge.com/gadgets/903416/dyson-pencilvac-fluffycones-amazon-big-spring-sale-deal-sale",
+    "title": "Dyson&#8217;s ultra-thin PencilVac Fluffycones is tougher to resist at $150 off",
+    "source": "rss:The Verge",
+    "category": "テクノロジー",
+    "body": "Dyson’s PencilVac Fluffycones is the cheapest it’s ever been. | Photo by Jennifer Pattison Tuohy / The Verge Robot vacuums are great for keeping floors clean on a regular basis, but they don’t catch everything. If you’re looking for a tool to handle the finer details your robovac might miss — room corners, edges, hard stairs, entryways, etc. — Dyson’s PencilVac Fluffycones is one of the lightest, most versatile stick vacuums you can buy. You can get one during Amazon’s Big Spring Sale for $449.99 ($150 off) at Amazon , Best Buy , and Target , marking a new low. PencilVac Fluffycones Where to Buy: $599.99 $449.99 at Dyson $599.99 $449.99 at Best Buy $599.99 $449.99 at Amazon The PencilVac is about as thin as Dyson’s Supersonic hair dryer and weighs under four pounds. Its slim design lets it reach spots that robot vacuums (and even some other stick vacuums) can miss. While it’s not designed to do large-scale vacuuming (or for vacuuming carpet), it can handle dust bunnies on stairs, small tufts of hair, and debris like cereal or dried oatmeal with ease. The vacuum’s built-in green LED lights shine on the ground, making it surprisingly easy to spot dirt, while its four “fluffy cone” roller bars are designed to suck up long hair without getting tangled up (as long as it’s not too thick). For a deeper clean, Dyson also includes crevice and dusting tools for tackling baseboards and windowsills, as well as reaching into corners and tight spaces possibly overrun by cobwebs, like behind a TV console. While this is a versatile stick vacuum, it’s not a powerhouse. Its 55 air watts of suction is noticeably weaker than Dyson’s current lowest-end cordless stick vacuum, the V8 , which is a better choice for bigger messes. The PencilVac’s battery life tops out at around 20 to 30 minutes depending on the setting, so it’s best suited for quick touch-ups rather than deep cleans. But as a companion to your robot vacuum, it’s a quirky, tiny gadget that might help your space stay a little more tidy. And, as our smart home reviewer Jennifer Pattison Tuohy puts it , it’s “a wildly overengineered device that’s delightful to use — entirely unnecessary, but something you’re probably going to really want anyway.” Read our Dyson PencilVac Fluffycones review.",
+    "published_at": "2026-03-30T16:27:31",
+    "score": 0,
+    "thumbnail_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/268311_Dyson_PencilVac_FluffyCones_JTuohy_0018.jpeg?quality=90&strip=all&crop=0,0,100,100",
+    "image_urls": [
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/268311_Dyson_PencilVac_FluffyCones_JTuohy_0018.jpeg?quality=90&strip=all&crop=0,0,100,100",
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/8A0A5258.jpeg?w=300"
+    ],
+    "author": "Sheena Vasani",
+    "collected_at": "2026-03-30T23:02:57.493837",
+    "is_featured": false
+  },
+  {
+    "url": "https://www.theverge.com/tech/903280/papure-project-fraunhofer-institute-laser-paper-packaging-recycling",
+    "title": "A new manufacturing process uses lasers to seal paper packaging instead of glue",
+    "source": "rss:The Verge",
+    "category": "テクノロジー",
+    "body": "A simple paper envelope made without additional glue or plastic to seal three of its sides. | Image: Fraunhofer IVV Although paper is a more environmentally friendly packaging material than plastic, it's often contaminated with additives, such as adhesives used to create a secure seal. That complicates the recycling process and reduces the quality of recycled paper. Now, German researchers at four Fraunhofer institutes have developed an alternative process that can seal paper packaging without glue or plastic using a carbon monoxide laser. The new system, currently called the Papure project, leverages the expertise of the Fraunhofer institutes, each of which focuses on areas such as polymer research, engineering and packaging, and laser beam technologies … Read the full story at The Verge.",
+    "published_at": "2026-03-30T16:01:01",
+    "score": 0,
+    "thumbnail_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/fraunhofer1.jpg?quality=90&strip=all&crop=0,0,100,100",
+    "image_urls": [
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/fraunhofer1.jpg?quality=90&strip=all&crop=0,0,100,100"
+    ],
+    "author": "Andrew Liszewski",
+    "collected_at": "2026-03-30T23:02:57.494731",
+    "is_featured": false
+  }
+]
