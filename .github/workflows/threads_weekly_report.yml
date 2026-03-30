@@ -1,8 +1,8 @@
 name: Threads 週次レポート
 
 on:
-  schedule:
-    - cron: '0 1 * * 1'   # 毎週月曜 JST 10:00 (UTC 1:00)
+  # schedule:
+  #   - cron: '0 1 * * 1'   # 毎週月曜 JST 10:00 (UTC 1:00)
   workflow_dispatch:       # 手動実行
 
 jobs:
