@@ -409,5 +409,14 @@
     "posted_at": "2026-03-30T17:12:07.907394+09:00",
     "metrics": null,
     "metrics_fetched_at": null
+  },
+  {
+    "post_id": "18106079464882940",
+    "category": "sale_countdown",
+    "text_preview": "04月02日 セール終了\n\n「また次のセールで」と思ってる人へ\n次のセールは早くて夏（プライムデー）まで待つことになる\n",
+    "hour": 18,
+    "posted_at": "2026-03-30T18:58:57.933682+09:00",
+    "metrics": null,
+    "metrics_fetched_at": null
   }
 ]
