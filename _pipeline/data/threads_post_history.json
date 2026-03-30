@@ -34,7 +34,8 @@
     "prod_switchbot:0",
     "comparison:3",
     "countdown:1",
-    "prod_ipad_air:1"
+    "prod_ipad_air:1",
+    "countdown:0"
   ],
   "product_index": 10
 }

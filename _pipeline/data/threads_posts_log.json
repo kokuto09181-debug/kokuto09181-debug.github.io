@@ -391,5 +391,14 @@
     "posted_at": "2026-03-30T09:04:35.364645+09:00",
     "metrics": null,
     "metrics_fetched_at": null
+  },
+  {
+    "post_id": "18090556961270441",
+    "category": "sale_countdown",
+    "text_preview": "⏰ Amazon新生活セール 残り3日\n\n価格が元に戻る前に確認してほしい\nEcho Dot {sale_price} ",
+    "hour": 16,
+    "posted_at": "2026-03-30T16:12:14.498560+09:00",
+    "metrics": null,
+    "metrics_fetched_at": null
   }
 ]
