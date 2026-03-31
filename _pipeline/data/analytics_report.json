@@ -9,39 +9,44 @@
       "sale_product": {
         "avg_engagement_rate": 0.0,
         "avg_views": 0.0,
-        "samples": 9
+        "samples": 13
       },
       "point_tips": {
         "avg_engagement_rate": 0.0,
         "avg_views": 0.0,
-        "samples": 5
+        "samples": 7
       },
       "comparison": {
         "avg_engagement_rate": 0.0,
         "avg_views": 0.0,
-        "samples": 4
+        "samples": 5
+      },
+      "sale_countdown": {
+        "avg_engagement_rate": 0.0,
+        "avg_views": 0.0,
+        "samples": 3
       }
     },
     "hour_stats": {
       "19": {
         "avg_views": 0.0,
-        "samples": 4
+        "samples": 5
       },
       "20": {
         "avg_views": 0.0,
-        "samples": 5
+        "samples": 6
       },
       "0": {
         "avg_views": 0.0,
-        "samples": 2
+        "samples": 3
       },
       "8": {
         "avg_views": 0.0,
-        "samples": 5
+        "samples": 6
       },
       "9": {
         "avg_views": 0.0,
-        "samples": 1
+        "samples": 2
       },
       "14": {
         "avg_views": 0.0,
@@ -53,11 +58,11 @@
       },
       "16": {
         "avg_views": 0.0,
-        "samples": 3
+        "samples": 4
       },
       "18": {
         "avg_views": 0.0,
-        "samples": 2
+        "samples": 3
       },
       "23": {
         "avg_views": 0.0,
@@ -65,10 +70,14 @@
       },
       "17": {
         "avg_views": 0.0,
-        "samples": 1
+        "samples": 2
+      },
+      "21": {
+        "avg_views": 0.0,
+        "samples": 2
       }
     },
-    "total_measured": 29
+    "total_measured": 39
   },
   "weights": {
     "category_weights": {},
@@ -78,7 +87,7 @@
       0,
       8
     ],
-    "total_analyzed": 29,
-    "generated_at": "2026-03-30T19:59:51.111334+00:00"
+    "total_analyzed": 39,
+    "generated_at": "2026-03-31T19:58:37.308133+00:00"
   }
 }
